@@ -38,7 +38,5 @@ $school = array(
         ],
         "Teacher Subject" => ['Sunita Singh' => 'Chemistry', 'Varun Thakur' => 'Maths', 'Jyoti Singh' => 'Computer', 'Sameer Thakur' => 'Physics', 'Priya Sharma' => 'English', 'Manjeet Thakur' => 'Sports', 'Ketan Thakur' => 'Music', 'Ghanshyam Singh' => 'Principle', 'Twinkle Thakur' => 'Dance', 'Ashu Rana' => 'Vice Principle']
     ),
-
-
 );
 Print_r($school);
