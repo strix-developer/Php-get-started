@@ -35,6 +35,9 @@ $SCH=array(
     );
 print_r($SCH);
 
+$s=array('10','20');
+print_r($s)
+
 
 
 $scho=array('school'=>['students'=>[
