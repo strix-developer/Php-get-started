@@ -1,0 +1,287 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: white;
+    height: auto;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.main { 
+    
+    width: 100%;
+}
+
+header {
+    background-color:navy;
+    height:auto;
+    width: 100%;
+}
+
+.container
+{
+    width:100%;
+    max-width: 1140px;
+    margin:0 auto;
+    padding:0 15px;
+}
+
+.logo{
+    width:15%;
+    display:inline-block;
+}
+
+.logo img{
+    background-color: navy;
+    height: 70px;
+    text-align: center;
+}
+
+
+.menu{
+    display:inline-block;
+    width: 84%;
+}
+
+.menu ul {
+    float:right;
+    list-style: none;
+}
+
+.menu ul li {
+    display:inline-block;
+    margin: 20px;
+    text-align: center;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+.banner {
+    background-color: white;
+    width: 100%;
+    background-image: url("images/photo.jpg");
+    background-size: 100% 400px;
+    background-repeat: no-repeat;
+    height: 400px;
+    width: 100%;
+}
+
+.photo p {
+    padding-top: 120px;
+    padding-left: 25%;
+}
+
+.menubar {
+    background-color: aqua;
+    height: 0px;
+    text-align: center;
+    margin-top: 65px;
+    width: 100%;
+}
+
+.menubar ul {
+    display: inline-flex;
+    list-style: none;
+}
+
+.menubar ul li {
+    width: 130px;
+    margin: 40px;
+    text-align: center;
+    height: 70px;
+    padding-top: 25px;
+    box-shadow: 10px 10px black;
+}
+
+.menubar ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+.active,
+.menubar ul li:hover {
+    background: navy;
+    border-radius: 20px;
+}
+
+section {
+    background-color: white;
+    height: auto;
+    float: left;
+    width: 100%;
+}
+
+.content {
+    text-align: center;
+    width: 100%;
+    padding-top: 80px;
+}
+
+.one {
+    background-image: url("images//photo1.jpg");
+    background-size: 500px 100%;
+    height: 500px;
+    float: left;
+    width: 25%;
+    margin-left: 25%;
+    margin-top: 60px;
+}
+
+.one h2 {
+    padding-top: 350px;
+    color: white;
+}
+
+.one p {
+    color: white;
+}
+
+.two {
+    background-image: url("images//photo2.jpg");
+    background-size: 500px 100%;
+    background-color: black;
+    height: 500px;
+    float: left;
+    width: 25%;
+    margin-left: 20px;
+    margin-top: 60px;
+}
+
+.two h2 {
+    padding-top: 350px;
+    color: white;
+}
+
+.two p {
+    color: white;
+}
+
+.three {
+    background-image: url("images/photo3.jpg");
+    background-size: 500px 100%;
+    background-color: black;
+    height: 500px;
+    width: 25%;
+    margin-left: 25%;
+    float: left;
+    margin-top: 20px;
+}
+
+.three h2 {
+    padding-top: 350px;
+    color: black;
+}
+
+.three p {
+    color: black;
+}
+
+.four {
+    background-image: url("images/photo4.jpg");
+    background-size: 500px;
+    background-color: black;
+    height: 500px;
+    width: 25%;
+    float: left;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.four h2 {
+    padding-top: 350px;
+    color: black;
+}
+
+.four p {
+    color: black;
+}
+
+.end1 {
+    background-color: navy;
+    color: white;
+    height: 200px;
+    width: 100%;
+    float: left;
+    margin-top: 50px;
+    padding-top: 50PX;
+}
+
+.end1 h2 {
+    padding-top: 20PX;
+    margin-left: 25%;
+}
+
+.end1 p {
+    margin-left: 55%;
+    padding-top: 20PX;
+}
+
+.end2 {
+    background-color: white;
+    height: 200px;
+    width: 100%;
+    float: left;
+    text-align: center;
+    padding-top: 60PX;
+    color: gray;
+}
+
+footer {
+    background-color: navy;
+    color: white;
+    height: 300px;
+    width: 100%;
+    float: left;
+    text-align: center;
+}
+
+.footer1 {
+    background-color: navy;
+    color: white;
+    text-align: center;
+    height: 250px;
+    width: 100%;
+    padding-top: 10px;
+    float: left;
+}
+
+.footer2 {
+    background-color: white;
+    color: gray;
+    height: 50px;
+    width: 100%;
+    float: left;
+    padding-top: 15px;
+}
+
+input[type=text] {
+    width: 40%;
+    padding: 14px;
+    border: 1px solid navy;
+    border-radius: 14px;
+    box-sizing: border-box;
+}
+
+input[type=button] {
+    background-color: white;
+    color: navy;
+    padding: 14px 40px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+input[type=submit] {
+    background-color: navy;
+    color: white;
+    padding: 14px 60px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
