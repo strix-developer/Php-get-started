@@ -1,5 +1,5 @@
 <?php
 
-include __DIR__."/readme.md";
+include __DIR__."/flowchart.php";
 
 ?>
