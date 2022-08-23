@@ -10,13 +10,17 @@ $s = array(
                     [ //section a
                         'Section A' =>
                         [
-                            'Students Name' => [ //name
+                            'Students Name' => [ //students name
                                 'Sunil', 'Anil', 'Vikash', 'Ankush', 'Devender', 'Dhirender', 'Akshay', 'Rahul', 'Abhishek', 'Shammi'
                             ],
 
                             'Roll Number' => [ //roll number
                                 'Sunil' => '01', 'Anil' => '02', 'Vikash' => '03', 'Ankush' => '04', 'Devender' => '05',
                                 'Dhirender' => '06', 'Akshay' => '07', 'Rahul' => '08', 'Abhishek' => '09', 'Shammi' => '10'
+                            ],
+
+                            'Teachers Name' => [ //teachers name
+                                'Nishant', 'Prashant', 'Vikash', 'Akshit'
                             ],
 
                             'Subject' => [ //subjects
@@ -55,6 +59,10 @@ $s = array(
                                 'Dhirender' => '06', 'Akshay' => '07', 'Rahul' => '08', 'Abhishek' => '09', 'Shammi' => '10'
                             ],
 
+                            'Teachers Name' => [ //teachers name
+                                'Sharma', 'Guleria', 'Singh', 'Verma'
+                            ],
+
                             'Subject' => [ //subjects
                                 'Hindi' => [ //hindi
                                     'Teacher' => ['Sharma'], 'Timing' => ['09:00am'],
@@ -89,6 +97,9 @@ $s = array(
                             'Roll Number' => [ //roll number
                                 'Sunil' => '01', 'Anil' => '02', 'Vikash' => '03', 'Ankush' => '04', 'Devender' => '05',
                                 'Dhirender' => '06', 'Akshay' => '07', 'Rahul' => '08', 'Abhishek' => '09', 'Shammi' => '10'
+                            ],
+                            'Teachers Name' => [ //teachers name
+                                'Kumar', 'Thakur', 'John', 'Ruchita'
                             ],
 
                             'Subject' => [ //subjects
@@ -152,5 +163,4 @@ $s = array(
 
 );
 
-echo $s['School'][0]['Students']['Class'][0]['Section A']['Subject']['Math']['Teacher'][0];
-
+echo $s['School'][0]['Students']['Class'][0]['Section A']['Teachers Name']['3'];
