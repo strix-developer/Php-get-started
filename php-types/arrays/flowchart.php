@@ -152,5 +152,5 @@ $s = array(
 
 );
 
-echo $s['School'][0]['Students']['Class'][0]['Section A']['Subject']['Math']['Teacher'][0];
+print_r($s);
 
