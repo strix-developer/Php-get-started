@@ -10,7 +10,7 @@ $s = array(
                     [ //section a
                         'Section A' =>
                         [
-                            'Name' => [ //name
+                            'Students Name' => [ //name
                                 'Sunil', 'Anil', 'Vikash', 'Ankush', 'Devender', 'Dhirender', 'Akshay', 'Rahul', 'Abhishek', 'Shammi'
                             ],
 
@@ -46,7 +46,7 @@ $s = array(
                     [ //section b
                         'Section B' =>
                         [
-                            'Name' => [ //name
+                            'Students Name' => [ //name
                                 'Sunil', 'Anil', 'Vikash', 'Ankush', 'Devender', 'Dhirender', 'Akshay', 'Rahul', 'Abhishek', 'Shammi'
                             ],
 
@@ -82,7 +82,7 @@ $s = array(
                     [ //section c
                         'Section C' =>
                         [
-                            'Name' => [ //name
+                            'Students Name' => [ //name
                                 'Sunil', 'Anil', 'Vikash', 'Ankush', 'Devender', 'Dhirender', 'Akshay', 'Rahul', 'Abhishek', 'Shammi'
                             ],
 
