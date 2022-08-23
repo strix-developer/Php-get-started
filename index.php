@@ -1,5 +1,5 @@
 <?php
 
-include __DIR__."/flowchart.php";
+include __DIR__."/php-types/arrays/flowchart.php";
 
 ?>
