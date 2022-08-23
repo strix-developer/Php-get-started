@@ -81,4 +81,4 @@ $school = array(
 
 
 
-print_r($school);
+echo $school['Students']['class']['0']['Section-A']['Teacher Name']['Computer'];
