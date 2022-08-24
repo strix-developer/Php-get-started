@@ -10,7 +10,7 @@
 
         header {
             width: 100%;
-            height: 100vh;
+            height: 50vh;
             background-color: white;
             background-repeat: no-repeat;
             background-size: cover;
@@ -33,7 +33,7 @@
 
         main {
             width: 100%;
-            height: 85vh;
+            height: 30vh;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -52,6 +52,9 @@
         section div {
             animation: changeborder 10s infinite linear;
             border: 7px solid red;
+        }
+        form{
+            text-align: center;
         }
 
     </style>
@@ -76,6 +79,14 @@
             </section>
         </main>
     </header>
+    
+<form action="/https://www.google.co.in" target="_blank">
+    <label for="fname">First name:</label><br>
+    <input type="text" id="fname" name="fname" value="Himanshu"><br>
+    <label for="lname">Last name:</label><br>
+    <input type="text" id="lname" name="lname" value="Thakur"><br><br>
+    <input type="submit" value="Submit">
+  </form> 
 </body>
 
 </html>
