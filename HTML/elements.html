@@ -1,0 +1,92 @@
+<html>
+
+<head>
+    <title></title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            width: 100%;
+            height: 50vh;
+            background-color: white;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        nav {
+            width: 100%;
+            height: 15vh;
+            background: black;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav .mainmenu {
+            width: 40%;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        main {
+            width: 100%;
+            height: 30vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        section h3 {
+            letter-spacing: 3px;
+            font-weight: 200;
+        }
+
+        section h1 {
+            text-transform: uppercase;
+        }
+
+        section div {
+            animation: changeborder 10s infinite linear;
+            border: 7px solid red;
+        }
+        form{
+            text-align: center;
+        }
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo" > <h3 style="color:white;">MYLOGO</h3>
+            </div>
+            <div class="mainmenu">
+                <a href="#">Home</a>
+                <a href="#">About Us</a>
+                <a href="#">Contact Us</a>
+            </div>
+        </nav>
+        <main>
+            <section>
+                <div class="change_text"><b>WELCOME TO XXX ELECTRONICS</b></div>
+                <p><i>All your electronics needs in one place</i></p><br>>
+                <input type=button value="view more">
+            </section>
+        </main>
+    </header>
+    
+<form action="/https://www.google.co.in" target="_self">
+    <label for="fname">First name:</label><br>
+    <input type="text" id="fname" name="fname" value="Himanshu"><br>
+    <label for="lname">Last name:</label><br>
+    <input type="text" id="lname" name="lname" value="Thakur"><br><br>
+    <input type="submit" value="Submit">
+  </form> 
+</body>
+
+</html>
