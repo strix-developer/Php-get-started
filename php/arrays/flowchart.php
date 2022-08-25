@@ -1,166 +1,135 @@
 <?php
-$s = array(
-    'School' =>
-    [ //school
-        [   //students  
-            'Students' =>
-            [ //class
-                'Class' =>
+$school = array(
+    'students' => [ //students
+        [
+            'class' => [ //class
                 [
-                    [ //section a
-                        'Section A' =>
-                        [
-                            'Students Name' => [ //students name
-                                'Sunil', 'Anil', 'Vikash', 'Ankush', 'Devender', 'Dhirender', 'Akshay', 'Rahul', 'Abhishek', 'Shammi'
-                            ],
-
-                            'Roll Number' => [ //roll number
-                                'Sunil' => '01', 'Anil' => '02', 'Vikash' => '03', 'Ankush' => '04', 'Devender' => '05',
-                                'Dhirender' => '06', 'Akshay' => '07', 'Rahul' => '08', 'Abhishek' => '09', 'Shammi' => '10'
-                            ],
-
-                            'Teachers Name' => [ //teachers name
-                                'Nishant', 'Prashant', 'Vikash', 'Akshit'
-                            ],
-
-                            'Subject' => [ //subjects
-                                'Hindi' => [ //hindi
-                                    'Teacher' => ['Nishant'], 'Timing' => ['09:00am'],
-                                    'Building' => ['Room NUmber' => ['101'], 'AC/NON AC' => ['Ac'], 'Capacity' => ['70']]
-                                ],
-                                'Math' => [ //math
-                                    'Teacher' => ['Prashant'], 'Timing' => ['10:00am'],
-                                    'Building' => ['Room NUmber' => ['101'], 'AC/NON AC' => ['Ac'], 'Capacity' => ['70']]
-                                ],
-                                'English' => [ //english
-                                    'Teacher' => ['Vikash'], 'Timing' => ['11:00am'],
-                                    'Building' => ['Room NUmber' => ['101'], 'AC/NON AC' => ['Ac'], 'Capacity' => ['70']]
-                                ],
-                                'Computer' => [ //computer
-                                    'Teacher' => ['Akshit'], 'Timing' => ['01:00pm'],
-                                    'Building' => ['Room NUmber' => ['101'], 'AC/NON AC' => ['Ac'], 'Capacity' => ['70']]
-                                ],
-                            ],
-                            'Total Students' => [ //total students
-                                '10'
-                            ]
+                    'section A' => [ //section A
+                        'name' => [
+                            'Sunil', 'Anil', 'Vikash', 'Ankush', 'Devender',
+                            'Dhirender', 'Akshay', 'Rahul', 'Abhishek', 'Shammi'
                         ],
-                    ],
 
-                    [ //section b
-                        'Section B' =>
-                        [
-                            'Students Name' => [ //name
-                                'Sunil', 'Anil', 'Vikash', 'Ankush', 'Devender', 'Dhirender', 'Akshay', 'Rahul', 'Abhishek', 'Shammi'
-                            ],
-
-                            'Roll Number' => [ //roll number
-                                'Sunil' => '01', 'Anil' => '02', 'Vikash' => '03', 'Ankush' => '04', 'Devender' => '05',
-                                'Dhirender' => '06', 'Akshay' => '07', 'Rahul' => '08', 'Abhishek' => '09', 'Shammi' => '10'
-                            ],
-
-                            'Teachers Name' => [ //teachers name
-                                'Sharma', 'Guleria', 'Singh', 'Verma'
-                            ],
-
-                            'Subject' => [ //subjects
-                                'Hindi' => [ //hindi
-                                    'Teacher' => ['Sharma'], 'Timing' => ['09:00am'],
-                                    'Building' => ['Room NUmber' => ['102'], 'AC/NON AC' => ['Ac'], 'Capacity' => ['70']]
-                                ],
-                                'Math' => [ //math
-                                    'Teacher' => ['Guleria'], 'Timing' => ['10:00am'],
-                                    'Building' => ['Room NUmber' => ['102'], 'AC/NON AC' => ['Ac'], 'Capacity' => ['70']]
-                                ],
-                                'English' => [ //english
-                                    'Teacher' => ['Singh'], 'Timing' => ['11:00am'],
-                                    'Building' => ['Room NUmber' => ['102'], 'AC/NON AC' => ['Ac'], 'Capacity' => ['70']]
-                                ],
-                                'Computer' => [ //computer
-                                    'Teacher' => ['Verma'], 'Timing' => ['01:00pm'],
-                                    'Building' => ['Room NUmber' => ['102'], 'AC/NON AC' => ['Ac'], 'Capacity' => ['70']]
-                                ],
-                            ],
-                            'Total Students' => [ //total students
-                                '10'
-                            ]
+                        'roll number' => [ //roll number
+                            'Sunil' => '01', 'Anil' => '02', 'Vikash' => '03', 'Ankush' => '04', 'Devender' => '05',
+                            'Dhirender' => '06', 'Akshay' => '07', 'Rahul' => '08', 'Abhishek' => '09', 'Shammi' => '10'
                         ],
-                    ],
 
-                    [ //section c
-                        'Section C' =>
-                        [
-                            'Students Name' => [ //name
-                                'Sunil', 'Anil', 'Vikash', 'Ankush', 'Devender', 'Dhirender', 'Akshay', 'Rahul', 'Abhishek', 'Shammi'
+                        'subject' => [ //subjects
+                            'Hindi' => [ //hindi
+                                'Teacher' => ['Nishant'], 'Timing' => ['09:00am'],
+                                'Building' => ['Room NUmber' => ['101'], 'AC/NON AC' => ['Ac'], 'Capacity' => ['70']]
                             ],
-
-                            'Roll Number' => [ //roll number
-                                'Sunil' => '01', 'Anil' => '02', 'Vikash' => '03', 'Ankush' => '04', 'Devender' => '05',
-                                'Dhirender' => '06', 'Akshay' => '07', 'Rahul' => '08', 'Abhishek' => '09', 'Shammi' => '10'
+                            'Math' => [ //math
+                                'Teacher' => ['Prashant'], 'Timing' => ['10:00am'],
+                                'Building' => ['Room NUmber' => ['101'], 'AC/NON AC' => ['Ac'], 'Capacity' => ['70']]
                             ],
-                            'Teachers Name' => [ //teachers name
-                                'Kumar', 'Thakur', 'John', 'Ruchita'
+                            'English' => [ //english
+                                'Teacher' => ['Vikash'], 'Timing' => ['11:00am'],
+                                'Building' => ['Room NUmber' => ['101'], 'AC/NON AC' => ['Ac'], 'Capacity' => ['70']]
                             ],
-
-                            'Subject' => [ //subjects
-                                'Hindi' => [ //hindi
-                                    'Teacher' => ['Kumar'], 'Timing' => ['09:00am'],
-                                    'Building' => ['Room NUmber' => ['103'], 'AC/NON AC' => ['Ac'], 'Capacity' => ['70']]
-                                ],
-                                'Math' => [ //math
-                                    'Teacher' => ['Thakur'], 'Timing' => ['10:00am'],
-                                    'Building' => ['Room NUmber' => ['103'], 'AC/NON AC' => ['Ac'], 'Capacity' => ['70']]
-                                ],
-                                'English' => [ //english
-                                    'Teacher' => ['John'], 'Timing' => ['11:00am'],
-                                    'Building' => ['Room NUmber' => ['103'], 'AC/NON AC' => ['Ac'], 'Capacity' => ['70']]
-                                ],
-                                'Computer' => [ //computer
-                                    'Teacher' => ['Ruchita'], 'Timing' => ['01:00pm'],
-                                    'Building' => ['Room NUmber' => ['103'], 'AC/NON AC' => ['Ac'], 'Capacity' => ['70']]
-                                ],
+                            'Computer' => [ //computer
+                                'Teacher' => ['Akshit'], 'Timing' => ['01:00pm'],
+                                'Building' => ['Room NUmber' => ['101'], 'AC/NON AC' => ['Ac'], 'Capacity' => ['70']]
                             ],
-                            'Total Students' => [ //total students
-                                '10'
-                            ]
                         ],
-                    ],
 
+                        'total students' => [10],
+                    ],
+                ],
+
+                [
+                    'section B' => [ //section B
+                        'name' => [ //name
+                            'Sunil', 'Anil', 'Vikash', 'Ankush', 'Devender',
+                            'Dhirender', 'Akshay', 'Rahul', 'Abhishek', 'Shammi'
+                        ],
+
+                        'roll number' => [ //roll number
+                            'Sunil' => '01', 'Anil' => '02', 'Vikash' => '03', 'Ankush' => '04', 'Devender' => '05',
+                            'Dhirender' => '06', 'Akshay' => '07', 'Rahul' => '08', 'Abhishek' => '09', 'Shammi' => '10'
+                        ],
+
+                        'subject' => [ //subjects
+                            'Hindi' => [ //hindi
+                                'Teacher' => ['Sharma'], 'Timing' => ['09:00am'],
+                                'Building' => ['Room NUmber' => ['102'], 'AC/NON AC' => ['Ac'], 'Capacity' => ['70']]
+                            ],
+                            'Math' => [ //math
+                                'Teacher' => ['Guleria'], 'Timing' => ['10:00am'],
+                                'Building' => ['Room NUmber' => ['102'], 'AC/NON AC' => ['Ac'], 'Capacity' => ['70']]
+                            ],
+                            'English' => [ //english
+                                'Teacher' => ['Singh'], 'Timing' => ['11:00am'],
+                                'Building' => ['Room NUmber' => ['102'], 'AC/NON AC' => ['Ac'], 'Capacity' => ['70']]
+                            ],
+                            'Computer' => [ //computer
+                                'Teacher' => ['Verma'], 'Timing' => ['01:00pm'],
+                                'Building' => ['Room NUmber' => ['102'], 'AC/NON AC' => ['Ac'], 'Capacity' => ['70']]
+                            ],
+                        ],
+
+                        'total students' => [10],
+                    ]
+                ],
+
+
+                [
+                    'section C' => [ //section C
+                        'name' => [ //name
+                            'Sunil', 'Anil', 'Vikash', 'Ankush', 'Devender', 'Dhirender', 'Akshay', 'Rahul', 'Abhishek', 'Shammi'
+                        ],
+
+                        'roll number' => [ //roll number
+                            'Sunil' => '01', 'Anil' => '02', 'Vikash' => '03', 'Ankush' => '04', 'Devender' => '05',
+                            'Dhirender' => '06', 'Akshay' => '07', 'Rahul' => '08', 'Abhishek' => '09', 'Shammi' => '10'
+                        ],
+
+                        'subject' => [ //subjects
+                            'Hindi' => [ //hindi
+                                'Teacher' => ['Kumar'], 'Timing' => ['09:00am'],
+                                'Building' => ['Room NUmber' => ['103'], 'AC/NON AC' => ['Ac'], 'Capacity' => ['70']]
+                            ],
+                            'Math' => [ //math
+                                'Teacher' => ['Thakur'], 'Timing' => ['10:00am'],
+                                'Building' => ['Room NUmber' => ['103'], 'AC/NON AC' => ['Ac'], 'Capacity' => ['70']]
+                            ],
+                            'English' => [ //english
+                                'Teacher' => ['John'], 'Timing' => ['11:00am'],
+                                'Building' => ['Room NUmber' => ['103'], 'AC/NON AC' => ['Ac'], 'Capacity' => ['70']]
+                            ],
+                            'Computer' => [ //computer
+                                'Teacher' => ['Ruchita'], 'Timing' => ['01:00pm'],
+                                'Building' => ['Room NUmber' => ['103'], 'AC/NON AC' => ['Ac'], 'Capacity' => ['70']]
+                            ],
+                        ],
+
+                        'total students' => [10]
+                    ]
                 ],
             ],
 
-            [ //total students
-                'Total Students' => ['30'],
-            ],
         ],
 
-        [ //teachers
-
-            [ //teacher
-                'Teachers' =>
-                ['Name' => [ //name
-                    'Nishant', 'Prashant', 'Vikash', 'Akshit', 'Sharma', 'Guleria',
-                    'Singh', 'Verma', 'Kumar', 'Thakur', 'John', 'Ruchita'
-                ]],
-
-                ['Qualification' => [ //Qualification
-                    'Nishant' => 'PHD', 'Prashant' => 'PHD', 'Vikash' => 'PHD', 'Akshit' => 'PHD', 'Sharma' => 'PHD', 'Guleria' => 'PHD',
-                    'Singh' => 'PHD', 'Verma' => 'PHD', 'Kumar' => 'PHD', 'Thakur' => 'PHD', 'John' => 'PHD', 'Ruchita' => 'PHD'
-                ]],
-
-                ['Subject' => [ //subjects
-                    'Hindi' => ['Nishant', 'Sharma', 'Kumar'],
-                    'Math' => ['Prashant', 'Guleria', 'Thakur'],
-                    'English' => ['Vikash', 'Singh', 'John'],
-                    'Computer' => ['Akshit', 'Verma', 'Ruchita'],
-                ]],
-            ],
-            [ //total teachers
-                'Total Teachers' => ['12'],
-            ],
+        [ //total students
+            'total students' => [30]
         ],
     ],
 
+
+
+
+
+    'teachers' => [ //teachers
+        'name' => [
+            'Nishant-PHD-HINDI', 'Prashant-PHD-MATH', 'Vikash-PHD-ENGLISH', 'Akshit-PHD-COMPUTER',
+            'Sharma-PHD-HINDI', 'Guleria-PHD-MATH', 'Singh-PHD-ENGLISH', 'Verma-PHD-COMPUTER',
+            'Kumar-PHD-HINDI', 'Thakur-PHD-MATH', 'John-PHD-ENGLISH', 'Ruchita-PHD-COMPUTER'
+        ],
+    ],
+
+    'total teachers' => [12],
+
 );
 
-echo $s['School'][0]['Students']['Class'][0]['Section A']['Teachers Name']['3'];
+print_r($school['teachers']['name'][0]);
