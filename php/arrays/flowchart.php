@@ -73,7 +73,6 @@ $school = array(
                     ]
                 ],
 
-
                 [
                     'section C' => [ //section C
                         'name' => [ //name
@@ -108,17 +107,12 @@ $school = array(
                     ]
                 ],
             ],
-
         ],
 
         [ //total students
             'total students' => [30]
         ],
     ],
-
-
-
-
 
     'teachers' => [ //teachers
         'name' => [
