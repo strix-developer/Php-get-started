@@ -5,7 +5,7 @@ $school = array(
             'class' => [ //class
                 [
                     'section A' => [ //section A
-                        'students name' => [ //name
+                        'student names' => [ //name
                             ['name' => 'Sunil', 'roll number' => '01'],
                             ['name' => 'Anil', 'roll number' => '02'],
                             ['name' => 'Vikash', 'roll number' => '03'],
@@ -43,7 +43,7 @@ $school = array(
 
                 [
                     'section B' => [ //section B
-                        'students name' => [ //name
+                        'student names' => [ //name
                             ['name' => 'Sunil', 'roll number' => '01'],
                             ['name' => 'Anil', 'roll number' => '02'],
                             ['name' => 'Vikash', 'roll number' => '03'],
@@ -82,7 +82,7 @@ $school = array(
 
                 [
                     'section C' => [ //section C
-                        'students name' => [ //name
+                        'student names' => [ //name
                             ['name' => 'Sunil', 'roll number' => '01'],
                             ['name' => 'Anil', 'roll number' => '02'],
                             ['name' => 'Vikash', 'roll number' => '03'],
@@ -147,4 +147,4 @@ $school = array(
 
 );
 
-print_r($school['students'][0]['class'][0]['section A']['students name'][9]);
+print_r($school['students'][0]['class'][0]['section A']['student names'][9]);
