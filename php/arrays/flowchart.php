@@ -5,7 +5,7 @@ $school = array(
             'class' => [ //class
                 [
                     'section A' => [ //section A
-                        'student names' => [ //name
+                        'students name' => [ //name
                             ['name' => 'Sunil', 'roll number' => '01', 'age' => '15'],
                             ['name' => 'Anil', 'roll number' => '02', 'age' => '15'],
                             ['name' => 'Vikash', 'roll number' => '03', 'age' => '15'],
@@ -43,7 +43,7 @@ $school = array(
 
                 [
                     'section B' => [ //section B
-                        'student names' => [ //name
+                        'students name' => [ //name
                             ['name' => 'Sunil', 'roll number' => '01', 'age' => '15'],
                             ['name' => 'Anil', 'roll number' => '02', 'age' => '15'],
                             ['name' => 'Vikash', 'roll number' => '03', 'age' => '15'],
@@ -82,12 +82,12 @@ $school = array(
 
                 [
                     'section C' => [ //section C
-                        'student names' => [ //name
+                        'students name' => [ //name
                             ['name' => 'Sunil', 'roll number' => '01', 'age' => '15'],
                             ['name' => 'Anil', 'roll number' => '02', 'age' => '15'],
                             ['name' => 'Vikash', 'roll number' => '03', 'age' => '15'],
                             ['name' => 'Ankush', 'roll number' => '04', 'age' => '15'],
-                            ['name' => 'Devender', 'roll number' => '05'], 'age' => '15',
+                            ['name' => 'Devender', 'roll number' => '05', 'age' => '15'],
                             ['name' => 'Dhirender', 'roll number' => '06', 'age' => '15'],
                             ['name' => 'Akshay', 'roll number' => '07', 'age' => '15'],
                             ['name' => 'Rahul', 'roll number' => '08', 'age' => '15'],
@@ -127,7 +127,7 @@ $school = array(
     ],
 
     'teachers' => [ //teachers
-        'teacher names' => [
+        'teacher' => [
             ['name' => 'Nishant', 'Qualification' => 'PHD', 'suject' => 'HINDI', 'section' => 'A'],
             ['name' => 'Prashant', 'Qualification' => 'PHD', 'subject' => 'MATH', 'section' => 'B'],
             ['name' => 'Vikash', 'Qualification' => 'PHD', 'subject' => 'ENGLISH', 'section' => 'C'],
@@ -147,4 +147,4 @@ $school = array(
 
 );
 
-print_r($school['teachers']['teacher names'][9]);
+print_r($school['students'][0]['class'][0]['section A']['students name'][9]);
