@@ -48,6 +48,7 @@ $school = array(
                         'roll number' => [ //roll number
                             '01' => 'Sunil', '02' => 'Anil', '03' => 'Vikash', '04' => 'Ankush', '05' => 'Devender',
                             '06' => 'Dhirender', '07' => 'Akshay', '08' => 'Rahul', '09' => 'Abhishek', '10' => 'Shammi'
+                        ],
 
                         'subject' => [ //subjects
                             'Hindi' => [ //hindi
@@ -71,6 +72,7 @@ $school = array(
                         'total students' => [10],
                     ]
                 ],
+
 
                 [
                     'section C' => [ //section C
@@ -106,12 +108,17 @@ $school = array(
                     ]
                 ],
             ],
+
         ],
 
         [ //total students
             'total students' => [30]
         ],
     ],
+
+
+
+
 
     'teachers' => [ //teachers
         'name' => [
@@ -125,4 +132,4 @@ $school = array(
 
 );
 
-print_r($school['teachers']['name'][0]);
+print_r($school['students']['0']['class'][0]['section A']['roll number']);
