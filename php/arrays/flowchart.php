@@ -147,4 +147,4 @@ $school = array(
 
 );
 
-print_r($school['teachers']['teacher names']);
+print_r($school['teachers']['teacher names'][9]);
