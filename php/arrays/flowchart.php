@@ -5,14 +5,17 @@ $school = array(
             'class' => [ //class
                 [
                     'section A' => [ //section A
-                        'name' => [
-                            'Sunil', 'Anil', 'Vikash', 'Ankush', 'Devender',
-                            'Dhirender', 'Akshay', 'Rahul', 'Abhishek', 'Shammi'
-                        ],
-
-                        'roll number' => [ //roll number
-                            '01' => 'Sunil', '02' => 'Anil', '03' => 'Vikash', '04' => 'Ankush', '05' => 'Devender',
-                            '06' => 'Dhirender', '07' => 'Akshay', '08' => 'Rahul', '09' => 'Abhishek', '10' => 'Shammi'
+                        'students name' => [ //name
+                            ['name' => 'Sunil', 'roll number' => '01'],
+                            ['name' => 'Anil', 'roll number' => '02'],
+                            ['name' => 'Vikash', 'roll number' => '03'],
+                            ['name' => 'Ankush', 'roll number' => '04'],
+                            ['name' => 'Devender', 'roll number' => '05'],
+                            ['name' => 'Dhirender', 'roll number' => '06'],
+                            ['name' => 'Akshay', 'roll number' => '07'],
+                            ['name' => 'Rahul', 'roll number' => '08'],
+                            ['name' => 'Abhishek', 'roll number' => '09'],
+                            ['name' => 'Shammi', 'roll number' => '10 '],
                         ],
 
                         'subject' => [ //subjects
@@ -40,14 +43,17 @@ $school = array(
 
                 [
                     'section B' => [ //section B
-                        'name' => [ //name
-                            'Sunil', 'Anil', 'Vikash', 'Ankush', 'Devender',
-                            'Dhirender', 'Akshay', 'Rahul', 'Abhishek', 'Shammi'
-                        ],
-
-                        'roll number' => [ //roll number
-                            '01' => 'Sunil', '02' => 'Anil', '03' => 'Vikash', '04' => 'Ankush', '05' => 'Devender',
-                            '06' => 'Dhirender', '07' => 'Akshay', '08' => 'Rahul', '09' => 'Abhishek', '10' => 'Shammi'
+                        'students name' => [ //name
+                            ['name' => 'Sunil', 'roll number' => '01'],
+                            ['name' => 'Anil', 'roll number' => '02'],
+                            ['name' => 'Vikash', 'roll number' => '03'],
+                            ['name' => 'Ankush', 'roll number' => '04'],
+                            ['name' => 'Devender', 'roll number' => '05'],
+                            ['name' => 'Dhirender', 'roll number' => '06'],
+                            ['name' => 'Akshay', 'roll number' => '07'],
+                            ['name' => 'Rahul', 'roll number' => '08'],
+                            ['name' => 'Abhishek', 'roll number' => '09'],
+                            ['name' => 'Shammi', 'roll number' => '10 '],
                         ],
 
                         'subject' => [ //subjects
@@ -76,13 +82,17 @@ $school = array(
 
                 [
                     'section C' => [ //section C
-                        'name' => [ //name
-                            'Sunil', 'Anil', 'Vikash', 'Ankush', 'Devender', 'Dhirender', 'Akshay', 'Rahul', 'Abhishek', 'Shammi'
-                        ],
-
-                        'roll number' => [ //roll number
-                            '01' => 'Sunil', '02' => 'Anil', '03' => 'Vikash', '04' => 'Ankush', '05' => 'Devender',
-                            '06' => 'Dhirender', '07' => 'Akshay', '08' => 'Rahul', '09' => 'Abhishek', '10' => 'Shammi'
+                        'students name' => [ //name
+                            ['name' => 'Sunil', 'roll number' => '01'],
+                            ['name' => 'Anil', 'roll number' => '02'],
+                            ['name' => 'Vikash', 'roll number' => '03'],
+                            ['name' => 'Ankush', 'roll number' => '04'],
+                            ['name' => 'Devender', 'roll number' => '05'],
+                            ['name' => 'Dhirender', 'roll number' => '06'],
+                            ['name' => 'Akshay', 'roll number' => '07'],
+                            ['name' => 'Rahul', 'roll number' => '08'],
+                            ['name' => 'Abhishek', 'roll number' => '09'],
+                            ['name' => 'Shammi', 'roll number' => '10 '],
                         ],
 
                         'subject' => [ //subjects
@@ -137,4 +147,4 @@ $school = array(
 
 );
 
-print_r($school['teachers']['teacher'][5]);
+print_r($school['students'][0]['class'][0]['section A']['students name'][9]);
