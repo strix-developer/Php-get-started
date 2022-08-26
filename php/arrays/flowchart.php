@@ -137,4 +137,4 @@ $school = array(
 
 );
 
-print_r($school['total teachers']);
+print_r($school['teachers']['teacher'][5]);
