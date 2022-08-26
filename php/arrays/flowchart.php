@@ -11,8 +11,8 @@ $school = array(
                         ],
 
                         'roll number' => [ //roll number
-                            'Sunil' => '01', 'Anil' => '02', 'Vikash' => '03', 'Ankush' => '04', 'Devender' => '05',
-                            'Dhirender' => '06', 'Akshay' => '07', 'Rahul' => '08', 'Abhishek' => '09', 'Shammi' => '10'
+                            '01' => 'Sunil', '02' => 'Anil', '03' => 'Vikash', '04' => 'Ankush', '05' => 'Devender',
+                            '06' => 'Dhirender', '07' => 'Akshay', '08' => 'Rahul', '09' => 'Abhishek', '10' => 'Shammi'
                         ],
 
                         'subject' => [ //subjects
@@ -46,9 +46,8 @@ $school = array(
                         ],
 
                         'roll number' => [ //roll number
-                            'Sunil' => '01', 'Anil' => '02', 'Vikash' => '03', 'Ankush' => '04', 'Devender' => '05',
-                            'Dhirender' => '06', 'Akshay' => '07', 'Rahul' => '08', 'Abhishek' => '09', 'Shammi' => '10'
-                        ],
+                            '01' => 'Sunil', '02' => 'Anil', '03' => 'Vikash', '04' => 'Ankush', '05' => 'Devender',
+                            '06' => 'Dhirender', '07' => 'Akshay', '08' => 'Rahul', '09' => 'Abhishek', '10' => 'Shammi'
 
                         'subject' => [ //subjects
                             'Hindi' => [ //hindi
@@ -80,8 +79,8 @@ $school = array(
                         ],
 
                         'roll number' => [ //roll number
-                            'Sunil' => '01', 'Anil' => '02', 'Vikash' => '03', 'Ankush' => '04', 'Devender' => '05',
-                            'Dhirender' => '06', 'Akshay' => '07', 'Rahul' => '08', 'Abhishek' => '09', 'Shammi' => '10'
+                            '01' => 'Sunil', '02' => 'Anil', '03' => 'Vikash', '04' => 'Ankush', '05' => 'Devender',
+                            '06' => 'Dhirender', '07' => 'Akshay', '08' => 'Rahul', '09' => 'Abhishek', '10' => 'Shammi'
                         ],
 
                         'subject' => [ //subjects
