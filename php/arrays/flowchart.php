@@ -5,7 +5,7 @@ $school = array(
             'class' => [ //class
                 [
                     'section A' => [ //section A
-                        'students name' => [ //name
+                        'student names' => [ //name
                             ['name' => 'Sunil', 'roll number' => '01', 'age' => '15'],
                             ['name' => 'Anil', 'roll number' => '02', 'age' => '15'],
                             ['name' => 'Vikash', 'roll number' => '03', 'age' => '15'],
@@ -43,7 +43,7 @@ $school = array(
 
                 [
                     'section B' => [ //section B
-                        'students name' => [ //name
+                        'student names' => [ //name
                             ['name' => 'Sunil', 'roll number' => '01', 'age' => '15'],
                             ['name' => 'Anil', 'roll number' => '02', 'age' => '15'],
                             ['name' => 'Vikash', 'roll number' => '03', 'age' => '15'],
@@ -82,7 +82,7 @@ $school = array(
 
                 [
                     'section C' => [ //section C
-                        'students name' => [ //name
+                        'student names' => [ //name
                             ['name' => 'Sunil', 'roll number' => '01', 'age' => '15'],
                             ['name' => 'Anil', 'roll number' => '02', 'age' => '15'],
                             ['name' => 'Vikash', 'roll number' => '03', 'age' => '15'],
@@ -127,7 +127,7 @@ $school = array(
     ],
 
     'teachers' => [ //teachers
-        'teacher' => [
+        'teacher names' => [
             ['name' => 'Nishant', 'Qualification' => 'PHD', 'suject' => 'HINDI', 'section' => 'A'],
             ['name' => 'Prashant', 'Qualification' => 'PHD', 'subject' => 'MATH', 'section' => 'B'],
             ['name' => 'Vikash', 'Qualification' => 'PHD', 'subject' => 'ENGLISH', 'section' => 'C'],
@@ -147,4 +147,4 @@ $school = array(
 
 );
 
-print_r($school['students'][0]['class'][0]['section A']['students name'][9]);
+print_r($school['students'][0]['class'][0]['section A']['student names'][9]);
