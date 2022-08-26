@@ -5,7 +5,7 @@ $school = array(
             'class' => [ //class
                 [
                     'section A' => [ //section A
-                        'student names' => [ //name
+                        'students name' => [ //name
                             ['name' => 'Sunil', 'roll number' => '01', 'age' => '15'],
                             ['name' => 'Anil', 'roll number' => '02', 'age' => '15'],
                             ['name' => 'Vikash', 'roll number' => '03', 'age' => '15'],
@@ -43,7 +43,7 @@ $school = array(
 
                 [
                     'section B' => [ //section B
-                        'student names' => [ //name
+                        'students name' => [ //name
                             ['name' => 'Sunil', 'roll number' => '01', 'age' => '15'],
                             ['name' => 'Anil', 'roll number' => '02', 'age' => '15'],
                             ['name' => 'Vikash', 'roll number' => '03', 'age' => '15'],
@@ -82,7 +82,7 @@ $school = array(
 
                 [
                     'section C' => [ //section C
-                        'student names' => [ //name
+                        'students name' => [ //name
                             ['name' => 'Sunil', 'roll number' => '01', 'age' => '15'],
                             ['name' => 'Anil', 'roll number' => '02', 'age' => '15'],
                             ['name' => 'Vikash', 'roll number' => '03', 'age' => '15'],
@@ -127,7 +127,7 @@ $school = array(
     ],
 
     'teachers' => [ //teachers
-        'teacher names' => [
+        'teachers name' => [
             ['name' => 'Nishant', 'Qualification' => 'PHD', 'suject' => 'HINDI', 'section' => 'A'],
             ['name' => 'Prashant', 'Qualification' => 'PHD', 'subject' => 'MATH', 'section' => 'B'],
             ['name' => 'Vikash', 'Qualification' => 'PHD', 'subject' => 'ENGLISH', 'section' => 'C'],
