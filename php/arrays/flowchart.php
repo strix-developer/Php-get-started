@@ -127,7 +127,7 @@ $school = array(
     ],
 
     'teachers' => [ //teachers
-        'teacher' => [
+        'teacher names' => [
             ['name' => 'Nishant', 'Qualification' => 'PHD', 'suject' => 'HINDI', 'section' => 'A'],
             ['name' => 'Prashant', 'Qualification' => 'PHD', 'subject' => 'MATH', 'section' => 'B'],
             ['name' => 'Vikash', 'Qualification' => 'PHD', 'subject' => 'ENGLISH', 'section' => 'C'],
@@ -147,4 +147,4 @@ $school = array(
 
 );
 
-print_r($school['students'][0]['class'][0]['section A']['student names'][9]);
+print_r($school['teachers']['teacher names']);
