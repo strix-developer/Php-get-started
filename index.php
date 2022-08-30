@@ -4,6 +4,6 @@
 
 // include __DIR__."/html/internal-CSS/table.html";
 
-include __DIR__."/php/variables/static.php";
+include __DIR__."/php/variables/globalvariable.php";
 
 ?>
