@@ -6,6 +6,6 @@
 
 // include __DIR__."/php/variables/global.php";
 
-include __DIR__ . "/php/form/studentpost.php";
+include __DIR__ . "/php/form/studentpost.html";
 
 ?>
