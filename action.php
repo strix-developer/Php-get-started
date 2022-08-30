@@ -3,6 +3,8 @@
 <body>
     <!--
     My name is : <?php echo $_GET['username']; ?> </br>
+    My Father name is : <?php echo $_POST['fathername']; ?> </br>
+    My Mother name is : <?php echo $_POST['mothername']; ?> </br>
     My roll number is : <?php echo $_GET['rollnumber']; ?> </br>
     My class is : <?php echo $_GET['class']; ?> </br>
     My phone number is : <?php echo $_GET['phonenumber']; ?> </br>
@@ -12,6 +14,8 @@
 -->
 
     My name is : <?php echo $_POST['username']; ?> </br>
+    My Father name is : <?php echo $_POST['fathername']; ?> </br>
+    My Mother name is : <?php echo $_POST['mothername']; ?> </br>
     My roll number is : <?php echo $_POST['rollnumber']; ?> </br>
     My class is : <?php echo $_POST['class']; ?> </br>
     My phone number is : <?php echo $_POST['phonenumber']; ?> </br>
