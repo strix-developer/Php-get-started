@@ -6,5 +6,8 @@
 //Globlevariable
 //include __DIR__."\PHP/globlevariable.php";
 //forms
-include __DIR__."\Form/student.php";
+//post
+//include __DIR__."\Form/studentpost.php";
+//get
+include __DIR__."\Form/studentget.php"
 ?>
