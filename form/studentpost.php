@@ -9,7 +9,7 @@
 </head>
 
 <body>
-    <form action="action.php" method="post">
+    <form action="actionpost.php" method="post">
         Name: <input type="text" name="username" /><br />
         Father Name: <input type="text" name="fathername" /><br />
         Mother Name: <input type="text" name="mothername" /><br />
