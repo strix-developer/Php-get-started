@@ -127,24 +127,29 @@ $school = array(
     ],
 
     'teachers' => [ //teachers
-        'teachers name' => [
+        'teacher' => [
             ['name' => 'Nishant', 'Qualification' => 'PHD', 'suject' => 'HINDI', 'section' => 'A'],
-            ['name' => 'Prashant', 'Qualification' => 'PHD', 'subject' => 'MATH', 'section' => 'B'],
-            ['name' => 'Vikash', 'Qualification' => 'PHD', 'subject' => 'ENGLISH', 'section' => 'C'],
-            ['name' => 'Akshit', 'Qualification' => 'PHD', 'subject' => 'COMPUTER', 'section' => 'D'],
-            ['name' => 'Sharma', 'Qualification' => 'PHD', 'subject' => 'HINDI', 'section' => 'A'],
+            ['name' => 'Prashant', 'Qualification' => 'PHD', 'subject' => 'MATH', 'section' => 'A'],
+            ['name' => 'Vikash', 'Qualification' => 'PHD', 'subject' => 'ENGLISH', 'section' => 'A'],
+            ['name' => 'Akshit', 'Qualification' => 'PHD', 'subject' => 'COMPUTER', 'section' => 'A'],
+            ['name' => 'Sharma', 'Qualification' => 'PHD', 'subject' => 'HINDI', 'section' => 'B'],
             ['name' => 'Guleria', 'Qualification' => 'PHD', 'subject' => 'MATH', 'section' => 'B'],
-            ['name' => 'Singh', 'Qualification' => 'PHD', 'subject' => 'ENGLISH', 'section' => 'C'],
-            ['name' => 'Verma', 'Qualification' => 'PHD', 'subject' => 'COMPUTER', 'section' => 'D'],
-            ['name' => 'Kumar', 'Qualification' => 'PHD', 'subject' => 'HINDI', 'section' => 'A'],
-            ['name' => 'Thakur', 'Qualification' => 'PHD', 'subject' => 'MATH', 'section' => 'B'],
+            ['name' => 'Singh', 'Qualification' => 'PHD', 'subject' => 'ENGLISH', 'section' => 'B'],
+            ['name' => 'Verma', 'Qualification' => 'PHD', 'subject' => 'COMPUTER', 'section' => 'B'],
+            ['name' => 'Kumar', 'Qualification' => 'PHD', 'subject' => 'HINDI', 'section' => 'C'],
+            ['name' => 'Thakur', 'Qualification' => 'PHD', 'subject' => 'MATH', 'section' => 'C'],
             ['name' => 'John', 'Qualification' => 'PHD', 'subject' => 'ENGLISH', 'section' => 'C'],
-            ['name' => 'Ruchita', 'Qualification' => 'PHD', 'subject' => 'COMPUTER', 'section' => 'D'],
+            ['name' => 'Ruchita', 'Qualification' => 'PHD', 'subject' => 'COMPUTER', 'section' => 'C'],
         ],
+
+        'section A' => ['Nishant', 'Prashant', 'Vikash', 'Akshit'],
+        'section B' => ['Sharma', 'Guleria', 'Singh', 'Verma'],
+        'section C' => ['Kumar', 'Thakur', 'John', 'Ruchita'],
     ],
+
 
     'total teachers' => [12],
 
 );
 
-print_r($school['students'][0]['class'][0]['section A']['students name'][9]);
+print_r($school['teachers']['section A']);
