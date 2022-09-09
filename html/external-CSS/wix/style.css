@@ -156,3 +156,12 @@ input[type=button] {
     height: 600px;
     float: left;
 }
+
+footer {
+    width: 50%;
+    height: auto;
+    margin-left: 25%;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
