@@ -162,6 +162,39 @@ footer {
     height: auto;
     margin-left: 25%;
     text-align: center;
-    margin-top: 50px;
     margin-bottom: 20px;
+}
+
+footer ul {
+    display: flex;
+}
+
+footer ul li {
+    list-style: none;
+    margin: 40px;
+    font-size: larger;
+    font-weight: bold;
+    color: rgb(99, 138, 99);
+}
+
+footer ul li ul {
+    display: inline;
+
+}
+
+footer ul li ul li {
+    margin: 20px;
+    font-size: medium;
+    color: gray;
+}
+
+footer input[type=text] {
+    padding: 5px;
+    border: solid 5px;
+    border-color: rgb(99, 138, 99);
+}
+
+footer input[type=submit] {
+    padding: 5px 50px;
+    background-color: rgb(99, 138, 99);
 }
