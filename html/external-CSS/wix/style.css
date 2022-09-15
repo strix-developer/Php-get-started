@@ -58,6 +58,10 @@ header {
     color: gray;
 }
 
+.header3 a:hover {
+    color: blueviolet;
+}
+
 .section1 {
     width: 80%;
     height: 700px;
@@ -179,13 +183,13 @@ footer ul li {
 
 footer ul li ul {
     display: inline;
-
 }
 
 footer ul li ul li {
     margin: 20px;
     font-size: medium;
     color: gray;
+    text-align: left;
 }
 
 footer input[type=text] {
@@ -197,4 +201,14 @@ footer input[type=text] {
 footer input[type=submit] {
     padding: 5px 50px;
     background-color: rgb(99, 138, 99);
+}
+
+footer a {
+    text-decoration: none;
+    color: gray;
+
+}
+
+footer a:hover {
+    color: blueviolet;
 }
