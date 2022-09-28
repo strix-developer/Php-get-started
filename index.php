@@ -14,5 +14,8 @@
 //include __DIR__."\PHP\operators.php";
 //constants
 //include __DIR__."\PHP\constants.php";
+//controlstructure
 include __DIR__."\PHP\controlstructure.php";
+//switchcase
+//include __DIR__."\PHP\switchcase.php";
 ?>
