@@ -15,7 +15,9 @@
 //constants
 //include __DIR__."\PHP\constants.php";
 //controlstructure
-include __DIR__."\PHP\controlstructure.php";
+//include __DIR__."\PHP\controlstructure.php";
+//While
+include __DIR__."\PHP\while.php";
 //switchcase
 //include __DIR__."\PHP\switchcase.php";
 ?>
