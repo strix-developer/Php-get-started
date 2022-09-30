@@ -8,5 +8,6 @@
 
 //include __DIR__ . "/form/studentpost.php";
 
-include __DIR__ . "/php/ifelseif.php";
-?>
+//include __DIR__ . "/php/ifelseif.php";
+
+include __DIR__ . "/php/controlstructure/while.php";
