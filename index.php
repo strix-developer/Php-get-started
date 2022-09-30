@@ -17,7 +17,7 @@
 //controlstructure
 //include __DIR__."\PHP\controlstructure.php";
 //While
-include __DIR__."\PHP\while.php";
+include __DIR__."\Controlstructure\while.php";
 //switchcase
 //include __DIR__."\PHP\switchcase.php";
 ?>
