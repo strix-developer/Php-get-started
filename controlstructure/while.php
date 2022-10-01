@@ -111,71 +111,8 @@ while($i<=4){
 	$i++;
 	echo "<br>";
 }
-$j=1;
-while($j<=11){
-	echo "x";
-	$j++;
-}
-echo "<br>";
-$j=1;
-do{
-	echo "x";
-	$j++;
-}while($j<=11);
-$s=1;
-$z=5;
+
 echo "</br>";
-$i=1;
-do{
-	$j=$z;
-	do{
-		echo "x";
-		$j--;
-	}while($j>0);
-	$k=1;
-	do{
-		echo "&nbsp ";
-		$k++;
-	}while($k<=$s);
-	$s+=2;
-	$l=$z;
-	do{
-		echo "x";
-		$l--;
-	}while($l>0);
-	$z--;
-	$i++;
-	echo "<br>";
-}while($i<=5);
-$m=7;
-$i=1;
-do{
-	$j=0;
-	do{
-		echo "x";
-		$j++;
-	}while($j<=$i);
-	$k=1;
-	do{	
-		echo"&nbsp ";
-		$k++; 
-	}while($k<=$m);
-	$j=0;	
-	do{
-		echo "x";
-		$j++;
-	}while($j<=$i);
-	$i++;
-	$m-=2;
-	echo "<br>";
-}while($i<=4);
-$i=1;
-do{
-	echo "x";
-	$i++;
-}while($i<=11);
-
-
 
 
 ?>
