@@ -1,7 +1,11 @@
 <?php
 # echo "simple";
  
-echo "rayaan"
+$company = 'strix';echo "<br>";
+$strix = "Strix is an organisation";
 
-// echo "hjfjhfjfuj";
+echo $company;
+echo $$company;
+
+
 ?>
