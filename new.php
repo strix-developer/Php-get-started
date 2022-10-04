@@ -7,5 +7,5 @@ $strix = "Strix is an organisation";
 echo $company;
 echo $$company;
 
-
+echo "Hello world";
 ?>
