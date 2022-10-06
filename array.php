@@ -9,6 +9,10 @@ echo '<br>';
 
 $y = ["oneee","twooo"];
 echo $y[1].'<br>'.$y[0];
+echo "<br>";
+
+$z = array('three','four');
+echo $z[0]."<br>".$z[1];
 ?>
 
 <h2>associative</h2>
