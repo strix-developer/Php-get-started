@@ -22,10 +22,12 @@ echo 'Ram  is ' .$age["Ram"]. " years old";
 ?>
 <?php
 echo"<br>";
-$age = array('rishi'=>'18','jitesh'=>'20','rishav'=>'22');
+$age = array('rishi'=>'18','jitesh'=>'20','rishav'=>'22','bentenis'=>'23','dhruv'=>'18');
 echo ' rishi is' .$age["rishi"].' years old'."<br>";
 echo 'jitesh is' .$age["jitesh"].'years old'."<br>";
 echo 'rishav is' .$age["rishav"].'years old'."<br>";
+echo ' bentenis is '.$age ["bentenis"].' years old'."<br>";
+echo $age ["dhruv"].'years old';
 
 
 
