@@ -90,7 +90,7 @@ $school = array(
                     "Total students"=>'3'
                     ],
                 "Section c"=>[
-                    "Name"=>["Piyush,Gautam,Rahul"],
+                    "Name"=>['Piyush','Gautam','Rahul'],
                     "Roll No"=>[3004,3005,3006],
                     "subject"=>[
                         "Physics"=>[
@@ -178,7 +178,7 @@ $school = array(
 
             ["Name"=>"Rohit",
                 "qualification"=>"master's in physics",
-                "subject"=>"physics"],
+                "subject"=>"phyhgfsics"],
 
             ["Name"=>"Shilpa",
                 "qualification"=>"master's in chemistry",
