@@ -4,8 +4,23 @@ $school = array(
         "students"=>[
             "class"=>["12th",
                 "Section A"=>[
-                    "Name"=>['Ramesh','Piyush','Rishav','Jitesh'],
-                    "Roll No"=>[2000,2001,2002,2003],
+                    "student"=>[
+                    ["Name"=>"Ramesh",
+                       "Roll No"=>2000,
+                       "Class"=>'12th'],
+
+                       ["Name"=>"Piyush",
+                          "Roll No"=>2001,
+                          "Class"=>'12th'],
+
+                       ["Name"=>"Rishav",
+                          "Roll No"=>2002,
+                          "Class"=>'12th'],
+
+                          ["Name"=>"Jitesh",
+                             "Roll No"=>2003,
+                             "Class"=>'12th'],],
+                   
                     "subject"=>[
                         "Physics"=>[
                             "Teacher"=>'Mohan',
@@ -47,8 +62,20 @@ $school = array(
                     "Total students"=>'4'
                     ],
                 "Section B"=>[
-                    "Name"=>['Ram','Sham', 'Mohan'],
-                    "Roll No"=>[1001,1002,1003],
+                    "student"=>[
+                    ["Name"=>"Ram",
+                       "Roll No"=>1001,
+                       "Class"=>'12th'],
+                
+                    ["Name"=>"Sham",
+                       "Roll No"=>1002,
+                       "Class"=>'12th'],
+
+                    ["Name"=>"Mohan",
+                       "Roll No"=>1003,
+                       "Class"=>'12th'],
+                    ],
+
                     "subject"=>[
                         "Physics"=>[
                         "Teacher"=>'Mohan',
@@ -90,8 +117,20 @@ $school = array(
                     "Total students"=>'3'
                     ],
                 "Section c"=>[
-                    "Name"=>['Piyush','Gautam','Rahul'],
-                    "Roll No"=>[3004,3005,3006],
+                    "student"=>[
+                    ["Name"=>"Piyush",
+                    "Roll No"=>3004,
+                    "Class"=>'12th'],
+
+                    ["Name"=>"Gautam",
+                    "Roll No"=>3005,
+                    "Class"=>'12th'],
+
+                    ["Name"=>"Rahul",
+                    "Roll No"=>3006,
+                    "Class"=>'12th'],
+                    ],
+
                     "subject"=>[
                         "Physics"=>[
                         "Teacher"=>'Rohit',
@@ -133,10 +172,11 @@ $school = array(
                 ],
             "Total students"=>'10'
             ],
-        ]
         ],
+        
             
         
+
 
            
 
@@ -194,7 +234,7 @@ $school = array(
 
             "Total Teachers"=>'12'
             ],  
-    
+        ],
         );
         echo "<pre>";
         print_r($school);
