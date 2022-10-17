@@ -1,0 +1,46 @@
+header.header {
+    background-image: url(./images/background6.jpg);
+    background-repeat: no-repeat;
+    height: 661px;
+    width: 100%;
+}
+h2 {
+    color: white;
+    height: 0px;
+    width: 25%;
+}
+header ul {
+    width: 100%;
+    list-style: none;
+    color: white;
+    width: 50%;
+    padding: 0px 534px;
+    display: flex;
+    height: 560px;
+}
+header ul li{
+    list-style: none;
+    margin: 25px;
+    font-size: x-large;
+    font-weight: bold;
+}
+.started {
+    border-radius: 100px;
+    border: #ffffff !important;
+    background-color: #a148ff !important;
+    background: linear-gradient(90deg, #a148ff 0%, #ff6f45 100%);
+    border: none;
+    transition: all 0.3s;
+    padding: 0.6rem 1.2rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    font-weight: 600;
+    font-style: normal;
+    margin: 0.6rem 0.6rem;
+    white-space: normal;
+    align-items: center;
+    display: inline-flex;
+    justify-content: center;
+    word-break: break-word;
+    float: right;
+}

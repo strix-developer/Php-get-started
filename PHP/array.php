@@ -1,5 +1,6 @@
 <?php
 $school = array(
+   'school' =>[
     //students Details
     "Students" => [
         //Class
@@ -98,10 +99,12 @@ $school = array(
     [
         'Total  Teachers' => ['10'],
     ]
-
+   ]
 
 );
 
 
-
+echo '<pre>';
 print_r($school);
+
+echo '</pre>';
