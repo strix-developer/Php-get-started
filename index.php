@@ -21,6 +21,8 @@
 //switchcase
 //include __DIR__."\PHP\switchcase.php";
 //include __DIR__."\Controlstructure\do-while.php";
-include __DIR__."\controlstructure/for.php";
+//include __DIR__."\controlstructure/for.php";
 //include __DIR__."\controlstructure/switch.php";
+//include __DIR__."\controlstructure/declare.php";
+include __DIR__."\Function/function.php";
 ?>
