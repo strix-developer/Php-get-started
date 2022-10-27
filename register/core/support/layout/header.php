@@ -45,7 +45,7 @@
                     </nav>
                 </div>
                 <div class="col-sm-3 p-3 bg-dark text-white text-end">
-                    <form action="signin.php" method="post">
+                    <form action="signup.php" method="post">
                         <button type="submit" class="btn btn-success btn-lg">
                             Sign up
                         </button>
