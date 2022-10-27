@@ -13,7 +13,7 @@
 <body>
     <div class="container mt-3 bg-light">
         <h2>Sign up form</h2>
-        <form action="/action_page.php">
+        <form action="#" method="POST">
             <div class="mb-3 mt-3">
                 <label for="name">Name:</label>
                 <input type="text" class="form-control" id="name" placeholder="Enter your name" name="name">
