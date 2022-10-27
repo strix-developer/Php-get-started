@@ -14,8 +14,15 @@
     <header>
         <div class="container-fluid">
             <div class="row">
-                <div class="col-sm-3 p-3 bg-dark text-white">
-                    <h1>Bootstrap</h1>
+                <div class="col-sm-1 pt-2 bg-dark">
+                    <a class="navbar-brand" href="#">
+                        <img src="images/logo.jpg" alt="Logo" style="width:90px ;" class="rounded-pill">
+                    </a>
+                </div>
+                <div class="col-sm-2 p-2 bg-dark text-white">
+                    <h1>
+                        Bootstrap
+                    </h1>
                 </div>
                 <div class="col-sm-6 p-3 bg-success text-white">
                     <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
@@ -47,6 +54,10 @@
             </div>
         </div>
     </header>
+    <?php
+    include_once('content.php');
+    include_once('footer.php');
+    ?>
 </body>
 
 </html>
