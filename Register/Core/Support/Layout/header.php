@@ -59,7 +59,7 @@
                     </li>
                 </ul>
             </div>
-            <div class="col-sm-4">
+            <div class="col-sm-3">
                 <form action="signup.php" method="post">
                     <button class="btn btn-light" type="Submit">Sign up</button>
                 </form>

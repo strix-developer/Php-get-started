@@ -30,7 +30,7 @@
     </div>
     <div class="mb-3">
       <label for="confirm pwd">Confirm Password:</label>
-      <input type="Confirm password" class="form-control" id="confirm pwd" placeholder="Confirm password" name="confirm pswd">
+      <input type="password" class="form-control" id="confirm pwd" placeholder="Confirm password" name="confirm pswd">
     </div>
     <label for="Roles">Roles:</label>
   <select id="Roles" name="Roles">
