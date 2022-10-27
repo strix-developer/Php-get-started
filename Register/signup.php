@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Bootstrap Example</title>
+  <title>Signup</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -32,9 +32,9 @@
       <label for="confirm pwd">Confirm Password:</label>
       <input type="Confirm password" class="form-control" id="confirm pwd" placeholder="Confirm password" name="confirm pswd">
     </div>
-    <label for="cars">Roles:</label>
+    <label for="Roles">Roles:</label>
   <select id="Roles" name="Roles">
-    <option value=" Admin">Admin</option>
+    <option value=" Admin ">Admin</option>
     <option value="User">User</option>
     <option value="Guest">Guest</option>
   </select>
@@ -43,10 +43,10 @@
         <input class="form-check-input" type="checkbox" name="remember"> Remember me
       </label>
     </div>
-    <button type="submit" class="navbar-dark bg-dark text-white">Submit</button>
+    <button type="submit" class="navbar-dark bg-dark text-white img-thumbnail">Submit</button>
     <br>
     <label class="Already Sign in">Already Sign in-></label>
-    <button type="Log in" class="navbar-dark bg-dark text-white">Log in</button>
+    <button type="Log in" class="navbar-dark bg-dark text-white img-thumbnail">Log in</button>
   </form>
 </div>
 
