@@ -60,9 +60,9 @@
                 </ul>
             </div>
             <div class="col-sm-3">
-                <form action="signup.php" method="post">
-                    <button class="btn btn-light" type="Submit">Sign up</button>
-                </form>
+
+                <a href="signup.php"> <button class="btn btn-light" type="Submit">Sign up</button></a>
+
             </div>
         </nav>
     </header>
