@@ -1,8 +1,8 @@
 <?php
-include __DIR__ . "/Bootsstrap/app.php";
+include __DIR__ . "/Bootsstrap/App.php";
 //header 
-require_once file_header();
+include_once file_header();
 // contant
-require_once file_contant();
+include file_contant();
 //footer 
-require_once file_footer();
+include file_footer();

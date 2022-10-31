@@ -1,3 +1,6 @@
+<?php
+require_once __DIR__ . "/Bootsstrap/App.php";
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -10,24 +13,26 @@
 </head>
 
 <body>
-
-  <div class="container col-sm-4 mt-3 bg-light">
+<?php
+require_once "./Core/Support/Layout/header.php";
+?>
+  <div class="container col-sm-4 mt-3 bg-light ">
     <h2>Please Sign in</h2>
-    <form action="" method="POST">
+    <form action="#" method="POST">
       <!-- Name-->
       <div class="mb-3 mt-3">
         <label for="Name">Name:</label>
-        <input type="Name" class="form-control" id="Name" placeholder="Enter Name" name="Name">
+        <input type="Name" class="form-control" id="name" placeholder="Enter Name" name="name">
       </div>
       <!-- Last Name-->
       <div class="mb-3">
         <label for="Last Name">Last Name:</label>
-        <input type="Last Name" class="form-control" id="Last Name" placeholder="Enter Last Name" name="Last Name">
+        <input type="Last Name" class="form-control" id="lastname" placeholder="Enter Last Name" name="lastname">
       </div>
       <!-- Gmail-->
       <div class="mb-3">
         <label for="Gmail">Gmail:</label>
-        <input type="Gmail" class="form-control" id="Gmail" placeholder="Enter Gmail" name="Gmail">
+        <input type="Gmail" class="form-control" id="gmail" placeholder="Enter Gmail" name="gmail">
       </div>
       <!-- Pswd-->
       <div class="mb-3">
@@ -36,8 +41,8 @@
       </div>
       <!-- cpswd-->
       <div class="mb-3">
-        <label for="confirm pwd">Confirm Password:</label>
-        <input type="password" class="form-control" id="confirm pwd" placeholder="Confirm password" name="confirm pswd">
+        <label for="confirmpswd">Confirm Password:</label>
+        <input type="password" class="form-control" id="confirmpswd" placeholder="Confirm password" name="confirmpswd">
       </div>
       <!-- Role-->
       <label for="Roles">Roles:</label>
@@ -53,14 +58,15 @@
         </label>
       </div>
       <!-- Submit Button-->
-      <button type="submit" class="navbar-dark bg-dark text-white img-thumbnail">Submit</button>
+
+      <input type="submit" class="navbar-dark bg-dark text-white img-thumbnail" name="submit" value="submit">
+      <input type="hidden" name="action" value="register">
       <br>
       <!-- Asi-->
       <label class="Already Sign in">Already Sign in-></label>
       <!-- Log in Button-->
       <a href="login.php"><button type="button" class="navbar-dark bg-dark text-white  img-thumbnail">Log in</button></a>
     </form>
-    <input type="hidden" name="Action" value="register">
   </div>
 </body>
 

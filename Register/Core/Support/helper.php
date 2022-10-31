@@ -1,16 +1,16 @@
 <?php
 function action($register)
 {
-    $actions = __DIR__ . './Action/' . $register . '.php';
-    if (has_Action($actions)) {
-        return realpath($actions);
+    $register = __DIR__ . './action/' . $register . '.php';
+    if (has_Action($register)) {
+        return realpath($register);
     } else {
         return __DIR__ . "/action/fallbacks.php";
     }
 }
-function has_Action($actions)
+function has_Action($register)
 {
-    return file_exists($actions);
+    return file_exists($register);
 }
 
 
@@ -22,7 +22,7 @@ function file_header()
 }
 function file_contant()
 {
-    return require_once __DIR__ . "/Layout/contant.php";
+    return require_once __DIR__ . "/Layout/content.php";
 }
 function file_footer()
 {
