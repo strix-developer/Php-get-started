@@ -11,45 +11,57 @@
 </head>
 
 <body>
-    <div class="container mt-3 bg-light">
+
+    <?php
+    require_once __DIR__ . "/core/support/layout/header.php";
+    ?>
+
+    <div class="container-fluid col-sm-5 mt-3 bg-light text-center">
         <h2>Sign up form</h2>
-        <form action="#" method="POST">
-            <div class="mb-3 mt-3">
+        <form action="" method="POST" id="form">
+            <div class="mb-3 mt-3 text-start">
                 <label for="name">Name:</label>
                 <input type="text" class="form-control" id="name" placeholder="Enter your name" name="name">
             </div>
-            <div class="mb-3 mt-3">
+            <div class="mb-3 mt-3 text-start">
                 <label for="name">Last Name:</label>
                 <input type="text" class="form-control" id="lname" placeholder="Enter your Last name" name="lname">
             </div>
-            <div class="mb-3 mt-3">
+            <div class="mb-3 mt-3 text-start">
                 <label for="email">Email:</label>
                 <input type="text" class="form-control" id="email" placeholder="Enter email" name="email">
             </div>
-            <div class="mb-3 mt-3">
-                <label for="pwd">Password:</label>
-                <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd">
+            <div class="mb-3 mt-3 text-start">
+                <label for="pass">Password:</label>
+                <input type="password" class="form-control" id="pass" placeholder="Enter password" name="pass">
             </div>
-            <div class="mb-3 mt-3">
-                <label for="pwd">Confirm Password:</label>
-                <input type="password" class="form-control" id="cpwd" placeholder="Confirm password" name="cpswd">
+            <div class="mb-3 mt-3 text-start">
+                <label for="con-pass">Confirm Password:</label>
+                <input type="password" class="form-control" id="con-pass" placeholder="Confirm password" name="con-pass">
             </div>
-            <div class="mb-3 mt-3">
+            <div class="mb-3 mt-3 text-start">
                 <label for="role">Role:</label>
                 <select id="role" name="role">
-                    <option value="One">Admin</option>
-                    <option value="Two">Guest</option>
-                    <option value="Three">User</option>
+                    <option value="admin">Admin</option>
+                    <option value="guest">Guest</option>
+                    <option value="user">User</option>
                 </select>
             </div>
-            <label class="form-check-label">
-                <input class="form-check-input" type="checkbox" name="remember"> Remember me
-            </label>
-            <button type="submit" class="btn btn-success">Submit</button>&nbsp;&nbsp;&nbsp;
-            <label for="user">Adready sign up/</label>
-            <input class="btn btn-success" type="submit" value="Log in">
+            <div class="mb-3 mt-3 text-end">
+                <label class="form-check-label">
+                    <input class="form-check-input" type="checkbox" name="remember"> Remember me
+                </label>
+                <input type="submit" class="btn btn-success" id="submit" name="submit">
+                <input type="hidden" name="action" value="register">
+            </div>
+            <div class="mb-3 mt-3 text-end">
+                <label for="user">Adready sign up/</label>
+                <a href="login.php"> <input class="btn btn-success" type="button" value="Log in"></a>
         </form>
     </div>
 </body>
 
 </html>
+<?php
+require_once __DIR__ . "/core/support/action/register.php";
+?>

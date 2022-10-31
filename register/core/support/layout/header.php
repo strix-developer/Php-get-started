@@ -45,19 +45,18 @@
                     </nav>
                 </div>
                 <div class="col-sm-3 p-3 bg-dark text-white text-end">
-                    <form action="signup.php" method="post">
+                    <a href="signup.php">
                         <button type="submit" class="btn btn-success btn-lg">
+                        <input type="hidden" name="action" value="register">
                             Sign up
                         </button>
-                    </form>
+                    </a>
+                    
                 </div>
             </div>
         </div>
     </header>
-    <?php
-    include_once('content.php');
-    include_once('footer.php');
-    ?>
+
 </body>
 
 </html>
