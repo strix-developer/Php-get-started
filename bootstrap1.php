@@ -36,7 +36,7 @@
 <div class="container">
   <h2>Rounded Corners</h2>
   <p>The .rounded class adds rounded corners to an image:</p>            
-  <img src="images/images.jpeg" class="rounded" alt="Goodmorning" width="304" height="236"> 
+  <img src="images/natasha.webp" class="rounded" alt="Natasha" width="600" height="500"> 
 </div>
  
   
