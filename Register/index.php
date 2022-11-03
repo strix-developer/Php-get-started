@@ -1,8 +1,8 @@
 <?php
 include __DIR__ . "/Bootsstrap/App.php";
 //header 
-include_once file_header();
+include_once __DIR__.file_header();
 // contant
-include file_contant();
+include_once __DIR__.file_content();
 //footer 
-include file_footer();
+include_once __DIR__.file_footer();

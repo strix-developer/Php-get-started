@@ -4,6 +4,7 @@ if (isset($_POST)) {
     $name = $_POST['name'];
     $lastname = $_POST['lastname'];
     $gmail = $_POST['gmail'];
+    $number = $_POST['number'];
     $pswd = $_POST['pswd'];
     $cpswd = $_POST['confirmpswd'];
     if (empty($name) || empty($lastname) || empty($gmail) || empty($pswd) || empty($cpswd)) {
@@ -13,7 +14,28 @@ if (isset($_POST)) {
     } elseif ($pswd !== $cpswd) {
         echo "<h4>error ! please check password</h4>";
     } else {
-        echo "<h4>Your sign is compleated and now you can log in</h4>";
+        $array = array(
+            "name" => $name,
+            "lastname" => $lastname,
+            "gmail" => $gmail,
+            "number" => $number,
+            "pswd" => $pswd,
+        );
+        $getdata = file_get_contents(__DIR__ . "/../../../database/user.json");
+        $decode = json_decode($getdata, true);
+        if (count($decode) == 0) {
+            $array["ID"] = 1;
+        }
+        $id = [];
+        foreach ($decode as $dataid) {
+            array_push($id, $dataid['ID']);
+            $var = count($id) + 1;
+            $array['ID'] = $var;
+        }
+        $decode[]=$array;
+        $data=json_encode($decode,JSON_PRETTY_PRINT);
+        if(file_put_contents(__DIR__."/../../../database/user.json",$data)){
+            echo"success";
+        }
     }
 }
-

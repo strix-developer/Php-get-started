@@ -10,15 +10,19 @@ require_once __DIR__ . "/Bootsstrap/App.php";
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
-</head>
+
+  <head>
+
+  </head>
 
 <body>
-<?php
-require_once "./Core/Support/Layout/header.php";
-?>
+
+  <?php
+  require_once "./Core/Support/Layout/header.php";
+  ?>
   <div class="container col-sm-4 mt-3 bg-light ">
     <h2>Please Sign in</h2>
-    <form action="#" method="POST">
+    <form action="" method="POST">
       <!-- Name-->
       <div class="mb-3 mt-3">
         <label for="Name">Name:</label>
@@ -34,6 +38,11 @@ require_once "./Core/Support/Layout/header.php";
         <label for="Gmail">Gmail:</label>
         <input type="Gmail" class="form-control" id="gmail" placeholder="Enter Gmail" name="gmail">
       </div>
+      <!--Phone Number-->
+      <div class="mb-3">
+        <label for="number">Number:</label>
+        <input type="number" class="form-control" id="number" placeholder="Enter number" name="number">
+      </div>
       <!-- Pswd-->
       <div class="mb-3">
         <label for="pwd">Password:</label>
@@ -47,6 +56,7 @@ require_once "./Core/Support/Layout/header.php";
       <!-- Role-->
       <label for="Roles">Roles:</label>
       <select id="Roles" name="Roles">
+        <option value=""></option>
         <option value=" Admin ">Admin</option>
         <option value="User">User</option>
         <option value="Guest">Guest</option>

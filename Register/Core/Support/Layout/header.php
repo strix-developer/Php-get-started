@@ -62,14 +62,11 @@
             <div class="col-sm-3">
 
                 <a href="signup.php"> <button class="btn btn-light" type="Submit">Sign up</button></a>
-                <input type="hidden" name="Action" value="register">
+                <input type="hidden" name="action" value="register">
             </div>
         </nav>
     </header>
-    <?php
-    // require_once('content.php');
-    // require_once('footer.php');
-    ?>
+   
 </body>
 
 </html>
