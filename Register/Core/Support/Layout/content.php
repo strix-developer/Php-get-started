@@ -1,22 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
-  <title>Contant Page</title>
-  <style>
-    .note {
-      width: 50%;
-      text-align: center;
-      padding: 188px;
-    }
-  </style>
-</head>
-
+ 
 <body>
   <section class="hero-banner py-4">
     <div class="container text-white img-thumbnail" style="background-image: url('images/5796282.webp');background-repeat:no-repeat;">
@@ -55,6 +37,3 @@
   </div>
   </div>
   </div>
-</body>
-
-</html>

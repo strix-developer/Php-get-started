@@ -1,4 +1,5 @@
 <?php
+require_once __DIR__. "/../../Bootsstrap/App.php";
 function action($register)
 {
 $action = __DIR__ . './action/' . $register . '.php';
@@ -18,13 +19,13 @@ return file_exists($register);
 
 function file_header()
 {
-    return  include_once __DIR__ . "/Layout/header.php";
+    return  realpath(__DIR__ . "/Layout/header.php");
 }
 function file_content()
 {
-    return include_once __DIR__ . "/Layout/content.php";
+    return realpath(__DIR__ . "/Layout/content.php");
 }
 function file_footer()
 {
-    return include_once __DIR__ . "/Layout/footer.php";
+    return  realpath(__DIR__ . "/Layout/footer.php");
 }

@@ -30,43 +30,50 @@
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-sm navbar-dark bg-dark justify-content-center">
-            <div class="col-sm-4">
-                <a class="navbar-brand" href="#">
-                    <img src="images/pngwing.com.png" alt="Logo" style="width:50px;" class="rounded-pill">
-                </a>
-                <a class="navbar-brand" href="#">Himanshu Thakur</a>
-            </div>
-            <div class="col-sm-4 ">
-                <ul class="nav nav-tabs  ">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Menu</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Contact</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Services</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Blog</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Reservation</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="col-sm-3">
+        <div class="container-fluid bg-dark">
+            <div class="row">
+                <div class="col-sm-1 p-3 bg-dark">
+                    <a class="navbar-brand" href="index.php">
+                        <img src="images/pngwing.com.png" alt="Logo" style="width:70px;" class="rounded-pill">
+                    </a>
+                </div>
+                <div class="col-sm-2 p-3">
+                    <a class="navbar-brand text-white" href="#"><h2>Himanshu Thakur</h2></a>
+                </div>
+                <div class="col-sm-6 bg-dark">
+                    <nav class="navbar navbar-expand-sm navbar-dark bg-dark justify-content-center">
+                        <div class="col-sm-6 ">
+                            <ul class="nav nav-tabs  ">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Menu</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">About</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Contact</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Services</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Blog</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Reservation</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+                <div class="col-sm-3 p-3 bg-dark">
 
-                <a href="signup.php"> <button class="btn btn-light" type="Submit">Sign up</button></a>
-                <input type="hidden" name="action" value="register">
+                    <button type="button" class="btn btn-light dropdown-toggle" data-bs-toggle="dropdown">Register</button>
+                    <ul class="dropdown-menu">
+                        <li> <a class="dropdown-item" href="signup.php"> sign up</a></li>
+                        <li> <a class="dropdown-item" href="login.php"> Log in</a></li>
+                    </ul>
+                </div>
             </div>
-        </nav>
+        </div>
     </header>
-   
-</body>
-
-</html>

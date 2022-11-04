@@ -10,7 +10,7 @@ if (isset($_POST)) {
     if (empty($name) || empty($lastname) || empty($gmail) || empty($pswd) || empty($cpswd)) {
         echo "<h4>Please fill out the empty field</h4>";
     } elseif (!filter_var($gmail, FILTER_VALIDATE_EMAIL)) {
-        echo "<h4>This is incorrect gmail id please check it out</h4>";
+        echo "<h4>This is incorrect gmail ID please Check it out</h4>";
     } elseif ($pswd !== $cpswd) {
         echo "<h4>error ! please check password</h4>";
     } else {
@@ -32,10 +32,11 @@ if (isset($_POST)) {
             $var = count($id) + 1;
             $array['ID'] = $var;
         }
-        $decode[]=$array;
-        $data=json_encode($decode,JSON_PRETTY_PRINT);
-        if(file_put_contents(__DIR__."/../../../database/user.json",$data)){
-            echo"success";
+        $decode[] = $array;
+        $data = json_encode($decode, JSON_PRETTY_PRINT);
+        if (file_put_contents(__DIR__ . "/../../../database/user.json", $data)) {
+            echo "<h4>you account is successfully signin you can log in now</h4>";
         }
     }
 }
+?>

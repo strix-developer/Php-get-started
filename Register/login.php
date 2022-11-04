@@ -1,3 +1,6 @@
+<?php
+require_once __DIR__."/Core/Support/action/logininfo.php";
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -10,30 +13,36 @@
 </head>
 
 <body>
+<?php
+  require_once "./Core/Support/Layout/header.php";
+  ?>
     <div class="container col-sm-6 mt-3 bg-light">
         <h2>Please Log in</h2>
-        <form action="#" class="was-validated" method="POST">
+        <form action=""  method="POST">
             <!-- Gmail-->
             <div class="mb-3">
-                <label for="Gmail">Gmail:</label>
-                <input type="Gmail" class="form-control" id="Gmail" placeholder="Enter Gmail" name="Gmail" required>
+                <label for="email">Gmail:</label>
+                <input type="text" class="form-control" id="email" placeholder="Enter Gmail" name="email" >
             </div>
-            <!-- Cpswd-->
+            <!-- pswd-->
             <div class="mb-3">
-                <label for="confirm pwd">Confirm Password:</label>
-                <input type="password" class="form-control" id="confirm pwd" placeholder="Confirm password" name="confirm pswd" required>
+                <label for="pswd">Confirm Password:</label>
+                <input type="password" class="form-control" id="pswd" placeholder=" password" name="pswd">
             </div>
             <!-- Rm-->
             <div class="form-check mb-3">
                 <label class="form-check-label">
-                    <input class="form-check-input" type="checkbox" name="remember" required> Remember me
+                    <input class="form-check-input" type="checkbox" name="remember"> Remember me
                 </label>
             </div>
             <!-- Log in Button-->
-            <a href="#"> <button type="Login" class="navbar-dark bg-dark text-white img-thumbnail">Login</button></a>
+            <input class="btn btn-primary" type="submit" value="Login">
+            <input type="hidden" name="action" value="header">
+
             <br>
         </form>
     </div>
+  
 </body>
 
 </html>
