@@ -11,17 +11,20 @@
 </head>
 
 <body>
+<?php
+    require_once __DIR__ . "/core/support/layout/header.php";
+    ?>
     <div class="container col-sm-4 mt-3 bg-light text-center">
         <h2>Please Log in</h2>
-        <form action="#" method="POST" class="was-validated">
+        <form action="#" method="POST">
             <div class="mb-3 mt-3 text-start">
                 <label for="email">Email:</label>
-                <input type="text" class="form-control" id="email" placeholder="Enter your email" name="email" required>
+                <input type="text" class="form-control" id="email" placeholder="Enter your email" name="email">
             </div>
 
             <div class="mb-3 mt-3 text-start">
-                <label for="pass">Password:</label>
-                <input type="password" class="form-control" id="pass" placeholder="Enter your password" name="pass" required>
+                <label for="password">Password:</label>
+                <input type="password" class="form-control" id="pass" placeholder="Enter your password" name="pass">
             </div>
 
             <div class="mb-3 mt-3 text-end">
@@ -31,10 +34,15 @@
             </div>
 
             <div class="mb-3 mt-3 text-end">
-                <input class="btn btn-success" type="submit" value="Log in">
+                <input  type="submit" class="btn btn-success" value="Log in">
+                <input type="hidden" name="action" value="register">
             </div>
         </form>
     </div>
 </body>
 
 </html>
+
+<?php
+require_once __DIR__."/core/support/action/login.php";
+?>

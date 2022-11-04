@@ -12,16 +12,18 @@
 
 <body>
     <header>
-        <div class="container-fluid">
+        <div class="container-fluid bg-success">
             <div class="row">
                 <div class="col-sm-1 pt-2 bg-dark">
-                    <a class="navbar-brand" href="#">
+                    <a class="navbar-brand" href="index.php">
                         <img src="images/logo.jpg" alt="Logo" style="width:90px ;" class="rounded-pill">
                     </a>
                 </div>
-                <div class="col-sm-2 p-2 bg-dark text-white">
+                <div class="col-sm-2 p-3 bg-dark text-white">
                     <h1>
-                        Bootstrap
+                        <a href="index.php" style="text-decoration:none ;color:white">
+                            Bootstrap
+                        </a>
                     </h1>
                 </div>
                 <div class="col-sm-6 p-3 bg-success text-white">
@@ -44,19 +46,17 @@
                         </div>
                     </nav>
                 </div>
-                <div class="col-sm-3 p-3 bg-dark text-white text-end">
-                    <a href="signup.php">
-                        <button type="submit" class="btn btn-success btn-lg">
-                        <input type="hidden" name="action" value="register">
-                            Sign up
-                        </button>
-                    </a>
-                    
+                <div class="col-sm-3 p-4 bg-dark text-white text-end">
+                    <button type="button" class="btn btn-success dropdown-toggle" data-bs-toggle="dropdown">
+                        Sign in
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="signup.php">Sign up</a></li>
+                        <li><a class="dropdown-item" href="login.php">Login</a></li>
+                    </ul>
                 </div>
             </div>
+
         </div>
+
     </header>
-
-</body>
-
-</html>

@@ -21,27 +21,32 @@
         <form action="" method="POST" id="form">
             <div class="mb-3 mt-3 text-start">
                 <label for="name">Name:</label>
-                <input type="text" class="form-control" id="name" placeholder="Enter your name" name="name">
+                <input type="text" class="form-control" id="name" pattern="[A-Za-z]{4,20}" placeholder="Enter your name" name="name">
             </div>
             <div class="mb-3 mt-3 text-start">
-                <label for="name">Last Name:</label>
-                <input type="text" class="form-control" id="lname" placeholder="Enter your Last name" name="lname">
+                <label for="last name">Last Name:</label>
+                <input type="text" class="form-control" id="lname" pattern="[A-Za-z]{4,20}" placeholder="Enter your Last name" name="lname">
             </div>
             <div class="mb-3 mt-3 text-start">
                 <label for="email">Email:</label>
                 <input type="text" class="form-control" id="email" placeholder="Enter email" name="email">
             </div>
             <div class="mb-3 mt-3 text-start">
-                <label for="pass">Password:</label>
+                <label for="phone number">Phone Number:</label>
+                <input type="number" class="form-control" id="number" placeholder="Enter your Phone Number" name="number">
+            </div>
+            <div class="mb-3 mt-3 text-start">
+                <label for="password">Password:</label>
                 <input type="password" class="form-control" id="pass" placeholder="Enter password" name="pass">
             </div>
             <div class="mb-3 mt-3 text-start">
-                <label for="con-pass">Confirm Password:</label>
+                <label for="confirm password">Confirm Password:</label>
                 <input type="password" class="form-control" id="con-pass" placeholder="Confirm password" name="con-pass">
             </div>
             <div class="mb-3 mt-3 text-start">
                 <label for="role">Role:</label>
                 <select id="role" name="role">
+                    <option value=""></option>
                     <option value="admin">Admin</option>
                     <option value="guest">Guest</option>
                     <option value="user">User</option>
@@ -55,13 +60,15 @@
                 <input type="hidden" name="action" value="register">
             </div>
             <div class="mb-3 mt-3 text-end">
-                <label for="user">Adready sign up/</label>
+                <label for="user">Adready have account/</label>
                 <a href="login.php"> <input class="btn btn-success" type="button" value="Log in"></a>
+                <input type="hidden" name="action" value="register">
         </form>
     </div>
 </body>
 
 </html>
+
 <?php
 require_once __DIR__ . "/core/support/action/register.php";
 ?>
