@@ -44,7 +44,7 @@
                     <nav class="navbar navbar-expand-sm navbar-dark bg-dark justify-content-center">
                         <div class="col-sm-6 ">
                             <ul class="nav nav-tabs  ">
-                                <li class="nav-item">
+                                <li class="nav-item ">
                                     <a class="nav-link" href="#">Menu</a>
                                 </li>
                                 <li class="nav-item">
