@@ -51,8 +51,9 @@
                         Sign in
                     </button>
                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="signup.php">Sign up</a></li>
                         <li><a class="dropdown-item" href="login.php">Login</a></li>
+                        <li><a class="dropdown-item" href="signup.php">Sign up</a></li>
+
                     </ul>
                 </div>
             </div>
