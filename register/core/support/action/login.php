@@ -14,16 +14,16 @@ if (isset($_POST['action'])) {
         $decode = json_decode($data, true);
 
         $filter = array_filter($decode, function ($data) {
-            if ($data['E-mail'] == $_POST['email'] || ($data['Password'] == $_POST['pass'])) {
+            if ($data['E-mail'] == $_POST['email'] && ($data['Password'] == $_POST['pass'])) {
                 echo "<p class='success'>successfully loged in!</p>";
                 return $data;
             }
         });
 
         if ($filter == true) {
-          echo"";
+
         } else {
-            echo "<p class='error'>Invalid email and password</p>";
+            echo "<p class='error'>Invalid email or password</p>";
         }
     }
 }
