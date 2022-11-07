@@ -1,5 +1,8 @@
 <?php
 
+realpath(__DIR__ . "/../../../bootstrap/app.php");
+
+session_start();
 if (isset($_POST['action'])) {
 
     $email = $_POST['email'];
@@ -15,13 +18,20 @@ if (isset($_POST['action'])) {
 
         $filter = array_filter($decode, function ($data) {
             if ($data['E-mail'] == $_POST['email'] && ($data['Password'] == $_POST['pass'])) {
-                echo "<p class='success'>successfully loged in!</p>";
+                $_SESSION['submit'] = true;
+                $_SESSION['name'] = $data['First Name'];
+                $_SESSION['lname'] = $data['Last Name'];
+                $_SESSION['number'] = $data['Phone Number'];
+                $_SESSION['email'] = $data['E-mail'];
+                $_SESSION['pass'] = $data['Password'];
+                $_SESSION['role'] = $data['Role'];
+
                 return $data;
             }
         });
 
         if ($filter == true) {
-
+            header("location: ./dashboard.php");
         } else {
             echo "<p class='error'>Invalid email or password</p>";
         }

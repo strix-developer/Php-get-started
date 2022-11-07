@@ -29,11 +29,11 @@
             </div>
             <div class="mb-3 mt-3 text-start">
                 <label for="email">Email:</label>
-                <input type="text" class="form-control" id="email" placeholder="Enter email" name="email">
+                <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
             </div>
             <div class="mb-3 mt-3 text-start">
                 <label for="phone number">Phone Number:</label>
-                <input type="number" class="form-control" id="number" placeholder="Enter your Phone Number" name="number">
+                <input type="text" class="form-control" id="number" placeholder="Enter your Phone Number" name="number" maxlength="10">
             </div>
             <div class="mb-3 mt-3 text-start">
                 <label for="password">Password:</label>
@@ -46,7 +46,6 @@
             <div class="mb-3 mt-3 text-start">
                 <label for="role">Role:</label>
                 <select id="role" name="role">
-                    <option value=""></option>
                     <option value="admin">Admin</option>
                     <option value="guest">Guest</option>
                     <option value="user">User</option>

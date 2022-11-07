@@ -8,9 +8,9 @@ if (isset($_POST['action'])) {
     $number = $_POST['number'];
     $pass = $_POST['pass'];
     $conpass = $_POST['con-pass'];
-    $roll = $_POST['role'];
+    $role = $_POST['role'];
 
-    if (empty($name) || empty($lname) || empty($email) || empty($pass) || empty($conpass) || empty($roll)) {
+    if (empty($name) || empty($lname) || empty($email) || empty($pass) || empty($conpass) || empty($role)) {
         echo "<h4 class='error'>Fill in the empty fields!</h4>";
     } elseif (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
         echo "<h4 class='error'>You used an invalid e-mail!</h4>";
@@ -23,6 +23,7 @@ if (isset($_POST['action'])) {
             'E-mail' => $email,
             'Phone Number' => $number,
             'Password' => $pass,
+            'Role' => $role,
         );
         $getdata = file_get_contents(__DIR__ . "/../../../database/user.json");
         $decode = json_decode($getdata, true);

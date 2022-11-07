@@ -11,20 +11,27 @@
 </head>
 
 <body>
-<?php
-    require_once __DIR__ . "/core/support/layout/header.php";
-    ?>
+
     <div class="container col-sm-4 mt-3 bg-light text-center">
         <h2>Please Log in</h2>
         <form action="#" method="POST">
             <div class="mb-3 mt-3 text-start">
                 <label for="email">Email:</label>
-                <input type="text" class="form-control" id="email" placeholder="Enter your email" name="email">
+                <input type="email" class="form-control" id="email" placeholder="Enter your email" name="email">
             </div>
 
             <div class="mb-3 mt-3 text-start">
                 <label for="password">Password:</label>
                 <input type="password" class="form-control" id="pass" placeholder="Enter your password" name="pass">
+            </div>
+
+            <div class="mb-3 mt-3 text-start">
+                <label for="role">Role:</label>
+                <select id="role" name="role">
+                    <option value="admin">Admin</option>
+                    <option value="guest">Guest</option>
+                    <option value="user">User</option>
+                </select>
             </div>
 
             <div class="mb-3 mt-3 text-end">
@@ -34,7 +41,7 @@
             </div>
 
             <div class="mb-3 mt-3 text-end">
-                <input  type="submit" class="btn btn-success" value="Log in">
+                <input type="submit" class="btn btn-success" value="Log in">
                 <input type="hidden" name="action" value="register">
             </div>
         </form>
@@ -44,5 +51,5 @@
 </html>
 
 <?php
-require_once __DIR__."/core/support/action/login.php";
+require_once __DIR__ . "/core/support/action/login.php";
 ?>

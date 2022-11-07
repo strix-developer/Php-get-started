@@ -3,40 +3,36 @@
         "First Name": "anil",
         "Last Name": "bhardwaj",
         "E-mail": "anilbhardwaj092@gmail.com",
-        "Phone Number": "1234567890",
-        "Password": "1",
+        "Phone Number": "1321314141",
+        "Password": "123",
+        "Role": "admin",
         "ID": 1
     },
     {
-        "First Name": "himashu",
+        "First Name": "himanshu",
         "Last Name": "thakur",
         "E-mail": "himanshu@gmail.com",
-        "Phone Number": "1234567",
+        "Phone Number": "1314325465",
         "Password": "123",
+        "Role": "user",
         "ID": 2
     },
     {
         "First Name": "jitesh",
         "Last Name": "sharma",
         "E-mail": "jitesh@gmail.com",
-        "Phone Number": "1234567",
+        "Phone Number": "2121451253",
         "Password": "123",
+        "Role": "guest",
         "ID": 3
     },
     {
-        "First Name": "rishav",
+        "First Name": "ritesh",
         "Last Name": "thakur",
         "E-mail": "rishav@gmail.com",
-        "Phone Number": "1122345555",
+        "Phone Number": "8766345324",
         "Password": "123",
+        "Role": "guest",
         "ID": 4
-    },
-    {
-        "First Name": "somesh",
-        "Last Name": "thakur",
-        "E-mail": "somesh@gmail.com",
-        "Phone Number": "0987654321",
-        "Password": "123",
-        "ID": 5
     }
 ]
