@@ -30,6 +30,7 @@ echo foo;   // Prints out: Hello
 echo bar;
 echo bd ."<br>";
 
+// predefined constants
 echo PHP_VERSION."<br>";
 echo PHP_MAJOR_VERSION."<br>";
 echo PHP_MINOR_VERSION. "<br>";
