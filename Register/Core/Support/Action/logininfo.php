@@ -1,7 +1,6 @@
 <?php
 
 if (isset($_POST['action'])) {
-
     $email = $_POST['email'];
     $pswd = $_POST['pswd'];
 
@@ -15,13 +14,22 @@ if (isset($_POST['action'])) {
 
         $filter = array_filter($var, function ($getdata) {
             if ($getdata['gmail'] == $_POST['email'] || ($getdata['pswd'] == $_POST['pswd'])) {
+                
+                $_SESSION['is_submit']=true;
+                $_SESSION['name']=$getdata['name'];
+                $_SESSION['lastname']=$getdata['lastname'];
+                $_SESSION['gmail']=$getdata['gmail'];
+                $_SESSION['number']=$getdata['number'];
+                $_SESSION['pswd']=$getdata['pswd'];
                 echo "<h3>You are successfully Log in</h3>";
-                return $getdata;
+                header("Location: ./dashboard.php");
             }
         });
-        if($filter==true){
-            echo "";
-        }else{
+
+        if ($filter == true) {
+             $_SESSION['email']== $email;
+          
+        } else {
             echo "<h3>Please correct you email and password</h3>";
         }
     }

@@ -20,7 +20,7 @@
          <div class="col-md-6 align-self-center">
            <div class="row justify-content-center">
              <div class="col-10">
-               <div class="subtitle text-center mb-4">Hotel Himanshu Thakur </div>
+               <div class="subtitle text-center mb-4"><h4>Hotel Himanshu Thakur</h4> </div>
                <h2 class="text-center">Here is a tribute to good life!</h2>
                <p class="text-center mt-5">Lorem ipsum dolor sit, amet consectetur adipisicing elit. <br>Similique amet pariatur officiis quis dignissimos ipsum molestiae <br>placeat deleniti eum ipsa aliquid debitis et,<br> delectus aut eos tempore voluptatibus doloremque vero sint dolorem!.</p>
              </div>

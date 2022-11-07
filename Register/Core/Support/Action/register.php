@@ -7,6 +7,7 @@ if (isset($_POST)) {
     $number = $_POST['number'];
     $pswd = $_POST['pswd'];
     $cpswd = $_POST['confirmpswd'];
+    $role =$_POST['role'];
     if (empty($name) || empty($lastname) || empty($gmail) || empty($pswd) || empty($cpswd)) {
         echo "<h4>Please fill out the empty field</h4>";
     } elseif (!filter_var($gmail, FILTER_VALIDATE_EMAIL)) {
@@ -20,6 +21,7 @@ if (isset($_POST)) {
             "gmail" => $gmail,
             "number" => $number,
             "pswd" => $pswd,
+            "role" => $role,
         );
         $getdata = file_get_contents(__DIR__ . "/../../../database/user.json");
         $decode = json_decode($getdata, true);

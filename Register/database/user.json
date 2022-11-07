@@ -1,18 +1,20 @@
 [
     {
-        "name": "himanshu",
-        "lastname": "thakur",
+        "name": "Himanshu",
+        "lastname": "Thakur",
         "gmail": "thakurhimanshu830@gmail.com",
         "number": "1234567890",
         "pswd": "12",
+        "role": " Admin ",
         "ID": 1
     },
     {
-        "name": "zester",
-        "lastname": "123",
-        "gmail": "abc@gmail.com",
+        "name": "Anil",
+        "lastname": "verma",
+        "gmail": "anil@gmail.com",
         "number": "1234567890",
         "pswd": "123",
+        "role": "User",
         "ID": 2
     }
 ]

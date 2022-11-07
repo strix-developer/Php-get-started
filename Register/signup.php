@@ -41,7 +41,7 @@ require_once __DIR__ . "/Bootsstrap/App.php";
       <!--Phone Number-->
       <div class="mb-3">
         <label for="number">Number:</label>
-        <input type="number" class="form-control" id="number" placeholder="Enter number" name="number">
+        <input type="text" class="form-control" id="number" placeholder="Enter number" name="number" maxlength="10">
       </div>
       <!-- Pswd-->
       <div class="mb-3">
@@ -54,9 +54,8 @@ require_once __DIR__ . "/Bootsstrap/App.php";
         <input type="password" class="form-control" id="confirmpswd" placeholder="Confirm password" name="confirmpswd">
       </div>
       <!-- Role-->
-      <label for="Roles">Roles:</label>
-      <select id="Roles" name="Roles">
-        <option value=""></option>
+      <label for="role">Roles:</label>
+      <select id="role" name="role">
         <option value=" Admin ">Admin</option>
         <option value="User">User</option>
         <option value="Guest">Guest</option>
@@ -71,6 +70,7 @@ require_once __DIR__ . "/Bootsstrap/App.php";
 
       <input type="submit" class="navbar-dark bg-dark text-white img-thumbnail" name="submit" value="submit">
       <input type="hidden" name="action" value="register">
+
       <br>
       <!-- Asi-->
       <label class="Already Sign in">Already Sign in-></label>

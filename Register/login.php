@@ -1,5 +1,7 @@
 <?php
+session_start();
 require_once __DIR__."/Core/Support/action/logininfo.php";
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
