@@ -115,12 +115,12 @@ echo "<br>";
 function myTest() {
     $a= 5; // local scope
     
-    echo "<p>Variable x inside function is: $a</p>";
+    echo "<p>Variable a inside function is: $a</p>";
   } 
   myTest();
 
-  // using x outside the function will generate an error
-  echo "<p>Variable x outside function is: $a</p>";
+  // using a outside the function will generate an error
+  echo "<p>Variable a outside function is: $a</p>";
 echo "<br>";
 
 $x=5; // global scope
