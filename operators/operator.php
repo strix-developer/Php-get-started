@@ -1,82 +1,52 @@
 <?php
-$x = 100;  
-$y = "100";
 
-var_dump($x === $y); 
-  
-echo '<br>';
+// Logical operator
+// AND
+// OR
+// XOR
+// NOT
 
-$x = 100;  
-$y = "100";
+ 
+ $var=10;
 
-var_dump($x == $y); 
+   if($var<13){
 
-$x = 100;  
-$y = 10;
+    echo "10 is less then 13 ";
 
-var_dump($x != $y); 
+   }else {
+    echo "0";
+   }
+   echo"<br>";
 
-$x = 100;
-$y = 50;
+//
+$car_1 = [
+    'year' => 2003,
+    'make' => 'Chevy',
+    'model' => 'Corvette'
+];
 
-var_dump ($x > $y);
+$car_2 = [
+    'year' => '2003',
+    'make' => 'Chevy',
+    'model' => 'Corvette'
+];
 
-echo"<br>";
+var_dump( $car_1 == $car_2 );
+var_dump( $car_1 === $car_2 );
 
-echo"<br>";
+var_dump( $car_1 != $car_2 );
+var_dump( $car_1 !== $car_2 );
 
-for($x=10;$x>=1;){
-    $x--;
-    echo $x,"<br>";
-}
+echo "<br>";
+//
+$birds = [ 'Scarlet Macaw', 'White Cockatoo', 'Buff-faced Pygmy Parrot' ];
+$big_cats = [ 'Tiger', 'Lion', 'Cheetah', 'Puma' ];
 
+$animals = $birds + $big_cats;
 
+print_r( $animals );
 
+$fav_animals = array_merge($birds, $big_cats);
+print_r($fav_animals);
 
-
-
-echo"<br>";
-$x=10;
-$y=10;
-if($x==10 Xor $y==1){
-    echo"both are equal";
-}else{
-    echo"not equal";
-}
-
-
-echo"<br>";
-
-
-for($x=10;$x>=1;){
-    $x--;
-    echo $x,"<br>";
-}
-echo"<br>";
-$x=10;
-
-if($x!=1){
-    echo"true";
-}else{
-    echo"false";
-}
-$x=19;
-$y=17;
-if($x >= 18 || $y >= 18){
-    echo"both are eligle for voting";
-}else{
-    echo"not eligible";
-}
-//error control
-echo"<br>";
-
-$x= @$n ."gjgju";
-
-echo $x;
-echo"<br>";
-
-//string control
-$a = "Hello ";
-$b = "World!";
-echo $a.$b;
 ?>

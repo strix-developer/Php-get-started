@@ -115,12 +115,12 @@ echo "<br>";
 function myTest() {
     $a= 5; // local scope
     
-    echo "<p>Variable a inside function is: $a</p>";
+    echo "<p>Variable a inside function is: $a </p>";
   } 
   myTest();
 
   // using a outside the function will generate an error
-  echo "<p>Variable a outside function is: $a</p>";
+  echo "<p>Variable a outside function is: $a </p>";
 echo "<br>";
 
 $x=5; // global scope
@@ -133,4 +133,70 @@ function test() {
 test();
 
 echo "<p>Variable x outside function is: $x</p>";
+echo "<br>";
+ 
+$a = 5;
+echo "Should be 5: " . $a . "<br />\n";
+echo "Should be 6: " . $a++ . "<br />\n";
+
+echo "<br>";
+//Array operator
+//union
+$x=array("a"=>"red","b"=>"orange","c"=>"green");
+$y=array("a"=>"blue","b"=>"yellow","c"=>"black");
+ print_r($x+$y);
+ 
+ echo "<br>";
+//equality
+ $x=array("a"=>"red","b"=>"orange","c"=>"green");
+$y=array("a"=>"blue","b"=>"yellow","c"=>"black");
+ var_dump($x==$y);
+
+ echo "<br>";
+//identity
+ $x=array("a"=>"red","b"=>"orange","c"=>"green");
+$y=array("a"=>"blue","b"=>"yellow","c"=>"black");
+ var_dump($x===$y);
+
+ echo "<br>";
+//inequality
+ $x=array("a"=>"red","b"=>"orange","c"=>"green");
+ $y=array("a"=>"blue","b"=>"yellow","c"=>"black");
+  var_dump($x!=$y);
+
+  echo "<br>";
+  //inequality
+  $x=array("a"=>"red","b"=>"orange","c"=>"green");
+  $y=array("a"=>"blue","b"=>"yellow","c"=>"black");
+   var_dump($x<>$y);
+
+   echo "<br>";
+//Non-identity
+   $x=array("a"=>"red","b"=>"orange","c"=>"green");
+   $y=array("a"=>"blue","b"=>"yellow","c"=>"black");
+  var_dump($x!==$y);
+  echo "<br>";
+  
+// test operator
+
+  class Developer{
+
+  }
+  class Programmer{
+
+  }
+
+$jitesh= new Developer;
+if($jitesh instanceof Developer){
+   echo"jitesh is developer";
+}
+elseif($jitesh instanceof Programmer){
+   echo"jitesh is programmer";
+}
+echo "<br>";
+var_dump($jitesh instanceof Developer);
+echo "<br>";
+var_dump($jitesh instanceof Programmer);
+
+
 ?>

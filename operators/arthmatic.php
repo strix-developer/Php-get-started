@@ -5,10 +5,6 @@ $sum=$one+$two;
 echo $sum;
 echo '<br>';
 
-
-
-
-
 $a=12;
 $b=56;
 $sum=$a-$b;
@@ -16,25 +12,17 @@ echo $sum;
 
 echo '<br>';
 
-
-
-
 $ab=233;
 $bc=777;
 $sum=$ab*$bc;
 echo $sum;
 echo '<br>';
 
-
-
-
 $cd=4;
 $md=3;
 $cum=$cd/$md;
 echo $cum;
 echo '<br>';
-
-
 
 $one=4;
 $two=3;
