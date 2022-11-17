@@ -1,7 +1,7 @@
 <?php
 session_start();
-require_once __DIR__."/Core/Support/action/logininfo.php";
-require __DIR__."/Bootsstrap/App.php";
+require_once __DIR__ . "/Core/Support/action/logininfo.php";
+require __DIR__ . "/Bootsstrap/App.php";
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -31,7 +31,7 @@ require __DIR__."/Bootsstrap/App.php";
 </head>
 
 <body>
-<header>
+    <header>
         <div class="container-fluid bg-dark rounded-pill">
             <div class="row">
                 <div class="col-sm-1 p-3 bg-dark rounded-pill">
@@ -40,7 +40,9 @@ require __DIR__."/Bootsstrap/App.php";
                     </a>
                 </div>
                 <div class="col-sm-2 p-3">
-                    <a class="navbar-brand text-white text-center" href="#"><h2>Himanshu Thakur</h2></a>
+                    <a class="navbar-brand text-white text-center" href="#">
+                        <h2>Himanshu Thakur</h2>
+                    </a>
                 </div>
                 <div class="col-sm-6 bg-info text-white rounded-pill img-thumbnail">
                     <nav class="navbar navbar-expand-sm bg-dark text-white rounded-pill p-2 m-1 justify-content-center">
@@ -80,11 +82,11 @@ require __DIR__."/Bootsstrap/App.php";
     </header>
     <div class="container col-sm-6 mt-3 bg-info p-2">
         <h2 class=" bg-info text-white rounded-pill img-thumbnail text-center">Please Log in</h2>
-        <form action=""  method="POST">
+        <form action="" method="POST">
             <!-- Gmail-->
             <div class="mb-3">
                 <label for="email">Gmail:</label>
-                <input type="email" class="form-control" id="email" placeholder="Enter Gmail" name="email" >
+                <input type="email" class="form-control" id="email" placeholder="Enter Gmail" name="email">
             </div>
             <!-- pswd-->
             <div class="mb-3">
@@ -104,7 +106,7 @@ require __DIR__."/Bootsstrap/App.php";
             <br>
         </form>
     </div>
-  
+
 </body>
 
 </html>

@@ -117,7 +117,7 @@ realpath(__DIR__ . "/Bootsstrap/App.php");
                         </tr>
                         <?php
                         //all employe detail 
-                     } else {
+                    } else {
                         if ($_SESSION['role'] == 'Admin') {
                             $users = json_decode(file_get_contents(__DIR__ . "/database/user.json"), true);
                             if (count($users) != 0) {

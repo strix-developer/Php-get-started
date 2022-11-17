@@ -1,6 +1,6 @@
 <?php
 //login page
-realpath(__DIR__."/../../../bootstrap/app.php");
+realpath(__DIR__ . "/../../../bootstrap/app.php");
 //if start
 if (isset($_POST['action'])) {
     $email = $_POST['email'];
@@ -18,25 +18,21 @@ if (isset($_POST['action'])) {
 
         $filter = array_filter($var, function ($getdata) {
             if ($getdata['email'] == $_POST['email'] || ($getdata['pswd'] == $_POST['pswd'])) {
-                
-                $_SESSION['is_submit']=true;
-                $_SESSION['name']=$getdata['name'];
-                $_SESSION['lastname']=$getdata['lastname'];
-                $_SESSION['email']=$getdata['email'];
-                $_SESSION['number']=$getdata['number'];
-                $_SESSION['pswd']=$getdata['pswd'];
-                $_SESSION['role']=$getdata['role'];
-                $_SESSION['ID']=$getdata['ID'];
-                return$getdata;
-               
-              
 
+                $_SESSION['is_submit'] = true;
+                $_SESSION['name'] = $getdata['name'];
+                $_SESSION['lastname'] = $getdata['lastname'];
+                $_SESSION['email'] = $getdata['email'];
+                $_SESSION['number'] = $getdata['number'];
+                $_SESSION['pswd'] = $getdata['pswd'];
+                $_SESSION['role'] = $getdata['role'];
+                $_SESSION['ID'] = $getdata['ID'];
+                return $getdata;
             }
         });
 
         if ($filter == true) {
             header("Location: ./dashboard.php");
-          
         } else {
             echo "<h3>Please correct you email and password</h3>";
         }

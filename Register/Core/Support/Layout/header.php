@@ -42,7 +42,9 @@
                 </div>
                 <!--Name-->
                 <div class="col-sm-2 p-3">
-                    <a class="navbar-brand text-white text-center" href="#"><h2>Himanshu Thakur</h2></a>
+                    <a class="navbar-brand text-white text-center" href="#">
+                        <h2>Himanshu Thakur</h2>
+                    </a>
                 </div>
                 <!--Menu-->
                 <div class="col-sm-6 bg-info text-white rounded-pill img-thumbnail">
