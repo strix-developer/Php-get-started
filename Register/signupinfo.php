@@ -22,7 +22,7 @@
     </style>
 </head>
 
-<body>
+<body >
     <h3>Details</h3>
     <table>
         <tr>
@@ -39,7 +39,7 @@
             <td> <?Php echo $_POST['gmail']; ?></td></br>
             <td> <?Php echo $_POST['number']; ?></td></br>
             <td> <?Php echo $_POST['pswd']; ?> </br></td>
-            <td> <?Php echo $_POST['Roles']; ?> </br></td>
+            <td> <?Php echo $_POST['role']; ?> </br></td>
         </tr>
     </table>
 </body>

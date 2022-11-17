@@ -2,16 +2,16 @@
     {
         "name": "Himanshu",
         "lastname": "Thakur",
-        "gmail": "thakurhimanshu830@gmail.com",
-        "number": "1234567890",
+        "email": "thakurhimanshu830@gmail.com",
+        "number": "8894536296",
         "pswd": "12",
-        "role": " Admin ",
+        "role": "Admin",
         "ID": 1
     },
     {
         "name": "Anil",
         "lastname": "verma",
-        "gmail": "anil@gmail.com",
+        "email": "anil@gmail.com",
         "number": "1234567890",
         "pswd": "123",
         "role": "User",
