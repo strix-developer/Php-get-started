@@ -59,7 +59,6 @@
          text-align: center;
          height: 50px;
          padding-top: 10px;
-         border-radius: 15px;
          border-color: red;
      }
 
@@ -69,7 +68,6 @@
          text-align: center;
          height: 50px;
          padding-top: 10px;
-         border-radius: 15px;
          border-color: red;
      }
  </style>
