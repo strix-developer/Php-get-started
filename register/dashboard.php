@@ -56,7 +56,7 @@
                          <a href="profile.php"> <button type="button" class="btn btn-success">Edit Profile</button></a>
                      </td>
                  </tr>
-                 <?php  } else {      //admin login to show all users data
+                 <?php  } else {      //admin login and to show all users data
                     if ($_SESSION['role'] == 'admin') {
                         $users = json_decode(file_get_contents(__DIR__ . "/database/user.json"), true);
 
