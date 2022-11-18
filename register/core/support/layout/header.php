@@ -12,22 +12,25 @@
 
 <body>
     <header>
-        <div class="container-fluid bg-success">
+        <div class="container-fluid bg-dark rounded ">
             <div class="row">
-                <div class="col-sm-1 pt-2 bg-dark">
+                <!--Logo div-->
+                <div class="col-sm-1 pt-2 bg-dark rounded text-center">
                     <a class="navbar-brand" href="index.php">
                         <img src="images/logo.jpg" alt="Logo" style="width:90px ;" class="rounded-pill">
                     </a>
                 </div>
-                <div class="col-sm-2 p-3 bg-dark text-white">
+                <!--Name div-->
+                <div class="col-sm-2 p-3 bg-dark text-white rounded text-center">
                     <h1>
                         <a href="index.php" style="text-decoration:none ;color:white">
                             Bootstrap
                         </a>
                     </h1>
                 </div>
-                <div class="col-sm-6 p-3 bg-success text-white">
-                    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+                <!--Navbar div-->
+                <div class="col-sm-7 p-3 bg-success text-white rounded-pill">
+                    <nav class="navbar navbar-expand-sm navbar-dark bg-dark rounded-pill border border-danger border-5">
                         <div class="container-fluid">
                             <ul class="navbar-nav mx-auto">
                                 <li class="nav-item">
@@ -46,17 +49,37 @@
                         </div>
                     </nav>
                 </div>
-                <div class="col-sm-3 p-4 bg-dark text-white text-end">
-                    <button type="button" class="btn btn-success dropdown-toggle" data-bs-toggle="dropdown">
-                        Sign in
-                    </button>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="login.php">Login</a></li>
-                        <li><a class="dropdown-item" href="signup.php">Sign up</a></li>
+                <!--div for Sign in and Logout options-->
+                <div class="col-sm-2 p-4 bg-dark text-white text-end rounded">
+                    <?php
+                    if (isset($_SESSION['email']) == true) {
 
-                    </ul>
+                        echo "<h5>Welcome $_SESSION[name]&nbsp"
+                    ?>
+                        <a href="logout.php">
+                            <button type="button" class="btn btn-success">
+                                Logout
+                            </button>
+                        </a>
+                    <?php
+                        "</h5>";
+                    } else {
+                    ?>
+                        <div class="dropdown">
+                            <button type="button" class="btn btn-success dropdown-toggle" data-bs-toggle="dropdown">
+                                Sign in
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="login.php">Login</a></li>
+                                <li><a class="dropdown-item" href="signup.php">Sign up</a></li>
+                            </ul>
+                        </div>
                 </div>
+            <?php
+                    }
+            ?>
             </div>
+        </div>
 
         </div>
 

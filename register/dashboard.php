@@ -1,58 +1,90 @@
-<?php
-session_start();
-?>
+ <?php
+    session_start();
+    require_once __DIR__ . "/bootstrap/app.php";
+    require_once file_header();
+    ?>
 
-<!DOCTYPE html>
-<html lang="en">
+ <!--div for Profile photo start-->
+ <div class="container mt-3 text-center">
+     <div class="card" style="width:300px; height:400px">
+         <img class="card-img-top" src="images/avatar.png" alt="Card image" style="width:100%">
+         <div class="card-body">
+             <h4 class="card-title">
+                 <?php echo $_SESSION['name']; ?>&nbsp;
+                 <?php echo $_SESSION['lname']; ?>
+             </h4>
 
-<head>
-    <title></title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
-</head>
+         </div>
+     </div>
+ </div>
+ <!--div for Profile photo end-->
 
-<body>
+ <!--div for form data start-->
+ <div class="container mt-3 text-center bg-light">
 
-    <div class="container mt-3">
-        <h2>User Sign Up Information</h2>
-        <table class="table table-striped">
-            <thead>
-                <tr>
-                    <th>First Name</th>
-                    <th>Last Name</th>
-                    <th>Phone Number</th>
-                    <th>Email</th>
-                    <th>Password</th>
-                    <th>Role</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td><?php echo $_SESSION['name']; ?> </td>
-                    <td><?php echo $_SESSION['lname']; ?></td>
-                    <td><?php echo $_SESSION['number']; ?></td>
-                    <td><?php echo $_SESSION['email']; ?></td>
-                    <td><?php echo $_SESSION['pass']; ?> </td>
-                    <td><?php echo $_SESSION['role']; ?> </td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>
-                        <a href="#">
-                            <input type="button" class="btn btn-success" value="edit profile">
-                        </a>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
+     <div class="container-fluid p-2 bg-primary text-center text-white">
+         <h2>Your Sign up Information</h2>
+     </div>
 
-</body>
+     <table class="table table-striped">
+         <thead>
+             <tr class="table-danger">
+                 <th>First Name</th>
+                 <th>Last Name</th>
+                 <th>Phone Number</th>
+                 <th>Email</th>
+                 <th>Password</th>
+                 <th>Role</th>
+                 <th>ID</th>
+                 <th>Edit</th>
+             </tr>
+         </thead>
 
-</html>
+         <tbody>
+             <?php
+                if ($_SESSION['role'] != 'admin') { // users login 
+                ?>
+                 <tr>
+                     <td><?php echo $_SESSION['name']; ?> </td>
+                     <td><?php echo $_SESSION['lname']; ?></td>
+                     <td><?php echo $_SESSION['number']; ?></td>
+                     <td><?php echo $_SESSION['email']; ?></td>
+                     <td><?php echo $_SESSION['pass']; ?> </td>
+                     <td><?php echo $_SESSION['role']; ?> </td>
+                     <td><?php echo $_SESSION['ID']; ?> </td>
+                     <td>
+                         <a href="profile.php"> <button type="button" class="btn btn-success">Edit Profile</button></a>
+                     </td>
+                 </tr>
+                 <?php  } else {      //admin login to show all users data
+                    if ($_SESSION['role'] == 'admin') {
+                        $users = json_decode(file_get_contents(__DIR__ . "/database/user.json"), true);
+
+                        if (count($users) != 0) {
+                            foreach ($users as $user) {
+                    ?>
+                             <tr>
+                                 <td><?php echo $user['First Name']; ?> </td>
+                                 <td><?php echo $user['Last Name']; ?></td>
+                                 <td><?php echo $user['Phone Number']; ?></td>
+                                 <td><?php echo $user['E-mail']; ?></td>
+                                 <td><?php echo $user['Password']; ?> </td>
+                                 <td><?php echo $user['Role']; ?> </td>
+                                 <td><?php echo $user['ID']; ?> </td>
+                                 <td>
+                                     <a href="profile.php"> <button type="button" class="btn btn-success">Edit Profile</button></a>
+                                 </td>
+                             </tr>
+             <?php
+                            }
+                        }
+                    }
+                }
+                ?>
+
+         </tbody>
+
+     </table>
+
+ </div>
+ <!--div for form data end-->

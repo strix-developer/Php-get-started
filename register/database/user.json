@@ -34,5 +34,59 @@
         "Password": "123",
         "Role": "guest",
         "ID": 4
+    },
+    {
+        "First Name": "somesh",
+        "Last Name": "thakur",
+        "E-mail": "somesh@gmail.com",
+        "Phone Number": "1312523326",
+        "Password": "123",
+        "Role": "user",
+        "ID": 5
+    },
+    {
+        "First Name": "shammi",
+        "Last Name": "thakur",
+        "E-mail": "shammi@gmail.com",
+        "Phone Number": "9876543209",
+        "Password": "123",
+        "Role": "user",
+        "ID": 6
+    },
+    {
+        "First Name": "ankush",
+        "Last Name": "kaushal",
+        "E-mail": "ankush@gmail.com",
+        "Phone Number": "1314325465",
+        "Password": "123",
+        "Role": "user",
+        "ID": 7
+    },
+    {
+        "First Name": "dhirender",
+        "Last Name": "verma",
+        "E-mail": "dhirender@gmail.com",
+        "Phone Number": "9876543209",
+        "Password": "123",
+        "Role": "user",
+        "ID": 8
+    },
+    {
+        "First Name": "devender",
+        "Last Name": "thakur",
+        "E-mail": "devender@gmail.com",
+        "Phone Number": "9798571364",
+        "Password": "123",
+        "Role": "user",
+        "ID": 9
+    },
+    {
+        "First Name": "akshay",
+        "Last Name": "dogra",
+        "E-mail": "akshay@gmail.com",
+        "Phone Number": "9978576427",
+        "Password": "123",
+        "Role": "user",
+        "ID": 10
     }
 ]

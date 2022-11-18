@@ -1,0 +1,54 @@
+[
+    {
+        "First Name": "anil",
+        "Last Name": "bhardwaj",
+        "E-mail": "anilbhardwaj092@gmail.com",
+        "Password": "123",
+        "Phone Number": "1321314141",
+        "Age": "30",
+        "Aadhar Number": "989899999899",
+        "Pan Card": "AKB-140892",
+        "Account Number": "11001110001",
+        "Role": "admin",
+        "ID": 1
+    },
+    {
+        "First Name": "akshay",
+        "Last Name": "dogra",
+        "E-mail": "akshay@gmail.com",
+        "Password": "123",
+        "Phone Number": "9978576427",
+        "Age": "31",
+        "Aadhar Number": "745845848484",
+        "Pan Card": "AK14081991",
+        "Account Number": "76387362369",
+        "Role": "user",
+        "ID": 10
+    },
+    {
+        "First Name": "dhirender",
+        "Last Name": "verma",
+        "E-mail": "dhirender@gmail.com",
+        "Password": "123",
+        "Phone Number": "9876543209",
+        "Age": "32",
+        "Aadhar Number": "887766554444",
+        "Pan Card": "DV05071991",
+        "Account Number": "11080101011",
+        "Role": "user",
+        "ID": 8
+    },
+    {
+        "First Name": "shammi",
+        "Last Name": "thakur",
+        "E-mail": "shammi@gmail.com",
+        "Password": "123",
+        "Phone Number": "9876543209",
+        "Age": "31",
+        "Aadhar Number": "888798698798",
+        "Pan Card": "ST10011991",
+        "Account Number": "11008797981",
+        "Role": "user",
+        "ID": 6
+    }
+]
