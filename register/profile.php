@@ -10,7 +10,7 @@
       <div class="container-fluid p-2 bg-primary text-center text-white">
           <h2>Edit your Profile</h2>
       </div>
-
+      <!--form start-->
       <form action="" method="POST" id="form">
           <div class="mb-3 mt-3 text-start">
               <label for="name">Name:</label>
@@ -54,5 +54,6 @@
             require_once __DIR__ . "/core/support/action/profile.php";
             ?>
       </form>
+      <!--form end-->
   </div>
   <!--div for edit data end-->
