@@ -3,13 +3,12 @@
     require_once file_header();
     ?>
 
-   <!--div for form start-->
    <div class="container-fluid col-sm-5 mt-3 bg-light text-center">
-
+       <!--div for heading text-->
        <div class="container-fluid p-2 bg-primary text-center">
            <h2>Sign up form</h2>
        </div>
-
+       <!--form start-->
        <form action="" method="POST" id="form">
            <div class="mb-3 mt-3 text-start">
                <label for="name">Name:</label>
@@ -56,5 +55,5 @@
                <input type="hidden" name="action" value="register">
            </div>
        </form>
+       <!--div for form end-->
    </div>
-   <!--div for form end-->

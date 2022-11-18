@@ -5,13 +5,12 @@
     require_once file_header();
     ?>
 
- <!--Form start-->
  <div class="container col-sm-4 mt-3 bg-light text-center">
-
+     <!--div for heading text-->
      <div class="container-fluid p-2 bg-primary text-center text-white">
          <h2>Please Log in</h2>
      </div>
-
+     <!--Form start-->
      <form action="" method="POST">
          <div class="mb-3 mt-3 text-start">
              <label for="email">Email:</label>
@@ -34,5 +33,5 @@
              <input type="hidden" name="action" value="login">
          </div>
      </form>
+     <!--Form end-->
  </div>
- <!--Form end-->
