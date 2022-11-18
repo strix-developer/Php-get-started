@@ -41,27 +41,20 @@
  <html lang="en">
  <style>
      .error {
-         background-color: #4a4a4a;
+        background-color: #212529;
          color: whitesmoke;
          text-align: center;
          height: 50px;
-         padding-top: 11px;
-         border-radius: 15px;
-         width: 500px;
-         float: left;
-         margin-left: 37%;
+         padding-top: 10px;
      }
 
      .success {
-         background-color: green;
+        background-color: #198754;
          color: white;
          width: 500px;
          text-align: center;
          height: 50px;
          padding-top: 10px;
-         border-radius: 15px;
-         float: left;
-         margin-left: 37%;
      }
  </style>
 
