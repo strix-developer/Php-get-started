@@ -1,15 +1,16 @@
  <?php
 
     if (isset($_POST['action'])) {
-
+        //Fetching user's login data
         $email = $_POST['email'];
         $pass = $_POST['pass'];
 
-        if (empty($email) || empty($pass)) {
+        if (empty($email) || empty($pass)) { //Condition for empty fields
             echo "<h4 class='error'>Fill in the empty fields!</h4>";
-        } elseif (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+        } elseif (!filter_var($email, FILTER_VALIDATE_EMAIL)) { //Condition for valid email format
             echo "<h4 class='error'>You used an invalid e-mail!</h4>";
         } else {
+            //Decoding json file data using json_decode
             $data = json_decode(file_get_contents(__DIR__ . "/../../../database/user.json"), true);
 
             $filter = array_filter($data, function ($data) {
