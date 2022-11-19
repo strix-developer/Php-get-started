@@ -10,10 +10,9 @@
         } elseif (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
             echo "<h4 class='error'>You used an invalid e-mail!</h4>";
         } else {
-            $data = file_get_contents(__DIR__ . "/../../../database/user.json");
-            $decode = json_decode($data, true);
+            $data = json_decode(file_get_contents(__DIR__ . "/../../../database/user.json"), true);
 
-            $filter = array_filter($decode, function ($data) {
+            $filter = array_filter($data, function ($data) {
                 if ($data['E-mail'] == $_POST['email'] && ($data['Password'] == $_POST['pass'])) {
                     $_SESSION['submit'] = true;
                     $_SESSION['name'] = $data['First Name'];
@@ -41,7 +40,7 @@
  <html lang="en">
  <style>
      .error {
-        background-color: #212529;
+         background-color: #212529;
          color: whitesmoke;
          text-align: center;
          height: 50px;
@@ -49,7 +48,7 @@
      }
 
      .success {
-        background-color: #198754;
+         background-color: #198754;
          color: white;
          width: 500px;
          text-align: center;
