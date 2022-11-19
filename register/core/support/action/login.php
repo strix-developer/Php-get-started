@@ -29,7 +29,7 @@
                 }
             });
 
-            if ($filter == true) {
+            if ($filter == true) { //If user log in successfully then redirecting him to profile page
                 header("location: ./dashboard.php");
             } else {
                 echo "<p class='error'>Invalid email or password</p>";
