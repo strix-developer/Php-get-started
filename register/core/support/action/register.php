@@ -10,11 +10,12 @@
         $conpass = $_POST['con-pass'];
         $role = $_POST['role'];
 
+        //Condition for empty fields
         if (empty($name) || empty($lname) || empty($email) || empty($pass) || empty($conpass) || empty($role)) {
             echo "<h4 class='error'>Fill in the empty fields!</h4>";
-        } elseif (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+        } elseif (!filter_var($email, FILTER_VALIDATE_EMAIL)) { //Condition for valid email format
             echo "<h4 class='error'>You have used an invalid e-mail!</h4>";
-        } elseif ($pass !== $conpass) {
+        } elseif ($pass !== $conpass) { //Condition for Password matching
             echo "<h4 class='error'>Password do not match!</h4>";
         } else {
             $array = array( // creating an array for the data
