@@ -17,7 +17,7 @@
                 <!--Logo div-->
                 <div class="col-sm-1 pt-2 bg-dark rounded text-center">
                     <a class="navbar-brand" href="index.php">
-                        <img src="images/logo.jpg" alt="Logo" style="width:90px ;" class="rounded-pill">
+                        <img src="images/logo.jpg" alt="Logo" style="width:105px ;" class="rounded-pill">
                     </a>
                 </div>
                 <!--Name div-->
@@ -52,7 +52,7 @@
                 <!--div for Sign in and Logout options-->
                 <div class="col-sm-2 p-4 bg-dark text-white text-end rounded">
                     <?php
-                    if (isset($_SESSION['email']) == true) {
+                    if (isset($_SESSION['email'])) {
 
                         echo "<h5>Welcome $_SESSION[name]&nbsp"
                     ?>
@@ -66,7 +66,7 @@
                     } else {
                     ?>
                         <div class="dropdown">
-                            <button type="button" class="btn btn-success dropdown-toggle" data-bs-toggle="dropdown">
+                            <button type="button" class="btn btn-success btn-lg dropdown-toggle" data-bs-toggle="dropdown">
                                 Sign in
                             </button>
                             <ul class="dropdown-menu">

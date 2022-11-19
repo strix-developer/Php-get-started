@@ -29,7 +29,7 @@
          </div>
 
          <div class="mb-3 mt-3 text-end">
-             <input type="submit" class="btn btn-success" value="Log in">
+             <input type="submit" class="btn btn-success" value="Login" name="login">
              <input type="hidden" name="action" value="login">
          </div>
      </form>

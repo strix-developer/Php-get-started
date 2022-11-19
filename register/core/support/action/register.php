@@ -13,7 +13,7 @@
         if (empty($name) || empty($lname) || empty($email) || empty($pass) || empty($conpass) || empty($role)) {
             echo "<h4 class='error'>Fill in the empty fields!</h4>";
         } elseif (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-            echo "<h4 class='error'>You used an invalid e-mail!</h4>";
+            echo "<h4 class='error'>You have used an invalid e-mail!</h4>";
         } elseif ($pass !== $conpass) {
             echo "<h4 class='error'>Password do not match!</h4>";
         } else {
@@ -27,21 +27,24 @@
             );
             //converting file into string and then decoding using json_decode
             $getdata = json_decode(file_get_contents(__DIR__ . "/../../../database/user.json"), true);
+
             // storing data using ID
             if (count($getdata) == 0) {
                 $array['ID'] = 1;
             };
             $id = [];
+
             foreach ($getdata as $dataid) {
                 array_push($id, $dataid['ID']);
                 $var = count($id) + 1;
                 $array['ID'] = $var;
             };
             $getdata[] = $array;
-            if ($email == $dataid['E-mail']) {
+
+            if ($email == $getdata['E-mail']) { // for checking if email already exists in database or not
                 echo "<h4 class='error'>Email is already in use!</h4>";
-            } else { //encoding the decode file using json_encode
-                $formdata = json_encode($getdata, JSON_PRETTY_PRINT);
+            } else {
+                $formdata = json_encode($getdata, JSON_PRETTY_PRINT); //encoding the decode file using json_encode
                 if (file_put_contents(__DIR__ . "/../../../database/user.json", $formdata)) { //write data to json file
                     echo "<p class='success'>user successfully registered</p>";
                 }
