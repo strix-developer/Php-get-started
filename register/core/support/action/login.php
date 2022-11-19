@@ -12,9 +12,10 @@
         } else {
             //Decoding json file data using json_decode
             $data = json_decode(file_get_contents(__DIR__ . "/../../../database/user.json"), true);
-
+            /*Iterates over each value in the array passing them to the callback function.
+            If returns true, the current value from array is returned into the result array.*/
             $filter = array_filter($data, function ($data) {
-                if ($data['E-mail'] == $_POST['email'] && ($data['Password'] == $_POST['pass'])) {
+                if ($data['E-mail'] == $_POST['email'] && ($data['Password'] == $_POST['pass'])) { //Condition for Login
                     $_SESSION['submit'] = true;
                     $_SESSION['name'] = $data['First Name'];
                     $_SESSION['lname'] = $data['Last Name'];
