@@ -35,7 +35,7 @@
             };
             $id = [];
 
-            foreach ($getdata as $dataid) {
+            foreach ($getdata as $dataid) { //Condition for multiple user's ID
                 array_push($id, $dataid['ID']);
                 $var = count($id) + 1;
                 $array['ID'] = $var;
