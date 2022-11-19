@@ -55,5 +55,5 @@
                <input type="hidden" name="action" value="register">
            </div>
        </form>
-       <!--div for form end-->
+       <!--form end-->
    </div>
