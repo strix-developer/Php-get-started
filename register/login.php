@@ -5,10 +5,10 @@
     require_once file_header();
     ?>
 
- <div class="container col-sm-4 mt-3 bg-light text-center">
+ <div class="container col-sm-3 mt-3 p-5 bg-light text-center">
      <!--div for heading text-->
-     <div class="container-fluid p-2 bg-primary text-center text-white">
-         <h2>Please Log in</h2>
+     <div class="container-fluid p-2 bg-primary text-center text-white text-capitalize">
+         <h2>Please log in</h2>
      </div>
      <!--Form start-->
      <form action="" method="POST">
