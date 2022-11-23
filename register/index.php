@@ -1,7 +1,12 @@
  <?php
 
-    require_once __DIR__ . "/bootstrap/app.php";
+   require_once __DIR__ . "/bootstrap/app.php";
 
-    require_once file_header();
-    require_once file_content();
-    require_once file_footer();
+   //call to header function
+   require_once file_header();
+
+   //call to content function
+   require_once file_content();
+
+   //call to footer function
+   require_once file_footer();
