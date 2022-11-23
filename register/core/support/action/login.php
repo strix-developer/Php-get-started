@@ -29,7 +29,6 @@
                     return $data;
                 }
             });
-
             //If user log in successfully then redirecting him to profile page
             if ($filter == true) {
                 header("location: ./dashboard.php");
