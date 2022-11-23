@@ -66,7 +66,6 @@
                         if (count($users) != 0) {
                             foreach ($users as $user) {
                     ?>
-
                              <!--Row for table data-->
                              <tr>
                                  <td><?php echo $user['First Name']; ?> </td>
