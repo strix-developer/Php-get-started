@@ -25,7 +25,6 @@
                     $_SESSION['pass'] = $data['Password'];
                     $_SESSION['role'] = $data['Role'];
                     $_SESSION['ID'] = $data['ID'];
-
                     return $data;
                 }
             });
