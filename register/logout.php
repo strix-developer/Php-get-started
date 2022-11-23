@@ -1,8 +1,12 @@
  <?php
-    session_start();
+   //Initialize session data
+   session_start();
 
-    session_unset();
+   //Free all session variables
+   session_unset();
 
-    session_destroy();
+   //Destroys all data registered to a session
+   session_destroy();
 
-    header("locationFGHV,: login.php");
+   //Redirect to login page 
+   header("location: login.php");
