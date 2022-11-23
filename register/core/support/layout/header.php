@@ -65,6 +65,7 @@
                         "</h5>";
                     } else {
                     ?>
+                        <!--Sign in options div-->
                         <div class="dropdown">
                             <button type="button" class="btn btn-success btn-lg dropdown-toggle" data-bs-toggle="dropdown">
                                 Sign in
