@@ -4,7 +4,6 @@
     ?>
 
    <div class="container-fluid col-sm-4 mt-3 p-4 bg-light text-center">
-
        <!--div for heading text-->
        <div class="container-fluid p-2 bg-primary text-center text-white text-capitalize">
            <h2>Sign up form</h2>
@@ -12,7 +11,6 @@
 
        <!--form start-->
        <form action="" method="POST" id="form">
-
            <!--For name field-->
            <div class="mb-3 mt-3 text-start">
                <label for="name">Name:</label>

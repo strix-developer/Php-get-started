@@ -6,13 +6,12 @@
 
   <!--div for data edit start-->
   <div class="container-fluid col-sm-5 mt-3 bg-light text-center">
-
+      <!--div for heading-->
       <div class="container-fluid p-2 bg-primary text-center text-white">
           <h2>Edit your Profile</h2>
       </div>
       <!--form start-->
       <form action="" method="POST" id="form">
-
           <!--For Name field-->
           <div class="mb-3 mt-3 text-start">
               <label for="name">Name:</label>

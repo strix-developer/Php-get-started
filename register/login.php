@@ -12,7 +12,6 @@
      </div>
      <!--Form start-->
      <form action="" method="POST">
-
          <!--For Email field-->
          <div class="mb-3 mt-3 text-start">
              <label for="email">Email:</label>
