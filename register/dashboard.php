@@ -28,6 +28,7 @@
 
      <table class="table table-striped">
          <thead>
+             <!--Row for table headings-->
              <tr class="table-danger">
                  <th>First Name</th>
                  <th>Last Name</th>
@@ -44,6 +45,8 @@
              <?php
                 if ($_SESSION['role'] != 'admin') { // users login 
                 ?>
+
+                 <!--Row for table data-->
                  <tr>
                      <td><?php echo $_SESSION['name']; ?> </td>
                      <td><?php echo $_SESSION['lname']; ?></td>
@@ -63,6 +66,8 @@
                         if (count($users) != 0) {
                             foreach ($users as $user) {
                     ?>
+
+                             <!--Row for table data-->
                              <tr>
                                  <td><?php echo $user['First Name']; ?> </td>
                                  <td><?php echo $user['Last Name']; ?></td>
