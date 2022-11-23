@@ -14,8 +14,6 @@
             //Decoding json file data using json_decode
             $data = json_decode(file_get_contents(__DIR__ . "/../../../database/user.json"), true);
 
-            /*array_filter Iterates over each value in the array passing them to the callback function.
-            If returns true, the current value from array is returned into the result array.*/
             $filter = array_filter($data, function ($data) {
                 //Condition for Login
                 if ($data['E-mail'] == $_POST['email'] && ($data['Password'] == $_POST['pass'])) {
