@@ -1,7 +1,6 @@
  <?php
-
-    if (isset($_POST['action'])) { //fetching user's data from signup form
-
+    if (isset($_POST['action'])) {
+        //fetching user's data from signup form
         $name = $_POST['name'];
         $lname = $_POST['lname'];
         $email = $_POST['email'];
@@ -13,12 +12,14 @@
         //Condition for empty fields
         if (empty($name) || empty($lname) || empty($email) || empty($pass) || empty($conpass) || empty($role)) {
             echo "<h4 class='error'>Fill in the empty fields!</h4>";
-        } elseif (!filter_var($email, FILTER_VALIDATE_EMAIL)) { //Condition for valid email format
+        }  //Condition for valid email format
+        elseif (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
             echo "<h4 class='error'>You have used an invalid e-mail!</h4>";
-        } elseif ($pass !== $conpass) { //Condition for Password matching
+        } //Condition for Password matching
+        elseif ($pass !== $conpass) {
             echo "<h4 class='error'>Password do not match!</h4>";
-        } else {
-            $array = array( // creating an array for the data
+        } else { // creating an array for the data
+            $array = array(
                 'First Name' => $name,
                 'Last Name' => $lname,
                 'E-mail' => $email,
@@ -35,18 +36,23 @@
             };
             $id = [];
 
-            foreach ($getdata as $dataid) { //Condition for storing multiple user's ID
+            //Condition for storing multiple user's ID
+            foreach ($getdata as $dataid) {
                 array_push($id, $dataid['ID']);
                 $var = count($id) + 1;
                 $array['ID'] = $var;
             };
             $getdata[] = $array;
 
-            if ($email == $getdata['E-mail']) { // for checking if email is already exists or not
+            // for checking if email is already exists or not
+            if ($email == $getdata['E-mail']) {
                 echo "<h4 class='error'>Email is already in use!</h4>";
             } else {
-                $formdata = json_encode($getdata, JSON_PRETTY_PRINT); //encoding the decode file using json_encode
-                if (file_put_contents(__DIR__ . "/../../../database/user.json", $formdata)) { //write data to json file
+                //encoding the decode file using json_encode
+                $formdata = json_encode($getdata, JSON_PRETTY_PRINT);
+
+                //write data to json file
+                if (file_put_contents(__DIR__ . "/../../../database/user.json", $formdata)) {
                     echo "<p class='success'>user successfully registered</p>";
                 }
             }

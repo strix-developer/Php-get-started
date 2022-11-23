@@ -1,5 +1,6 @@
  <?php
-    if (isset($_POST['action'])) { //fetching user's profile data
+    if (isset($_POST['action'])) {
+        //fetching user's profile data
         $name = $_POST['name'];
         $lname = $_POST['lname'];
         $email = $_POST['email'];
@@ -12,7 +13,8 @@
         $role = $_SESSION['role'];
         $id = $_SESSION['ID'];
 
-        $array = array( //creating an array for the data
+        //creating an array for the data
+        $array = array(
             'First Name' => $name,
             'Last Name' => $lname,
             'E-mail' => $email,
@@ -25,13 +27,16 @@
             'Role' => $role,
             'ID' => $id,
         );
+
         //converting file into string and then decoding by json_decode
         $data = json_decode(file_get_contents(__DIR__ . '/../../../database/profile.json'), true);
         $data[] = $array;
 
         //encoding the decode data
         $formdata = json_encode($data, JSON_PRETTY_PRINT);
-        if (file_put_contents(__DIR__ . "/../../../database/profile.json", $formdata)) { //storing data to json file
+
+        //storing data to json file
+        if (file_put_contents(__DIR__ . "/../../../database/profile.json", $formdata)) {
             echo "<p class='success'>Profile Successfully Updated!</p>";
         }
     }
