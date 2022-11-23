@@ -42,7 +42,7 @@
             };
             $getdata[] = $array;
 
-            if ($email == $getdata['E-mail']) { // for checking if email already exists in database or not
+            if ($email == $getdata['E-mail']) { // for checking if email is already exists or not
                 echo "<h4 class='error'>Email is already in use!</h4>";
             } else {
                 $formdata = json_encode($getdata, JSON_PRETTY_PRINT); //encoding the decode file using json_encode
