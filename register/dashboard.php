@@ -21,11 +21,12 @@
 
  <!--div for form data start-->
  <div class="container mt-3 text-center bg-light">
-
+     <!--div for heading-->
      <div class="container-fluid p-2 bg-primary text-center text-white">
          <h2>Your Sign up Information</h2>
      </div>
 
+     <!--table for data-->
      <table class="table table-striped">
          <thead>
              <!--Row for table headings-->
