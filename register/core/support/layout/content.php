@@ -12,14 +12,17 @@
         </div>
     </div>
     <!--Banner div end-->
+
     <!--Content div-->
     <div class="container-fluid mt-5">
         <div class="row">
+
             <!--Image div-->
             <div class="col-sm-6 ">
                 <img src="images/unsplash.jpg" class="img-fluid mx-auto d-block" style="height:450px; width:100%;">
             </div>
             <!--Image div ens-->
+
             <!--Text div-->
             <div class="col-sm-6 bg-light text-center pt-5">
                 <h1 class="mt-3">Web Designing & Development</h1>
@@ -31,8 +34,9 @@
                     normal distribution of letters.</p>
             </div>
             <!--Text div end-->
+
         </div>
     </div>
     <!--Content div end-->
-    </div>
+
 </section>
