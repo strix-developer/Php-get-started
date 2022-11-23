@@ -9,8 +9,6 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
 
-
-
     <style>
         button.btn.btn-light {
             float: right;
@@ -27,12 +25,15 @@
             width: 514px;
         }
     </style>
+
 </head>
 
 <body>
+
     <!--Header Started-->
     <header>
         <div class="container-fluid bg-dark rounded-pill">
+
             <div class="row">
                 <!--Png logo-->
                 <div class="col-sm-1 p-3 bg-dark rounded-pill">
@@ -40,12 +41,14 @@
                         <img src="./images/5796282.webp" alt="Logo" style="width:70px;" class="rounded-pill">
                     </a>
                 </div>
+
                 <!--Name-->
                 <div class="col-sm-2 p-3">
                     <a class="navbar-brand text-white text-center" href="#">
                         <h2>Himanshu Thakur</h2>
                     </a>
                 </div>
+
                 <!--Menu-->
                 <div class="col-sm-6 bg-info text-white rounded-pill img-thumbnail">
                     <nav class="navbar navbar-expand-sm bg-dark text-white rounded-pill p-2 m-1 justify-content-center">
@@ -73,16 +76,40 @@
                         </div>
                     </nav>
                 </div>
-                <!--Resgister form-->
-                <div class="col-sm-3 p-3 bg-dark rounded-pill">
 
-                    <button type="button" class="btn btn-light dropdown-toggle p-2 rounded-pill" data-bs-toggle="dropdown">Register</button>
-                    <ul class="dropdown-menu">
-                        <li> <a class="dropdown-item " href="signup.php"> sign up</a></li>
-                        <li> <a class="dropdown-item" href="login.php"> Log in</a></li>
-                    </ul>
+                <!--Resgister form-->
+                <div class="col-sm-3 p-3 text-end bg-dark rounded-pill p-2">
+                    <?php
+                    if (isset($_SESSION['email'])) {
+
+                        echo "<h5>Welcome $_SESSION[name]"
+                    ?>
+                        <a href="/Register/logout.php">
+                            <button type="button" class="btn btn-info rounded-pill text-end p-2">
+                                Logout
+                            </button>
+                        </a>
+                    <?php
+                        "</h5>";
+                    } else {
+                    ?>
+                        <div class="dropdown">
+                            <button type="button" class="btn btn-info rounded-pill text-end dropdown-toggle p-2" data-bs-toggle="dropdown">
+                                Register
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="login.php">Login</a></li>
+                                <li><a class="dropdown-item" href="signup.php">Sign up</a></li>
+                            </ul>
+                        </div>
                 </div>
+
+            <?php
+                    }
+            ?>
             </div>
+
+        </div>
         </div>
     </header>
     <!--Header close-->

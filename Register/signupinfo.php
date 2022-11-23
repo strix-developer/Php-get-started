@@ -22,7 +22,7 @@
     </style>
 </head>
 
-<body >
+<body>
     <h3>Details</h3>
     <table>
         <tr>

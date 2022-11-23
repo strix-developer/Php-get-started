@@ -1,22 +1,28 @@
 <?php
+
 //login page
 realpath(__DIR__ . "/../../../bootstrap/app.php");
+
 //if start
 if (isset($_POST['action'])) {
     $email = $_POST['email'];
     $pswd = $_POST['pswd'];
+
     //file empty
     if ($email == '' || $pswd == '') {
         echo " <h3>File the empty Space</h3>";
+
         //correct email
     } elseif (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
         echo "<h3>Please correct your email</h3>";
+
         //user.json file
     } else {
         $getdata = file_get_contents(__DIR__ . '/../../../database/user.json');
         $var = json_decode($getdata, true);
 
         $filter = array_filter($var, function ($getdata) {
+
             if ($getdata['email'] == $_POST['email'] || ($getdata['pswd'] == $_POST['pswd'])) {
 
                 $_SESSION['is_submit'] = true;
@@ -33,8 +39,10 @@ if (isset($_POST['action'])) {
 
         if ($filter == true) {
             header("Location: ./dashboard.php");
+            
+            //correct email & pssword
         } else {
-            echo "<h3>Please correct you email and password</h3>";
+            echo "<h4 class=' bg-info p-2 text-white rounded-end rounded-start text-center'>you are success fully sign in .>Please correct you email and password</h4>";
         }
     }
 }

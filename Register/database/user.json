@@ -16,5 +16,14 @@
         "pswd": "123",
         "role": "User",
         "ID": 2
+    },
+    {
+        "name": "pihu",
+        "lastname": "bae",
+        "email": "bae@gmail.com",
+        "number": "1234567890",
+        "pswd": "1235",
+        "role": "User",
+        "ID": 3
     }
 ]

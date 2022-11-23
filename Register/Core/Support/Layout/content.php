@@ -1,5 +1,7 @@
 <!--Content Start-->
+
 <!--Section Start-->
+
 <section class="hero-banner py-4">
   <div class="container text-white img-thumbnail" style="background-image: url('images/5796282.webp');background-repeat:no-repeat;">
     <div class="row ">
@@ -15,6 +17,7 @@
     </div>
   </div>
 </section>
+
 <!--Section End-->
 <div class="section padding-top-bottom over-hide">
   <div class="container">
@@ -30,15 +33,15 @@
           </div>
         </div>
       </div>
+      
+      <!-- content image-->
       <div class="col-md-6 mt-4 mt-md-0">
         <div class="img-wrap">
           <img src="images/rooms.png" alt="">
         </div>
       </div>
+
     </div>
   </div>
-</div>
-
-</div>
 </div>
 <!--Content End-->

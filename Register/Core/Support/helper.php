@@ -1,5 +1,6 @@
 <?php
 require_once __DIR__ . "/../../Bootsstrap/App.php";
+
 function action($register)
 {
     $action = __DIR__ . './action/' . $register . '.php';
@@ -9,13 +10,11 @@ function action($register)
         return __DIR__ . "/action/fallbacks.php";
     }
 }
+
 function has_Action($register)
 {
     return file_exists($register);
 }
-
-
-
 
 function file_header()
 {

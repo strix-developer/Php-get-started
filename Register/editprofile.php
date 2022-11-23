@@ -13,12 +13,12 @@ session_start();
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <style>
-        .col-sm-3.p-3.bg-dark.rounded-pill{
+        .col-sm-3.p-3.bg-dark.rounded-pill {
             float: right;
         }
     </style>
 
-    
+
 </head>
 
 <body>
@@ -98,7 +98,7 @@ session_start();
             </div>
             <div class="mb-3">
                 <label for="Account">Account:</label>
-                <input type="text" class="form-control" id="Account" placeholder="Enter Account number" name="account"maxlength="12">
+                <input type="text" class="form-control" id="Account" placeholder="Enter Account number" name="account" maxlength="12">
             </div>
             <div class="mb-3">
                 <input type="submit" class="navbar-dark bg-dark text-white img-thumbnail " name="submit" value="Submit">
