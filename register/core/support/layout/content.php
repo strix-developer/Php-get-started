@@ -21,7 +21,7 @@
             <div class="col-sm-6 ">
                 <img src="images/unsplash.jpg" class="img-fluid mx-auto d-block" style="height:450px; width:100%;">
             </div>
-            <!--Image div ens-->
+            <!--Image div end-->
 
             <!--Text div-->
             <div class="col-sm-6 bg-light text-center pt-5">
