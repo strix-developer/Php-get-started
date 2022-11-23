@@ -78,13 +78,13 @@
                 </div>
 
                 <!--Resgister form-->
-                <div class="col-sm-3 p-3 text-end bg-dark rounded-pill p-2">
+                <div class="col-sm-3 p-3 text-end bg-dark rounded-pill ">
                     <?php
                     if (isset($_SESSION['email'])) {
 
                         echo "<h5>Welcome $_SESSION[name]"
                     ?>
-                        <a href="/Register/logout.php">
+                        <a href="login.php">
                             <button type="button" class="btn btn-info rounded-pill text-end p-2">
                                 Logout
                             </button>

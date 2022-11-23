@@ -81,8 +81,8 @@ session_start();
                 <input type="text" class="form-control" id="lastname" value=" <?Php echo $_SESSION['lastname']; ?>" name="lastname">
             </div>
             <div class="mb-3">
-                <label for="Gmail">E-mail:</label>
-                <input type="email" class="form-control" id="gmail" value=" <?Php echo $_SESSION['email']; ?>" name="gmail" disabled>
+                <label for="email">E-mail:</label>
+                <input type="email" class="form-control" id="email" value=" <?Php echo $_SESSION['email']; ?>" name="email" disabled>
             </div>
             <div class="mb-3">
                 <label for="Contact">Contact:</label>
@@ -105,3 +105,6 @@ session_start();
                 <input type="hidden" name="action" value="register">
             </div>
         </form>
+        <?php
+        require_once __DIR__."/Core/Support/action/profile.php";
+        ?>
