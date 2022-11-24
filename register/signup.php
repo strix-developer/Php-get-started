@@ -14,13 +14,13 @@
            <!--For name field-->
            <div class="mb-3 mt-3 text-start">
                <label for="name">Name:</label>
-               <input type="text" class="form-control" id="name" pattern="[A-Za-z]{4,20}" placeholder="Enter name" name="name">
+               <input type="text" class="form-control" id="name" pattern="[A-Za-z]{0,20}" placeholder="Enter name" name="name">
            </div>
 
            <!--For last name field-->
            <div class="mb-3 mt-3 text-start">
                <label for="last name">Last Name:</label>
-               <input type="text" class="form-control" id="lname" pattern="[A-Za-z]{4,20}" placeholder="Enter Last name" name="lname">
+               <input type="text" class="form-control" id="lname" pattern="[A-Za-z]{0,20}" placeholder="Enter Last name" name="lname">
            </div>
 
            <!--For Email field-->
