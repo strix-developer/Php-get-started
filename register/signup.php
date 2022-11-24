@@ -32,7 +32,7 @@
            <!--For Phone number field-->
            <div class="mb-3 mt-3 text-start">
                <label for="phone number">Phone Number:</label>
-               <input type="text" class="form-control" id="number" placeholder="Enter Phone Number" name="number" maxlength="10">
+               <input type="number" class="form-control" id="number" placeholder="Enter Phone Number" name="number" maxlength="10">
            </div>
 
            <!--For Password field-->
