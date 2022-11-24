@@ -1,11 +1,4 @@
 <?php
-
-// Logical operator
-// AND
-// OR
-// XOR
-// NOT
-
  
  $var=10;
 

@@ -60,7 +60,9 @@ if($per>=80 && $per<=100){
 
 
 echo"<br>";
-        
+
+//
+
 $overtime=100;
 if ($overtime<=50)
 {
@@ -75,4 +77,26 @@ $medical=1500;
 echo "Pay Amount : $pay_amt : Medical : $medical";
 }
 echo"<br>";
+
+//
+
+$role = 'author';
+$message = '';
+
+if ('admin' === $role) {
+	$message = 'Welcome, admin!';
+} elseif ('editor' === $role) {
+	$message = 'Welcome! You have some pending articles to edit';
+} elseif ('author' === $role) {
+	$message = 'Welcome! Do you want to publish the draft article?';
+} elseif ('subscriber' === $role) {
+	$message = 'Welcome! Check out some new articles.';
+} else {
+	$message = 'Sorry! You are not authorized to access this page';
+}
+
+echo $message;
+
+
+
 ?>

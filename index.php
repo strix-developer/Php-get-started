@@ -1,2 +1,2 @@
 <?php
-echo"hjfjhfjfuj";
+require __DIR__ ."/loops/practice.php";

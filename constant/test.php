@@ -153,6 +153,7 @@ $y=array("a"=>"blue","b"=>"yellow","c"=>"black");
  var_dump($x==$y);
 
  echo "<br>";
+  
 //identity
  $x=array("a"=>"red","b"=>"orange","c"=>"green");
 $y=array("a"=>"blue","b"=>"yellow","c"=>"black");
@@ -176,7 +177,7 @@ $y=array("a"=>"blue","b"=>"yellow","c"=>"black");
    $y=array("a"=>"blue","b"=>"yellow","c"=>"black");
   var_dump($x!==$y);
   echo "<br>";
-  
+
 // test operator
 
   class Developer{
@@ -198,5 +199,8 @@ var_dump($jitesh instanceof Developer);
 echo "<br>";
 var_dump($jitesh instanceof Programmer);
 
-
+$new1= 500;
+$new2= 700;
+if($new1===$new2);
+echo "true";
 ?>
