@@ -45,7 +45,7 @@
             $data[] = $array;
 
             // for checking if email is already exists or not
-            if ($_POST['email'] == $data['E-mail']) {
+            if ($_POST['email'] == $dataid['E-mail']) {
                 echo "<h4 class='error'>Email is already in use!</h4>";
             } else {
                 //encoding the decode file using json_encode
