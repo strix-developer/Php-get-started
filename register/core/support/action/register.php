@@ -28,31 +28,31 @@
                 'Role' => $role,
             );
             //converting file into string and then decoding using json_decode
-            $getdata = json_decode(file_get_contents(__DIR__ . "/../../../database/user.json"), true);
+            $data = json_decode(file_get_contents(__DIR__ . "/../../../database/user.json"), true);
 
             // storing data using ID
-            if (count($getdata) == 0) {
+            if (count($data) == 0) {
                 $array['ID'] = 1;
             };
             $id = [];
 
             //Condition for storing multiple user's ID
-            foreach ($getdata as $dataid) {
+            foreach ($data as $dataid) {
                 array_push($id, $dataid['ID']);
                 $var = count($id) + 1;
                 $array['ID'] = $var;
             };
-            $getdata[] = $array;
+            $data[] = $array;
 
             // for checking if email is already exists or not
-            if ($_POST['email'] == $dataid['E-mail']) {
+            if ($_POST['email'] == $data['E-mail']) {
                 echo "<h4 class='error'>Email is already in use!</h4>";
             } else {
                 //encoding the decode file using json_encode
-                $formdata = json_encode($getdata, JSON_PRETTY_PRINT);
+                $encode = json_encode($data, JSON_PRETTY_PRINT);
 
                 //write data to json file
-                if (file_put_contents(__DIR__ . "/../../../database/user.json", $formdata)) {
+                if (file_put_contents(__DIR__ . "/../../../database/user.json", $encode)) {
                     echo "<p class='success'>user successfully registered</p>";
                 }
             }
