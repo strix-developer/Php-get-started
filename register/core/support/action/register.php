@@ -39,8 +39,8 @@
             //Condition for storing multiple user's ID
             foreach ($data as $dataid) {
                 array_push($id, $dataid['ID']);
-                $var = count($id) + 1;
-                $array['ID'] = $var;
+                $variable = count($id) + 1;
+                $array['ID'] = $variable;
             };
             $data[] = $array;
 
