@@ -37,8 +37,8 @@ echo "<h1> 1. </h1>";
      $i++;
     
  }
-
  echo "<br>";
+
 //
  echo "<h1> 2. </h1>";
 $size = 5;
@@ -58,6 +58,7 @@ echo "<br>";
 $i++;
 }
 echo "<br>";
+
 //
 echo "<h1> 3. </h1>";
  $i=0;
@@ -72,6 +73,7 @@ while ($i <= 5) {
 }
 
 echo "<br>";
+
 //
 echo "<h1> 4. </h1>";
 $i=0;
@@ -139,8 +141,9 @@ while( $i>=0)
  echo "<br>";
  $i--;
 }
-
 echo "<br>";
+
+
 //
 echo "<h1> 4. </h1>";
 $i=5;
@@ -176,6 +179,8 @@ $size = 5;
     }
  
  echo "<br>";
+
+
  //
  echo "<h1> 1. </h1>";
  $size = 5  ;
@@ -211,6 +216,8 @@ $size = 5;
         $i++;
     }
     echo"<br>";
+
+
 //
     echo "<h1> 2. </h1>";
     $row = 7; 
@@ -250,6 +257,8 @@ while ($a <= 7) {
     echo "<br>";
 }
 echo "<br>";
+
+
 //
 echo "<h1> 3. </h1>";
 $row = 7; 
@@ -287,6 +296,8 @@ echo "<br>";
 
 
         echo "<br>";
+
+
 //
 echo "<h1> 4. </h1>";
         $size = 6;

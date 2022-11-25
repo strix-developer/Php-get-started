@@ -75,6 +75,7 @@ echo "<h1> 1. </h1>";
     echo "<br>"; 
  }
 
+ //
  echo "<h1> 2. </h1>";
 $size = 5;
     for( $i = 0; $i < $size; $i++) {       
@@ -101,6 +102,7 @@ for ($i = 0; $i < 5; $i++)
     echo "<br>";
 }
 
+//
 echo "<h1> 4. </h1>";
 
 for($i=5; $i>=0;$i--)
@@ -111,6 +113,7 @@ for( $j=1; $j<=$i;$j++ ){
  echo "<br>";
 }
 
+//
 echo "<h1> 5. </h1>";
 
 for($i=5;$i>=1;$i--){ 
@@ -118,7 +121,8 @@ for($j=$i;$j>=1;$j--){
 echo $i;  
  }  
 echo "<br>";
-} 
+}
+
 //
 echo "<h1> 1. </h1>";
 $size = 5;
@@ -142,6 +146,7 @@ $size = 5;
        echo "<br>"; 
    }
 
+   //
    echo "<h1> 2. </h1>";
    $row = 7; 
 
@@ -167,6 +172,7 @@ for ($a = 1;$a <= 7;$a++) {
    echo "<br>";
 }
 
+//
 echo "<h1> 3. </h1>";
 $row = 7; 
 for ($a = 1;$a <= $row;$a++) {
@@ -192,6 +198,8 @@ for ($a = 1;$a <= $row;$a++) {
     }
     echo "<br>";
 }
+
+//
 echo "<h1> 4. </h1>";
         $size = 6; 
     for ( $i = $size / 2;$i < $size;$i += 2 ) {
@@ -236,6 +244,8 @@ echo "<h1> 4. </h1>";
         echo "</br>";   
     }  
 echo "<br>";
+
+
 // indexed array elements using foreach loop
     $arr = array(2,4,6,8,10);
 foreach ($arr as $i){
