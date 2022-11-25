@@ -3,9 +3,9 @@
     require_once file_header();
     ?>
 
-   <div class="container-fluid col-sm-4 mt-3 p-4 bg-light text-center">
+   <div class="container-fluid col-sm-4 mt-3 p-4 bg-success text-center rounded">
        <!--div for heading text-->
-       <div class="container-fluid p-2 bg-primary text-center text-white text-capitalize">
+       <div class="container-fluid p-2 bg-dark text-center text-white text-capitalize">
            <h2>Sign up form</h2>
        </div>
 
@@ -14,7 +14,7 @@
            <!--For name field-->
            <div class="mb-3 mt-3 text-start">
                <label for="name">Name:</label>
-               <input type="text" class="form-control" id="name" pattern="[A-Za-z]{0,20}" placeholder="Enter name" name="name">
+               <input type="text" class="form-control" id="name" pattern="[A-Za-z]{0,20}" placeholder="Enter your name" name="name">
            </div>
 
            <!--For last name field-->
@@ -32,7 +32,7 @@
            <!--For Phone number field-->
            <div class="mb-3 mt-3 text-start">
                <label for="phone number">Phone Number:</label>
-               <input type="number" class="form-control" id="number" placeholder="Enter Phone Number" name="number" maxlength="10">
+               <input type="number" class="form-control" id="number" placeholder="Enter Phone Number" name="number">
            </div>
 
            <!--For Password field-->
@@ -62,14 +62,14 @@
                <label class="form-check-label">
                    <input class="form-check-input" type="checkbox" name="remember"> Remember me
                </label>
-               <input type="submit" class="btn btn-success" id="submit" name="submit">
+               <input type="submit" class="btn btn-dark" id="submit" name="submit">
                <input type="hidden" name="action" value="register">
            </div>
 
            <!--For Log in field-->
            <div class="mb-3 mt-3 text-end">
                <label for="user">Adready have account/</label>
-               <a href="login.php"> <input class="btn btn-success" type="button" value="Log in"></a>
+               <a href="login.php"> <input class="btn btn-dark" type="button" value="Log in"></a>
                <input type="hidden" name="action" value="register">
            </div>
        </form>

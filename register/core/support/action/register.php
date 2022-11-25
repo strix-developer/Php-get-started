@@ -55,9 +55,11 @@
                 if (file_put_contents(__DIR__ . "/../../../database/user.json", $encode)) {
                     echo "<p class='success'>user successfully registered</p>";
                 }
+                header("location: ./login.php");
             }
         }
     }
+
     ?>
 
  <!DOCTYPE html>

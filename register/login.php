@@ -5,9 +5,9 @@
     require_once file_header();
     ?>
 
- <div class="container col-sm-3 mt-3 p-5 bg-light text-center">
+ <div class="container col-sm-3 mt-3 p-5 bg-success text-center rounded">
      <!--div for heading text-->
-     <div class="container-fluid p-2 bg-primary text-center text-white text-capitalize">
+     <div class="container-fluid p-2 bg-dark text-center text-white text-capitalize rounded">
          <h2>Please log in</h2>
      </div>
      <!--Form start-->
@@ -33,7 +33,7 @@
 
          <!--For Submit field-->
          <div class="mb-3 mt-3 text-end">
-             <input type="submit" class="btn btn-success" value="Login" name="login">
+             <input type="submit" class="btn btn-dark" value="Login" name="login">
              <input type="hidden" name="action" value="login">
          </div>
      </form>

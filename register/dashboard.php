@@ -22,7 +22,7 @@
  <!--div for form data start-->
  <div class="container mt-3 text-center bg-light">
      <!--div for heading-->
-     <div class="container-fluid p-2 bg-primary text-center text-white">
+     <div class="container-fluid p-2 bg-dark text-center text-white">
          <h2>Your Sign up Information</h2>
      </div>
 
@@ -38,7 +38,8 @@
                  <th>Password</th>
                  <th>Role</th>
                  <th>ID</th>
-                 <th>Edit</th>
+                 <th>Edit Profile</th>
+                 <th>View Profile</th>
              </tr>
          </thead>
 
@@ -59,6 +60,9 @@
                      <td>
                          <a href="profile.php"> <button type="button" class="btn btn-success">Edit Profile</button></a>
                      </td>
+                     <td>
+                         <a href="viewprofile.php"> <button type="button" class="btn btn-success">View Profile</button></a>
+                     </td>
                  </tr>
                  <?php  } else {      //admin login and to show all users data
                     if ($_SESSION['role'] == 'admin') {
@@ -78,6 +82,9 @@
                                  <td><?php echo $user['ID']; ?> </td>
                                  <td>
                                      <a href="profile.php"> <button type="button" class="btn btn-success">Edit Profile</button></a>
+                                 </td>
+                                 <td>
+                                     <a href="viewprofile.php"> <button type="button" class="btn btn-success">View Profile</button></a>
                                  </td>
                              </tr>
              <?php

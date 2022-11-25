@@ -7,9 +7,13 @@
         $number = $_POST['number'];
         $pass = $_SESSION['pass'];
         $age = $_POST['age'];
+        $dob = $_POST['dob'];
         $aadhar = $_POST['aadhar'];
-        $pancard = $_POST['pancard'];
-        $account = $_POST['account'];
+        $address = $_POST['address'];
+        $city = $_POST['city'];
+        $state = $_POST['state'];
+        $zip = $_POST['zip'];
+        $country = $_POST['country'];
         $role = $_SESSION['role'];
         $id = $_SESSION['ID'];
 
@@ -21,9 +25,13 @@
             'Password' => $pass,
             'Phone Number' => $number,
             'Age' => $age,
+            'Date Of Birth' => $dob,
             'Aadhar Number' => $aadhar,
-            'Pan Card' => $pancard,
-            'Account Number' => $account,
+            'Address' => $address,
+            'City' => $city,
+            'State' => $state,
+            'Zip' => $zip,
+            'Country' => $country,
             'Role' => $role,
             'ID' => $id,
         );
@@ -39,6 +47,7 @@
         if (file_put_contents(__DIR__ . "/../../../database/profile.json", $formdata)) {
             echo "<p class='success'>Profile Successfully Updated!</p>";
         }
+        header("location: ./dashboard.php");
     }
     ?>
 
