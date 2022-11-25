@@ -36,7 +36,7 @@ session_start();
                     </a>
                 </div>
                 <div class="col-sm-6 bg-info text-white rounded-pill img-thumbnail">
-                    <nav class="navbar navbar-expand-sm bg-dark text-white rounded-pill p-2 m-1 justify-content-center">
+                    <nav class="navbar navbar-expand-sm bg-dark text-white rounded-pill p-2 justify-content-center">
                         <div class="col-sm-7 bg-dark text-white rounded-end ">
                             <ul class="nav nav-tabs  ">
                                 <li class="nav-item ">
@@ -97,12 +97,28 @@ session_start();
                 <input type="text" class="form-control" id="Aadhar" placeholder="Enter Aadhar number " name="aadhar" maxlength='12'>
             </div>
             <div class="mb-3">
-                <label for="Account">Account:</label>
-                <input type="text" class="form-control" id="Account" placeholder="Enter Account number" name="account" maxlength="12">
+                <label for="PAN card">PAN Card:</label>
+                <input type="text" class="form-control" id="Pancard" placeholder="Enter PAN Card" name="pancard" maxlength="12">
             </div>
             <div class="mb-3">
-                <input type="submit" class="navbar-dark bg-dark text-white img-thumbnail " name="submit" value="Submit">
-                <input type="hidden" name="action" value="register">
+                <label for="Address">Address:</label>
+                <input type="text" class="form-control" id="Address" placeholder="Enter your address" name="address">
+            </div>
+            <div class="mb-3">
+                <label for="City">City:</label>
+                <input type="text" class="form-control" id="city" placeholder="Enter your city" name="city">
+            </div>
+            <div class="mb-3">
+                <label for="Zip-Code">Zip-code:</label>
+                <input type="text" class="form-control" id="zipcode" placeholder="Enter your zipcode" name="zipcode">
+            </div>
+            <div class="mb-3">
+                <label for="Country">Country:</label>
+                <input type="text" class="form-control" id="Country" placeholder="Enter your Country" name="country">
+            </div>
+            <div class="mb-3">
+            <input type="submit" class="navbar-dark bg-dark text-white img-thumbnail " name="submit" value="Submit">
+                <input type="hidden" name="action" value="dashboard">
             </div>
         </form>
         <?php

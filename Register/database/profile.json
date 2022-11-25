@@ -1,57 +1,17 @@
 [
     {
-        "name": "Himanshu",
-        "lastname": " Thakur",
-        "email": "thakurhimanshu830@gmail.com",
-        "number": "8894536296",
-        "age": "18",
-        "aadhar": "123456789098",
-        "account": "123456789098",
-        "role": "Admin",
-        "ID": 1
-    },
-    {
-        "name": "Anil",
-        "lastname": " verma",
-        "email": "anil@gmail.com",
-        "number": "1234567890",
-        "age": "19",
-        "aadhar": "121233254656",
-        "account": "567678980909",
-        "role": "User",
-        "ID": 2
-    },
-    {
-        "name": "pihu",
+        "name": "Pihu",
         "lastname": " bae",
         "email": "bae@gmail.com",
         "number": "1234567890",
         "age": "18",
-        "aadhar": "123434565789",
-        "account": "898988675423",
+        "aadhar": "234354678908",
+        "address": "23456787",
+        "pancard": "435678876756",
+        "city": "hr",
+        "zipcode": "122001",
+        "country": "India",
         "role": "User",
         "ID": 3
-    },
-    {
-        "name": "Anil",
-        "lastname": " verma",
-        "email": "anil@gmail.com",
-        "number": "1234567890",
-        "age": "17",
-        "aadhar": "545688798896",
-        "account": "423556567878",
-        "role": "User",
-        "ID": 2
-    },
-    {
-        "name": "Himanshu",
-        "lastname": " Thakur",
-        "email": "thakurhimanshu830@gmail.com",
-        "number": "8894536296",
-        "age": "",
-        "aadhar": "",
-        "account": "",
-        "role": "Admin",
-        "ID": 1
     }
 ]

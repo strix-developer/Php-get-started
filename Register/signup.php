@@ -12,13 +12,13 @@ require file_header();
     <!-- Name-->
     <div class="mb-3 mt-3">
       <label for="Name">Name:</label>
-      <input type="Name" class="form-control" id="name" placeholder="Enter Name" name="name">
+      <input type="text" class="form-control" id="name" placeholder="Enter Name" pattern="[A-Za-z]" name="name" >
     </div>
 
     <!-- Last Name-->
     <div class="mb-3">
       <label for="Last Name">Last Name:</label>
-      <input type="Last Name" class="form-control" id="lastname" placeholder="Enter Last Name" name="lastname">
+      <input type="text" class="form-control" id="lastname" placeholder="Enter Last Name" name="lastname">
     </div>
 
     <!-- Gmail-->

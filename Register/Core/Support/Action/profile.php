@@ -7,7 +7,11 @@ if (isset($_POST['action'])) {
     $number = $_SESSION['number'];
     $age = $_POST['age'];
     $aadhar = $_POST['aadhar'];
-    $account = $_POST['account'];
+    $address = $_POST['address'];
+    $pancard = $_POST['pancard'];
+    $city = $_POST['city'];
+    $zipcode = $_POST['zipcode'];
+    $country = $_POST['country'];
     $role = $_SESSION['role'];
     $id = $_SESSION['ID'];
 //array for data
@@ -18,7 +22,11 @@ if (isset($_POST['action'])) {
         "number" => $number,
         "age" => $age,
         "aadhar" => $aadhar,
-        "account" => $account,
+        "address" => $address,
+        "pancard" => $pancard,
+        "city" => $city,
+        "zipcode" => $zipcode,
+        "country" => $country,
         "role" => $role,
         "ID" => $id
     );

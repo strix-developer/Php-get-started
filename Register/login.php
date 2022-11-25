@@ -32,6 +32,8 @@ require file_header();
         <!-- Log in Button-->
         <input class="btn btn-dark" type="submit" value="Login">
         <input type="hidden" name="action" value="header">
+        <a class="btn btn-dark" href="signup.php">Sign up</a></li>
+        <input type="hidden" name="action" value="header">
         <br>
     </form>
 </div>
