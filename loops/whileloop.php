@@ -1,5 +1,7 @@
 <?php
-
+/// while loop///
+/* The while loop executes a block of code as long 
+as the specified condition is true. */
 $i = 11;
 while ($i <= 10):
     echo $i;
@@ -20,7 +22,7 @@ do {
   $x++;
 } while ($x >= 5);
 
-//star pattern
+//star pattern using while loop
 echo "<h1> 1. </h1>";
 
  $i=0;
@@ -90,7 +92,7 @@ while( $i<5 ){
 }
 
  
-// number pattern
+// number pattern using while loop
 echo "<h1> 1. </h1>";
 $i=1;
  while($i<=5){
@@ -328,4 +330,20 @@ echo "<h1> 4. </h1>";
         echo "<br>";
         $i--;
     }
+echo "<br>";
+
+
+    // Do while loop
+    /*The do...while loop will always execute the block of code once, it will then check the condition,
+     and repeat the loop while the specified condition is true.*/
+
+
+    $n=1;    
+    do{    
+    echo "$n<br/>";    
+    $n++;    
+    }while($n<=10);   
+
+
+
 ?>
