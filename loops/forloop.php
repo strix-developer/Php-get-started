@@ -230,7 +230,7 @@ echo "<h1> 4. </h1>";
     //foreach loop
     /* The foreach loop is used to traverse the array elements. It works only on array and object
       It provides an easiest way to iterate the elements of an array
-      In foreach loop, we don't need to increment the value. */
+      In foreach loop, we don't need to increment or decrement the value. */
 
       //associative array elements using foreach loop
       $person = array (  
@@ -247,10 +247,42 @@ echo "<br>";
 
 
 // indexed array elements using foreach loop
-    $arr = array(2,4,6,8,10);
+    $arr = array(1,2,3,4,5,6,7,8,9,10);
 foreach ($arr as $i){
-   echo $i . "*2=" . $i*2 . "";
+   echo $i . "*2=" . $i*2 . " ";
    echo "<br>";
 }
+echo "<br>";
+// here aresome examples of foreach loop
+$character=array(
+ "this is my class"
+);
+foreach($character as $y){
+    echo $y ;
+    
+}
+
+echo "<br>";
+
+$section=array("section"=>"A","name"=>"prince","class"=>"5th","roll no"=>"24");
+foreach($section as $key => $value){
+    echo $key . " : " . $value . "<br>";}
+$section1=array("section"=>"B","name"=>"riyansh","class"=>"5th","roll no"=>"12");
+foreach($section1 as $key => $value){
+    echo $key . " : " . $value . "<br>";
+}
+echo "<br>";
+
+$capitals=array(
+    "Himalchal"=>"shimla",
+    "J&k"=>"kashmir",
+    "Punjab"=>"chandigarh",
+    "Uttar-pradesh"=>"lucknow",
+    "Bihar"=>"patna"
+);
+    foreach($capitals as $state=>$capital){
+        echo "the capital of $state is => $capital" . "<br>";
+    }
+ 
 
 ?>  
