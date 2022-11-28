@@ -29,7 +29,8 @@ require_once file_header();
     <!--table for data-->
     <table class="table table-striped">
         <?php $users = json_decode(file_get_contents(__DIR__ . "/database/profile.json"), true);
-        foreach ($users as $user){}
+        foreach ($users as $user) {
+        }
         ?>
         <!--Row for table headings-->
         <tr class="table-danger">
@@ -91,6 +92,12 @@ require_once file_header();
         <tr>
             <th>Country</th>
             <td><?php echo $user['Country']; ?> </td>
+        </tr>
+        <tr>
+            <th></th>
+            <td>
+                <a href="dashboard.php"> <button type="button" class="btn btn-success">↽ Back</button></a>
+            </td>
         </tr>
     </table>
 </div>

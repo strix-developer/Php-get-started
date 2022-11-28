@@ -38,8 +38,9 @@
                  <th>Password</th>
                  <th>Role</th>
                  <th>ID</th>
-                 <th>Edit Profile</th>
-                 <th>View Profile</th>
+                 <th></th>
+                 <th></th>
+                 <th></th>
              </tr>
          </thead>
 
@@ -63,6 +64,7 @@
                      <td>
                          <a href="viewprofile.php"> <button type="button" class="btn btn-success">View Profile</button></a>
                      </td>
+                     <td></td>
                  </tr>
                  <?php  } else {      //admin login and to show all users data
                     if ($_SESSION['role'] == 'admin') {
@@ -85,6 +87,9 @@
                                  </td>
                                  <td>
                                      <a href="viewprofile.php"> <button type="button" class="btn btn-success">View Profile</button></a>
+                                 </td>
+                                 <td>
+                                     <a href=""> <button type="button" class="btn btn-success">Delete Profile</button></a>
                                  </td>
                              </tr>
              <?php
