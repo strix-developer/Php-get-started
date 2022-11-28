@@ -29,8 +29,7 @@ require_once file_header();
     <!--table for data-->
     <table class="table table-striped">
         <?php $users = json_decode(file_get_contents(__DIR__ . "/database/profile.json"), true);
-        foreach ($users as $user) {
-        }
+        foreach ($users as $user)
         ?>
         <!--Row for table headings-->
         <tr class="table-danger">
