@@ -1,7 +1,7 @@
 <?php
 //Profile page
 if (isset($_POST['action'])) {
-    $name = $_POST['name'];
+    $name = $_SESSION['name'];
     $lastname = $_POST['lastname'];
     $email = $_SESSION['email'];
     $number = $_SESSION['number'];
@@ -40,3 +40,4 @@ if (isset($_POST['action'])) {
         echo "<p class='bg-dark text-center rounded-pill text-white p-3'>Profile Successfully Updated!</p>";
     }
 }
+

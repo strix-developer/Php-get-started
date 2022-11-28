@@ -1,7 +1,7 @@
 [
     {
         "name": "Pihu",
-        "lastname": " bae",
+        "lastname": "bae",
         "email": "bae@gmail.com",
         "number": "1234567890",
         "age": "18",
@@ -13,5 +13,20 @@
         "country": "India",
         "role": "User",
         "ID": 3
+    },
+    {
+        "name": "Himanshu",
+        "lastname": " Thakur",
+        "email": "thakurhimanshu830@gmail.com",
+        "number": "8894536296",
+        "age": "18",
+        "aadhar": "123345672345",
+        "address": "3499",
+        "pancard": "123456789987",
+        "city": "Haryana",
+        "zipcode": "122001",
+        "country": "India",
+        "role": "Admin",
+        "ID": 1
     }
 ]

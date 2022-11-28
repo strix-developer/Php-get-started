@@ -7,12 +7,12 @@ require file_header();
 <div class="container col-sm-4 mt-3 bg-info p-2 ">
   <h2 class=" bg-info text-white rounded-pill img-thumbnail text-center">Please Sign in</h2>
   <!--sign up Form Started-->
-  <form action="" method="POST">
+  <form action="login.php" method="POST">
 
     <!-- Name-->
     <div class="mb-3 mt-3">
       <label for="Name">Name:</label>
-      <input type="text" class="form-control" id="name" placeholder="Enter Name" pattern="[A-Za-z]" name="name" >
+      <input type="text" class="form-control" id="name" placeholder="Enter Name" name="name" >
     </div>
 
     <!-- Last Name-->
@@ -62,7 +62,7 @@ require file_header();
 
     <!-- Submit Button-->
     <input type="submit" class="navbar-dark bg-dark text-white img-thumbnail" name="submit" value="submit">
-    <input type="hidden" name="action" value="register">
+    <input type="hidden" name="action" value="login">
     <br>
 
     <!-- Already-->

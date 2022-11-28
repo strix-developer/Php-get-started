@@ -71,7 +71,7 @@ session_start();
     </header>
     <div class="container col-sm-6 mt-3 bg-info p-2  ">
         <h2 class=" bg-info text-white rounded-pill img-thumbnail text-center ">Edit Profile</h2>
-        <form action="editprofile.php" method="post">
+        <form action="" method="post">
             <div class="mb-3 mt-3">
                 <label for="Name">Name:</label>
                 <input type="text" class="form-control" id="name" value="<?php echo $_SESSION['name']; ?>" name="name">
@@ -118,7 +118,7 @@ session_start();
             </div>
             <div class="mb-3">
             <input type="submit" class="navbar-dark bg-dark text-white img-thumbnail " name="submit" value="Submit">
-                <input type="hidden" name="action" value="dashboard">
+                <input type="hidden" name="action" value="profile">
             </div>
         </form>
         <?php

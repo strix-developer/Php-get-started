@@ -18,11 +18,11 @@
         "ID": 2
     },
     {
-        "name": "pihu",
+        "name": "Pihu",
         "lastname": "bae",
-        "email": "bae@gmail.com",
-        "number": "1234567890",
-        "pswd": "1235",
+        "email": "pihu@gmail.com",
+        "number": "3245657568",
+        "pswd": "2986",
         "role": "User",
         "ID": 3
     }

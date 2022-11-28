@@ -42,7 +42,7 @@ if (isset($_POST['action'])) {
             
             //correct email & pssword
         } else {
-            echo "<h4 class=' bg-info p-2 text-white rounded-end rounded-start text-center'>you are success fully sign in .>Please correct you email and password</h4>";
+            echo "<h4 class=' bg-info p-2 text-white rounded-end rounded-start text-center'>Please correct you email and password</h4>";
         }
     }
 }
