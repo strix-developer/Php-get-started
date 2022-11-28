@@ -28,7 +28,9 @@ require_once file_header();
 
     <!--table for data-->
     <table class="table table-striped">
-
+        <?php $users = json_decode(file_get_contents(__DIR__ . "/database/profile.json"), true);
+        foreach ($users as $user){}
+        ?>
         <!--Row for table headings-->
         <tr class="table-danger">
             <th>First Name</th>
@@ -60,35 +62,35 @@ require_once file_header();
         </tr>
         <tr>
             <th>Age</th>
-            <td><?php echo $_POST['age']; ?> </td>
+            <td><?php echo $user['Age']; ?> </td>
         </tr>
         <tr>
             <th>Date Of Birth</th>
-            <td><?php echo $_POST['dob']; ?> </td>
+            <td><?php echo $user['Date Of Birth']; ?> </td>
         </tr>
         <tr>
             <th>Aadhar Card</th>
-            <td><?php echo $_POST['aadhar']; ?> </td>
+            <td><?php echo $user['Aadhar Number']; ?> </td>
         </tr>
         <tr>
             <th>Address</th>
-            <td><?php echo $_POST['address']; ?> </td>
+            <td><?php echo $user['Address']; ?> </td>
         </tr>
         <tr>
             <th>City</th>
-            <td><?php echo $_POST['city']; ?> </td>
+            <td><?php echo $user['City']; ?> </td>
         </tr>
         <tr>
             <th>State</th>
-            <td><?php echo $_POST['state']; ?> </td>
+            <td><?php echo $user['State']; ?> </td>
         </tr>
         <tr>
             <th>Zip-code</th>
-            <td><?php echo $_POST['zip']; ?> </td>
+            <td><?php echo $user['Zip']; ?> </td>
         </tr>
         <tr>
             <th>Country</th>
-            <td><?php echo $_POST['country']; ?> </td>
+            <td><?php echo $user['Country']; ?> </td>
         </tr>
     </table>
 </div>
