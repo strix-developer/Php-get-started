@@ -25,5 +25,14 @@
         "pswd": "2986",
         "role": "User",
         "ID": 3
+    },
+    {
+        "name": "FoDx",
+        "lastname": "Zester",
+        "email": "zester@gmail.com",
+        "number": "8894536296",
+        "pswd": "2004",
+        "role": "Guest",
+        "ID": 4
     }
 ]

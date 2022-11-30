@@ -43,5 +43,6 @@ if (isset($_POST['action'])) {
         if (file_put_contents(__DIR__ . "/../../../database/user.json", $encode)) {
             echo "<h4 class=' bg-info p-2 text-white rounded-end rounded-start text-center'>you are success fully sign in .</h4>";
         }
+        header("location: ./login.php");
     }
 }

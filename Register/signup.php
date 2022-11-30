@@ -7,7 +7,7 @@ require file_header();
 <div class="container col-sm-4 mt-3 bg-info p-2 ">
   <h2 class=" bg-info text-white rounded-pill img-thumbnail text-center">Please Sign in</h2>
   <!--sign up Form Started-->
-  <form action="login.php" method="POST">
+  <form action="" method="POST">
 
     <!-- Name-->
     <div class="mb-3 mt-3">
@@ -62,7 +62,7 @@ require file_header();
 
     <!-- Submit Button-->
     <input type="submit" class="navbar-dark bg-dark text-white img-thumbnail" name="submit" value="submit">
-    <input type="hidden" name="action" value="login">
+    <input type="hidden" name="action" value="register">
     <br>
 
     <!-- Already-->

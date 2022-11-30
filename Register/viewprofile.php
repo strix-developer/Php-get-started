@@ -1,9 +1,8 @@
 <?php
 session_start();
-realpath(__DIR__ . "/Bootsstrap/App.php");
-require __DIR__ . "/Core/Support/Layout/header.php";
+require __DIR__ . "/Bootsstrap/App.php";
+require file_header();
 ?>
-
 
 <body>
     <section style="background-color: #eee;">
@@ -17,11 +16,15 @@ require __DIR__ . "/Core/Support/Layout/header.php";
                             <div class="d-flex justify-content-center mb-2">
                                 <button type="button" class="btn btn-outline-dark ms-1">Follow</button>
                                 <button type="button" class="btn btn-outline-dark ms-1">Message</button>
+                                <a href="dashboard.php" class="btn btn-outline-dark ms-1">Back</button></a>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-8">
+                    <?php $users = json_decode(file_get_contents(__DIR__ . "/database/profile.json"), true);
+                    foreach ($users as $_POST);
+                    ?>
                     <div class="card mb-4">
                         <div class="card-body">
                             <div class="row">
@@ -74,7 +77,7 @@ require __DIR__ . "/Core/Support/Layout/header.php";
                                     <p class="mb-0">Age</p>
                                 </div>
                                 <div class="col-sm-9">
-                                    <p class="text-muted mb-0"><?Php echo $_SESSION['age']; ?></p>
+                                    <p class="text-muted mb-0"><?Php echo $_POST["age"]; ?></p>
                                 </div>
                             </div>
                             <hr>

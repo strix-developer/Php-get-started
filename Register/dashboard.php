@@ -10,15 +10,15 @@ require __DIR__ . "/Core/Support/Layout/header.php";
         <div class="col-sm-12 text-center p-2">
             <h2 class=" bg-info text-white rounded-pill img-thumbnail">Your signup information</h2>
             <div class="col-lg-4">
-                    <div class="card mb-4">
-                        <div class="card-body text-center">
-                            <img src="images/profile.png" alt="avatar"  class="rounded-circle img-fluid col-sm-8">
-                            <h5 class="my-3">Welcome <?Php echo $_SESSION['name']; ?></h5>
-                            <div class="d-flex justify-content-center mb-2">
-                            </div>
+                <div class="card mb-4">
+                    <div class="card-body text-center">
+                        <img src="images/profile.png" alt="avatar" class="rounded-circle img-fluid col-sm-8">
+                        <h5 class="my-3">Welcome <?Php echo $_SESSION['name']; ?></h5>
+                        <div class="d-flex justify-content-center mb-2">
                         </div>
                     </div>
                 </div>
+            </div>
             <!--Table satrt-->
             <table class="table table-bordered ">
                 <thead>
@@ -30,9 +30,9 @@ require __DIR__ . "/Core/Support/Layout/header.php";
                         <th>Password</th>
                         <th>Roles</th>
                         <th>ID</th>
-                        <th>Edit</th>
-                        <th>View profile</th>
-
+                        <th></th>
+                        <th></th>
+                        <th></th>
                     </tr>
                 </thead>
 
@@ -68,6 +68,9 @@ require __DIR__ . "/Core/Support/Layout/header.php";
                         <td>
                             <a href="viewprofile.php"><input type="button" class="navbar-dark bg-dark text-info img-thumbnail table-light text-center " value="View profile"></a>
                         </td>
+                        <td>
+                                        <a href="delete.php"><input type="button" class="navbar-dark bg-danger text-light img-thumbnail table-light text-center" value="Delete profile"></a>
+                                    </td>
                     </tr>
 
                     <?php
@@ -105,6 +108,9 @@ require __DIR__ . "/Core/Support/Layout/header.php";
                                     </td>
                                     <td>
                                         <a href="viewprofile.php"><input type="button" class="navbar-dark bg-dark text-info img-thumbnail table-light text-center" value="View profile"></a>
+                                    </td>
+                                    <td>
+                                        <a href="delete.php"><input type="button" class="navbar-dark bg-danger text-light img-thumbnail table-light text-center" value="Delete profile"></a>
                                     </td>
                                 </tr>
                 <?php
