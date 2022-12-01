@@ -11,7 +11,7 @@
         elseif (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
             echo "<h4 class='error'>You used an invalid e-mail!</h4>";
         } else {
-            //Decoding json file data using json_decode
+            //Read json file and decode json to associative array
             $data = json_decode(file_get_contents(__DIR__ . "/../../../database/user.json"), true);
             //array_filter Iterates over each value in the array passing them to the callback function.
             $filter = array_filter($data, function ($data) {

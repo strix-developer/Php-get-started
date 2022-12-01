@@ -27,7 +27,7 @@
                 'Password' => $pass,
                 'Role' => $role,
             );
-            //converting file into string and then decoding using json_decode
+            //Read json file and decode json to associative array
             $data = json_decode(file_get_contents(__DIR__ . "/../../../database/user.json"), true);
 
             // storing data using ID
@@ -48,10 +48,10 @@
             if ($_POST['email'] == $dataid['E-mail']) {
                 echo "<h4 class='error'>Email is already in use!</h4>";
             } else {
-                //encoding the decode file using json_encode
+                //encoding array to json
                 $encode = json_encode($data, JSON_PRETTY_PRINT);
 
-                //write data to json file
+                //saving data to file
                 if (file_put_contents(__DIR__ . "/../../../database/user.json", $encode)) {
                     echo "<p class='success'>user successfully registered</p>";
                 }

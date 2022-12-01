@@ -23,14 +23,14 @@
  <div class="container mt-3 text-center bg-light">
      <!--div for heading-->
      <div class="container-fluid p-2 bg-dark text-center text-white">
-         <h2>Your Sign up Information</h2>
+         <h2>Profile Information</h2>
      </div>
 
      <!--table for data-->
      <table class="table table-striped">
          <thead>
              <!--Row for table headings-->
-             <tr class="table-danger">
+             <tr class="table-success font-monospace">
                  <th>First Name</th>
                  <th>Last Name</th>
                  <th>Phone Number</th>
@@ -48,9 +48,8 @@
              <?php
                 if ($_SESSION['role'] != 'admin') { // users login 
                 ?>
-
                  <!--Row for table data-->
-                 <tr>
+                 <tr class="font-monospace">
                      <td><?php echo $_SESSION['name']; ?> </td>
                      <td><?php echo $_SESSION['lname']; ?></td>
                      <td><?php echo $_SESSION['number']; ?></td>
@@ -64,7 +63,9 @@
                      <td>
                          <a href="viewprofile.php"> <button type="button" class="btn btn-success">View Profile</button></a>
                      </td>
-                     <td></td>
+                     <td>
+                         <a href=""> <button type="button" class="btn btn-danger">Delete Profile</button></a>
+                     </td>
                  </tr>
                  <?php  } else {      //admin login and to show all users data
                     if ($_SESSION['role'] == 'admin') {
@@ -89,7 +90,7 @@
                                      <a href="viewprofile.php"> <button type="button" class="btn btn-success">View Profile</button></a>
                                  </td>
                                  <td>
-                                     <a href=""> <button type="button" class="btn btn-success">Delete Profile</button></a>
+                                     <a href=""> <button type="button" class="btn btn-danger">Delete Profile</button></a>
                                  </td>
                              </tr>
              <?php

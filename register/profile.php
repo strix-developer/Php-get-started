@@ -8,20 +8,20 @@
   <div class="container-fluid col-sm-5 mt-3 p-2 bg-light text-center rounded">
       <!--div for heading-->
       <div class="container-fluid p-2 bg-dark text-center text-white rounded">
-          <h2>Edit your Profile</h2>
+          <h2>Edit Profile</h2>
       </div>
       <!--form start-->
-      <form action="" method="POST" id="form">
+      <form action="" method="POST" id="form" class="font-monospace">
           <!--For Name field-->
           <div class="mb-3 mt-3 text-start">
               <label for="name">Name:</label>
-              <input type="text" class="form-control" id="name" pattern="[A-Za-z]{4,20}" value="<?php echo $_SESSION['name']; ?>" name="name">
+              <input type="text" class="form-control" id="name" pattern="[A-Za-z]{1,20}" value="<?php echo $_SESSION['name']; ?>" name="name">
           </div>
 
           <!--For last name field-->
           <div class="mb-3 mt-3 text-start">
               <label for="last name">Last Name:</label>
-              <input type="text" class="form-control" id="lname" pattern="[A-Za-z]{4,20}" value="<?php echo $_SESSION['lname']; ?>" name="lname">
+              <input type="text" class="form-control" id="lname" pattern="[A-Za-z]{1,20}" value="<?php echo $_SESSION['lname']; ?>" name="lname">
           </div>
 
           <!--For Email field-->

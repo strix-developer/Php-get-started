@@ -36,14 +36,14 @@
             'ID' => $id,
         );
 
-        //converting file into string and then decoding by json_decode
+        //Read json file and decode json to associative array
         $data = json_decode(file_get_contents(__DIR__ . '/../../../database/profile.json'), true);
         $data[] = $array;
 
-        //encoding the decode data
+        //encoding array to json
         $formdata = json_encode($data, JSON_PRETTY_PRINT);
 
-        //storing data to json file
+        //storing data to file
         if (file_put_contents(__DIR__ . "/../../../database/profile.json", $formdata)) {
             echo "<p class='success'>Profile Successfully Updated!</p>";
         }

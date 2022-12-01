@@ -5,7 +5,7 @@
     require_once file_header();
     ?>
 
- <div class="container col-sm-3 mt-3 p-5 bg-success text-center rounded">
+ <div class="container col-sm-3 mt-3 p-5 bg-success text-center rounded font-monospace">
      <!--div for heading text-->
      <div class="container-fluid p-2 bg-dark text-center text-white text-capitalize rounded">
          <h2>Please log in</h2>

@@ -10,17 +10,17 @@
        </div>
 
        <!--form start-->
-       <form action="" method="POST" id="form">
+       <form action="" method="POST" id="form" class="font-monospace">
            <!--For name field-->
            <div class="mb-3 mt-3 text-start">
                <label for="name">Name:</label>
-               <input type="text" class="form-control" id="name" pattern="[A-Za-z]{0,20}" placeholder="Enter your name" name="name">
+               <input type="text" class="form-control" id="name" pattern="[A-Za-z]{1,20}" placeholder="Enter your name" name="name">
            </div>
 
            <!--For last name field-->
            <div class="mb-3 mt-3 text-start">
                <label for="last name">Last Name:</label>
-               <input type="text" class="form-control" id="lname" pattern="[A-Za-z]{0,20}" placeholder="Enter Last name" name="lname">
+               <input type="text" class="form-control" id="lname" pattern="[A-Za-z]{1,20}" placeholder="Enter Last name" name="lname">
            </div>
 
            <!--For Email field-->
@@ -32,7 +32,7 @@
            <!--For Phone number field-->
            <div class="mb-3 mt-3 text-start">
                <label for="phone number">Phone Number:</label>
-               <input type="number" class="form-control" id="number" placeholder="Enter Phone Number" name="number">
+               <input type="number" class="form-control" id="number" placeholder="Enter Phone Number" name="number" min="0" maxlength="10" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);">
            </div>
 
            <!--For Password field-->

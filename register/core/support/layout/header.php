@@ -12,7 +12,7 @@
 
 <body>
     <header>
-        <div class="container-fluid bg-dark rounded ">
+        <div class="container-fluid bg-dark rounded">
             <div class="row">
                 <!--Logo div-->
                 <div class="col-sm-1 pt-2 bg-dark rounded text-center">
@@ -57,7 +57,7 @@
                         echo "<h5>Welcome $_SESSION[name]&nbsp"
                     ?>
                         <a href="logout.php">
-                            <button type="button" class="btn btn-success">
+                            <button type="button" class="btn btn-danger font-monospace">
                                 Logout
                             </button>
                         </a>
@@ -66,9 +66,9 @@
                     } else {
                     ?>
                         <!--Sign in options div-->
-                        <div class="dropdown">
+                        <div class="dropdown font-monospace">
                             <button type="button" class="btn btn-success btn-lg dropdown-toggle" data-bs-toggle="dropdown">
-                                Sign in
+                                Sign In
                             </button>
                             <ul class="dropdown-menu">
                                 <li><a class="dropdown-item" href="login.php">Login</a></li>
