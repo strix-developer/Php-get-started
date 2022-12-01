@@ -1,0 +1,214 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.container {
+    width: 100%;
+    height: auto;
+}
+
+header {
+    width: 100%;
+    height: auto;
+}
+
+.header1 {
+    width: 100%;
+    height: 50px;
+    background-color: rgb(99, 138, 99);
+    text-align: center;
+    padding: 12px
+}
+
+.header2 {
+    width: 16%;
+    font-size: xx-large;
+    text-align: center;
+    border: solid 7px;
+    margin-left: 42%;
+    margin-top: 40px;
+}
+
+.header2 h2 a {
+    text-decoration: none;
+    color: black;
+}
+
+.header3 {
+    width: 100%;
+    margin-top: 40px;
+}
+
+.header3 ul {
+    display: flex;
+    padding-left: 5%;
+}
+
+.header3 ul li {
+    margin: 25px;
+    list-style: none;
+
+}
+
+.header3 ul li a {
+    text-decoration: none;
+    color: gray;
+}
+
+.header3 a:hover {
+    color: blueviolet;
+}
+
+.section1 {
+    width: 80%;
+    height: 700px;
+    margin-left: 15%;
+    background-image: url("images/photo-1527904219733-fddc74937915-6.jpg");
+    background-size: 70% 700px;
+    background-repeat: no-repeat;
+    padding-left: 32%;
+    padding-top: 10%;
+}
+
+input[type=button] {
+    background-color: transparent;
+    color: black;
+    padding: 10px 40px;
+    border: solid 4px;
+    cursor: pointer;
+    font-size: larger;
+    font-weight: bold;
+}
+
+.section2 {
+    width: 50%;
+    height: 2450px;
+    margin-left: 25%;
+    text-align: center;
+    padding-top: 50px;
+    border-bottom: solid 4px;
+}
+
+.section2one {
+    width: 40%;
+    float: left;
+    height: 400px;
+    margin-top: 50px;
+    padding-top: 50px;
+}
+
+.section2two {
+    width: 50%;
+    float: left;
+    height: 400px;
+    margin-top: 50px;
+    background-image: url("images/86cb94_7b8abc8e5056446384763653e49e60fef000.webp");
+    background-size: 100% 400px;
+    margin-left: 10%;
+}
+
+.section2three {
+    width: 50%;
+    float: left;
+    height: 400px;
+    background-image: url("images/GettyImages-818735824.jpg");
+    background-size: 100% 400px;
+}
+
+.section2four {
+    width: 40%;
+    float: left;
+    height: 400px;
+    margin-left: 10%;
+    padding-top: 100px;
+}
+
+.section2five {
+    width: 100%;
+    float: left;
+    margin-top: 80px;
+}
+
+.section2six {
+    width: 100%;
+    height: 370px;
+    float: left;
+    background-image: url("images/alex-loup-393839-unsplash\(hand\)2.jpg");
+    background-size: 40% 300px;
+    background-repeat: no-repeat;
+    margin-top: 50px;
+}
+
+.section2six input[type=button] {
+    background-color: transparent;
+    color: black;
+    padding: 10px 40px;
+    border: solid 4px;
+    cursor: pointer;
+    font-size: larger;
+    font-weight: bold;
+    float: left;
+    margin-left: 30%;
+    margin-top: 10%;
+}
+
+.section2seven {
+    width: 100%;
+    height: 600px;
+    float: left;
+}
+
+footer {
+    width: 50%;
+    height: auto;
+    margin-left: 25%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+footer ul {
+    display: flex;
+}
+
+footer ul li {
+    list-style: none;
+    margin: 40px;
+    font-size: larger;
+    font-weight: bold;
+    color: rgb(99, 138, 99);
+}
+
+footer ul li ul {
+    display: inline;
+}
+
+footer ul li ul li {
+    margin: 20px;
+    font-size: medium;
+    color: gray;
+    text-align: left;
+}
+
+footer input[type=text] {
+    padding: 5px;
+    border: solid 5px;
+    border-color: rgb(99, 138, 99);
+}
+
+footer input[type=submit] {
+    padding: 5px 50px;
+    background-color: rgb(99, 138, 99);
+}
+
+footer a {
+    text-decoration: none;
+    color: gray;
+
+}
+
+footer a:hover {
+    color: blueviolet;
+}
