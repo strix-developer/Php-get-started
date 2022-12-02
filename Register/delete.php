@@ -1,13 +1,11 @@
 <?php
  session_start();
-	$id = $_SESSION['ID'];
+	$index = $_GET['index'];
  
-	$getdata = json_decode(file_get_contents('user.json'),true);
+	$users = json_decode(file_get_contents('/database/user.json'),true);
 
-	unset($getdata[$id]);
+	unset($users[$index]);
  
-	$user = json_encode($getdata, JSON_PRETTY_PRINT);
-	file_put_contents('user.json', $user);
-  header ("location: signup.php");
-
-?>
+	$users = json_encode($users, JSON_PRETTY_PRINT);
+	file_put_contents('/database/user.json', $users);
+header('location: index.php');

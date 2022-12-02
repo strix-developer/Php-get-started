@@ -38,9 +38,9 @@ if (isset($_POST['action'])) {
         };
 
         $decode[] = $array;
-        $encode = json_encode($decode, JSON_PRETTY_PRINT);
+        $decode = json_encode($decode, JSON_PRETTY_PRINT);
 
-        if (file_put_contents(__DIR__ . "/../../../database/user.json", $encode)) {
+        if (file_put_contents(__DIR__ . "/../../../database/user.json", $decode)) {
             echo "<h4 class=' bg-info p-2 text-white rounded-end rounded-start text-center'>you are success fully sign in .</h4>";
         }
         header("location: ./login.php");
