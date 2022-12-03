@@ -33,7 +33,7 @@
 
          <!--For Submit field-->
          <div class="mb-3 mt-3 text-end">
-             <input type="submit" class="btn btn-dark" value="Login" name="login">
+             <input type="submit" class="btn btn-dark" value="Login" name="submit">
              <input type="hidden" name="action" value="login">
          </div>
      </form>

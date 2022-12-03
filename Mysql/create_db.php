@@ -15,7 +15,7 @@ if (!$conn) {
 }
 
 //Create a db
-$sql = "CREATE DATABASE anil092";
+$sql = "CREATE DATABASE practice";
 $result = mysqli_query($conn, $sql);
 
 //Check for the database creation successful
