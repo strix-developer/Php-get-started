@@ -253,7 +253,7 @@ foreach ($arr as $i){
    echo "<br>";
 }
 echo "<br>";
-// here aresome examples of foreach loop
+// here are some examples of foreach loop
 $character=array(
  "this is my class"
 );
@@ -263,7 +263,7 @@ foreach($character as $y){
 }
 
 echo "<br>";
-
+//
 $section=array("section"=>"A","name"=>"prince","class"=>"5th","roll no"=>"24");
 foreach($section as $key => $value){
     echo $key . " : " . $value . "<br>";}
@@ -272,7 +272,7 @@ foreach($section1 as $key => $value){
     echo $key . " : " . $value . "<br>";
 }
 echo "<br>";
-
+//
 $capitals=array(
     "Himalchal"=>"shimla",
     "J&k"=>"kashmir",
@@ -284,5 +284,38 @@ $capitals=array(
         echo "the capital of $state is => $capital" . "<br>";
     }
  
+    echo "<br>";
+//
+    $sum=3485;
+    $arr=array(3,4,5,6,7);
+    foreach($arr as $value){
+        $sum= $sum/$value;}
+        echo "the sum of element is =>" .$sum ;
+echo "<br>";
+$number = array( 'one', 'three', 'two', 'four', 'five' );
+foreach( $number as $value ){
+if( $value == 'three' ){
+echo "Number three found in the second item of array!";
+}
+}
+echo "<br>";
+// even or odd numbers with for loop
+$even="";
+$odd="";
+$number= array(1,2,3,4,5,6);
+foreach($number as $value)
+{
+if($value %2==0)
+{
+$even=$even . "  ". $value;
+}
+else
+{
+$odd=$odd . "  ".$value;
+}
+}
+echo"The even elements are =>" .$even . "<br>";
+echo "The odd elements are =>".$odd ;
+
 
 ?>  
