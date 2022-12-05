@@ -46,14 +46,38 @@
                 <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
             </div>
 
-            <!--For Phone number field-->
+            <!--For Password field-->
             <div class="mb-3 mt-3 text-start">
-                <label for="phone_number">Phone Number:</label>
-                <input type="number" class="form-control" id="phone_number"  name="phone_number" placeholder="Enter Phone Number" min="0" maxlength="10" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);">
+                <label for="password">Password:</label>
+                <input type="password" class="form-control" id="password" placeholder="Enter password" name="password">
             </div>
 
-            <!--Submit field-->
+      <!--For Phone number field-->
+      <div class="mb-3 mt-3 text-start">
+               <label for="phone_number">Phone Number:</label>
+               <input type="number" class="form-control" id="phone_number" placeholder="Enter Phone Number" name="phone_number" min="0" maxlength="10" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);">
+           </div>
+
+            <!--For Role field-->
+            <div class="mb-3 mt-3 text-start">
+                <label for="role">Role:</label>
+                <select id="role" name="role">
+                    <option value="admin">Admin</option>
+                    <option value="guest">Guest</option>
+                    <option value="user">User</option>
+                </select>
+            </div>
+
+            <!--div for file upload-->
+            <div class="form-group mb-3 mt-3 text-start">
+                <input type="file" name="file" required>
+            </div>
+
+            <!--For Remember me and Submit field-->
             <div class="mb-3 mt-3 text-end">
+                <label class="form-check-label">
+                    <input class="form-check-input" type="checkbox" name="remember"> Remember me
+                </label>
                 <input type="submit" class="btn btn-dark" id="submit" name="submit">
             </div>
         </form>

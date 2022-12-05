@@ -4,7 +4,10 @@
         $fname = $_REQUEST['first_name'];
         $lname = $_REQUEST['last_name'];
         $email = $_REQUEST['email'];
+        $pswd = $_REQUEST['password'];
         $pnumber = $_REQUEST['phone_number'];
+        $role = $_REQUEST['role'];
+        $file = $_REQUEST['file'];
 
         //Connecting to the database
         $servername = "localhost";
@@ -21,8 +24,8 @@
         }
 
         //sql query to be executed
-        $sql = "INSERT INTO `users` (`first_name`, `last_name`, `email`, `phone_number`)
-        VALUES ('$fname', '$lname', '$email', '$pnumber')";
+        $sql = "INSERT INTO `users` (`First Name`, `Last Name`, `Email`, `Password`, `Phone Number`, `Role`, `File`)
+        VALUES ('$fname', '$lname', '$email', '$pswd', '$pnumber','$role','$file')";
 
         $result = mysqli_query($conn, $sql);
 
