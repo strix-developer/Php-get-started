@@ -14,7 +14,7 @@
     <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">
-                <img src="avatar.png" alt="Logo" style="width:40px;" class="rounded-pill">
+                <img src="images/2441.jpg" alt="Logo" style="width:50px;" class="rounded-pill">
             </a>
         </div>
     </nav>
@@ -27,7 +27,7 @@
         </div>
 
         <!--form start-->
-        <form action="insert_form.php" method="POST" id="form" class="font-monospace">
+        <form action="insert_form.php" method="POST" id="form" enctype="multipart/form-data" class="font-monospace">
             <!--For name field-->
             <div class="mb-3 mt-3 text-start">
                 <label for="first_name">First Name:</label>
@@ -52,11 +52,11 @@
                 <input type="password" class="form-control" id="password" placeholder="Enter password" name="password">
             </div>
 
-      <!--For Phone number field-->
-      <div class="mb-3 mt-3 text-start">
-               <label for="phone_number">Phone Number:</label>
-               <input type="number" class="form-control" id="phone_number" placeholder="Enter Phone Number" name="phone_number" min="0" maxlength="10" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);">
-           </div>
+            <!--For Phone number field-->
+            <div class="mb-3 mt-3 text-start">
+                <label for="phone_number">Phone Number:</label>
+                <input type="number" class="form-control" id="phone_number" placeholder="Enter Phone Number" name="phone_number" min="0" maxlength="10" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);">
+            </div>
 
             <!--For Role field-->
             <div class="mb-3 mt-3 text-start">
@@ -70,7 +70,7 @@
 
             <!--div for file upload-->
             <div class="form-group mb-3 mt-3 text-start">
-                <input type="file" name="file" required>
+                <input type="file" name="image" id="image" accept=".jpg, .jpeg, .png" value="" required>
             </div>
 
             <!--For Remember me and Submit field-->
@@ -80,6 +80,14 @@
                 </label>
                 <input type="submit" class="btn btn-dark" id="submit" name="submit">
             </div>
+
+            <!--For Log in field-->
+            <div class="mb-3 mt-3 text-end">
+                <label for="user">Adready have account/</label>
+                <a href="create_login.php"> <input class="btn btn-dark" type="button" value="Log in"></a>
+                <input type="hidden" name="action" value="register">
+            </div>
+
         </form>
         <!--form end-->
     </div>
