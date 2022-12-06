@@ -35,9 +35,9 @@
                     $newImageName .= '.' . $imageExtension;
                     move_uploaded_file($tmpName, 'upload/' . $newImageName);
 
-                    //sql query to be executed
+                    //sql query to be executed for inserting the data
                     $sql = "INSERT INTO `users` (`First Name`, `Last Name`, `Email`, `Password`, `Phone Number`, `Role`, `File`)
-        VALUES ('$fname', '$lname', '$email', '$pass', '$pnumber','$role','$newImageName')";
+                    VALUES ('$fname', '$lname', '$email', '$pass', '$pnumber','$role','$newImageName')";
 
                     $result = mysqli_query($conn, $sql);
 
