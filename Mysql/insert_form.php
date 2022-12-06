@@ -8,51 +8,45 @@
         $pnumber = $_REQUEST['phone_number'];
         $role = $_REQUEST['role'];
 
-        //Connecting to the database
-        $servername = "localhost";
-        $username = "root";
-        $password = "";
-        $database = "practice";
+        //Connecting to server
+        extract($_POST);
+        include("create_connection.php");
+        $sql = mysqli_query($conn, "SELECT * FROM users where Email='$email'");
+        if (mysqli_num_rows($sql) > 0) {
+            echo "Email Id Already Exists";
+            exit;
+        } else {
 
-        //Create a connection
-        $conn = mysqli_connect($servername, $username, $password, $database);
+            // check if the user has clicked the button "UPLOAD" 
+            if (isset($_POST['submit'])) {
+                $fileName = $_FILES["image"]["name"];
+                $fileSize = $_FILES["image"]["size"];
+                $tmpName = $_FILES["image"]["tmp_name"];
 
-        // Die if connection was not successful
-        if (!$conn) {
-            die("Connection failed: " . mysqli_connect_error());
-        }
+                $validImageExtension = ['jpg', 'jpeg', 'png'];
+                $imageExtension = explode('.', $fileName);
+                $imageExtension = strtolower(end($imageExtension));
+                if (!in_array($imageExtension, $validImageExtension)) {
+                    echo "<script> alert('Invalid Image Extension'); </script>";
+                } elseif ($fileSize > 1000000) {
+                    echo "<script> alert('Image Size Is Too Large'); </script>";
+                } else {
+                    $newImageName = uniqid();
+                    $newImageName .= '.' . $imageExtension;
+                    move_uploaded_file($tmpName, 'upload/' . $newImageName);
 
-        // check if the user has clicked the button "UPLOAD" 
-
-        if (isset($_POST['submit'])) {
-
-            $fileName = $_FILES["image"]["name"];
-            $fileSize = $_FILES["image"]["size"];
-            $tmpName = $_FILES["image"]["tmp_name"];
-
-            $validImageExtension = ['jpg', 'jpeg', 'png'];
-            $imageExtension = explode('.', $fileName);
-            $imageExtension = strtolower(end($imageExtension));
-            if (!in_array($imageExtension, $validImageExtension)) {
-                echo "<script> alert('Invalid Image Extension'); </script>";
-            } elseif ($fileSize > 1000000) {
-                echo "<script> alert('Image Size Is Too Large'); </script>";
-            } else {
-                $newImageName = uniqid();
-                $newImageName .= '.' . $imageExtension;
-                move_uploaded_file($tmpName, 'upload/' . $newImageName);
-
-                //sql query to be executed
-                $sql = "INSERT INTO `users` (`First Name`, `Last Name`, `Email`, `Password`, `Phone Number`, `Role`, `File`)
+                    //sql query to be executed
+                    $sql = "INSERT INTO `users` (`First Name`, `Last Name`, `Email`, `Password`, `Phone Number`, `Role`, `File`)
         VALUES ('$fname', '$lname', '$email', '$pass', '$pnumber','$role','$newImageName')";
 
-                $result = mysqli_query($conn, $sql);
+                    $result = mysqli_query($conn, $sql);
 
-                if ($result) {
-                    echo '<strong>Success!</strong>Your entry has been submitted successfully!';
-                    header("Location: create_login.php?status=success");
-                } else {
-                    echo "The record was not submitted successfully because of this error --->" . mysqli_error($conn);
+                    if ($result) {
+                        echo '<strong>Success!</strong>Your entry has been submitted successfully!';
+                        header("Location: create_login.php?status=success");
+                    } else {
+                        echo "The record was not submitted successfully because of this error --->" . mysqli_error($conn);
+                    }
                 }
             }
         }

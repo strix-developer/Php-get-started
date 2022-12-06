@@ -34,13 +34,13 @@ session_start();
             <!--For Email field-->
             <div class="mb-3 mt-3 text-start">
                 <label for="email">Email:</label>
-                <input type="email" class="form-control" id="email" placeholder="Enter your email" name="email">
+                <input type="email" class="form-control" id="email" placeholder="Enter your email" name="email" required>
             </div>
 
             <!--For last Password field-->
             <div class="mb-3 mt-3 text-start">
                 <label for="password">Password:</label>
-                <input type="password" class="form-control" id="pass" placeholder="Enter your password" name="pass">
+                <input type="password" class="form-control" id="pass" placeholder="Enter your password" name="pass" required>
             </div>
 
             <!--For Remember me field-->

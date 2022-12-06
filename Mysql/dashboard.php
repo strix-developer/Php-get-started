@@ -99,7 +99,7 @@ session_start();
                     <?php
                 } else {
                     if ($_SESSION['role'] == 'admin') { ?>
-                        <tr class="table-primary font-monospace">
+                        <tr class="table-danger font-monospace">
                             <th>ID</th>
                             <th>First Name</th>
                             <th>Last Name</th>
