@@ -48,7 +48,6 @@ session_start();
             </div>
         </div>
 
-
         <!--div for form data start-->
         <div class="container mt-3 text-center bg-body">
             <!--div for heading-->
