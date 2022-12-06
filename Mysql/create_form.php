@@ -85,7 +85,6 @@
             <div class="mb-3 mt-3 text-end">
                 <label for="user">Adready have account/</label>
                 <a href="create_login.php"> <input class="btn btn-dark" type="button" value="Log in"></a>
-                <input type="hidden" name="action" value="register">
             </div>
 
         </form>
