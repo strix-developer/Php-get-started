@@ -131,7 +131,7 @@ session_start();
                                     </a>
                                 </td>
                                 <td>
-                                    <a href="deleteprofile.php">
+                                    <a href="deleteprofile.php?ID=<?php echo $row['ID']; ?>">
                                         <button type="button" class="btn btn-danger">Delete</button>
                                     </a>
                                 </td>
