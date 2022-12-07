@@ -11,7 +11,7 @@
 
 <body>
     <!--navbar div-->
-    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark text-white">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">
                 <img src="images/2441.jpg" alt="Logo" style="width:50px;" class="rounded-pill">
@@ -55,7 +55,10 @@
             <!--For Phone number field-->
             <div class="mb-3 mt-3 text-start">
                 <label for="phone_number">Phone Number:</label>
-                <input type="number" class="form-control" id="phone_number" placeholder="Enter Phone Number" name="phone_number" min="0" maxlength="10" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);">
+                <input type="number" class="form-control" id="phone_number" placeholder="
+                Enter Phone Number" name="phone_number" min="0" maxlength="10" oninput="
+                javascript: if (this.value.length > this.maxLength) this.value = 
+                this.value.slice(0, this.maxLength);">
             </div>
 
             <!--For Role field-->

@@ -107,6 +107,8 @@ session_start();
                             <th>Phone Number</th>
                             <th>Role</th>
                             <th>Image</th>
+                            <th>Update Profile</th>
+                            <th>Delete Profile</th>
                         </tr>
                         <?php
                         $i = 1;
@@ -123,6 +125,12 @@ session_start();
                                 <td><?php echo $row['Phone Number']; ?></td>
                                 <td><?php echo $row['Role']; ?> </td>
                                 <td><?php echo $row['File']; ?> </td>
+                                <td>
+                                    <a href="updateprofile.php?ID=<?php echo $row['ID']; ?>"> <button type="button" class="btn btn-success">Update Profile</button></a>
+                                </td>
+                                <td>
+                                    <a href="deleteprofile.php"> <button type="button" class="btn btn-danger">Delete Profile</button></a>
+                                </td>
                             </tr>
                         <?php endforeach; ?>
                 <?php
