@@ -2,20 +2,20 @@
 $servername = "localhost";
 $username = "root";
 $password = "";
-$connect = mysqli_connect($servername,$username,$password);
-if(!$connect){
-     die("Fail to connect".mysqli_connect_error($connect)) ;
+$conn = mysqli_connect($servername,$username,$password);
+if(!$conn){
+     die("Fail to connect".mysqli_connect_error($conn)) ;
 }
 else{
     echo "connected successfully<br>";
 }
-$sql = "CREATE DATABASE Himanshu";
-$result = mysqli_query($connect,$sql);
+$sql = "CREATE DATABASE practice";
+$result = mysqli_query($conn,$sql);
 if($result){
     echo "database created";
 }
 else{
-    echo "database not created ". mysqli_error($connect);
+    echo "database not created ". mysqli_error($conn);
 }
 
 ?>

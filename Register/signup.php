@@ -12,7 +12,7 @@ require file_header();
     <!-- Name-->
     <div class="mb-3 mt-3">
       <label for="Name">Name:</label>
-      <input type="text" class="form-control" id="name" placeholder="Enter Name" name="name" >
+      <input type="text" class="form-control" id="name" placeholder="Enter Name" name="name">
     </div>
 
     <!-- Last Name-->

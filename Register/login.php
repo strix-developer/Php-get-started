@@ -1,9 +1,4 @@
-<?php
-session_start();
-require_once __DIR__ . "/Core/Support/action/logininfo.php";
-require __DIR__ . "/Bootsstrap/App.php";
-require file_header();
-?>
+
 <!--Log in-->
 <div class="container col-sm-6 mt-3 bg-info p-2">
     <h2 class=" bg-info text-white rounded-pill img-thumbnail text-center">Please Log in</h2>
