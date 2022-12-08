@@ -122,13 +122,14 @@ if (isset($_POST['submit'])) {
     $old_image = $_POST['old_image'];
 
     if (isset($_FILES['image']['name']) && $_FILES['image']['name'] != '') {
+        $old_image = $_POST['old_image'];
         $image_size = $_FILES["image"]["size"];
         $tmp_name = $_FILES["image"]["tmp_name"];
         $image_type = $_FILES['image']['type'];
         $image_name = $_FILES["image"]["name"];
 
-        unlink("/uplaod/$old_image");
-        move_uploaded_file($tmp_name, "/upload/$image_name");
+        unlink("upload/$old_image");
+        move_uploaded_file($tmp_name, "upload/$image_name");
     } else {
         $image_name = $old_image;
     }
