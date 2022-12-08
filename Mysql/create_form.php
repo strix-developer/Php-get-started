@@ -55,8 +55,8 @@
             <!--For Phone number field-->
             <div class="mb-3 mt-3 text-start">
                 <label for="phone_number">Phone Number:</label>
-                <input type="number" class="form-control" id="phone_number" placeholder="
-                Enter Phone Number" name="phone_number" min="0" maxlength="10" oninput="
+                <input type="number" class="form-control" id="
+                phone_number" placeholder="Enter Phone Number" name="phone_number" min="0" maxlength="10" oninput="
                 javascript: if (this.value.length > this.maxLength) this.value = 
                 this.value.slice(0, this.maxLength);">
             </div>
