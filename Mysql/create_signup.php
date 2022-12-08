@@ -27,7 +27,7 @@
         </div>
 
         <!--form start-->
-        <form action="insert_form.php" method="POST" id="form" enctype="multipart/form-data" class="font-monospace">
+        <form action="insert_signup.php" method="POST" id="form" enctype="multipart/form-data" class="font-monospace">
             <!--For name field-->
             <div class="mb-3 mt-3 text-start">
                 <label for="first_name">First Name:</label>

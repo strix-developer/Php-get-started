@@ -55,7 +55,7 @@ session_start();
                 <input type="submit" class="btn btn-dark" value="Login" name="submit">
             </div>
 
-            <div class="mb-3 mt-3 text-end">Don't have an account? <a href="create_form.php">
+            <div class="mb-3 mt-3 text-end">Don't have an account? <a href="create_signup.php">
                     <input class="btn btn-dark" type="button" value="Register here"></a>
             </div>
         </form>
