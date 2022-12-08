@@ -101,7 +101,7 @@
                      </h4>
                      <div class="d-flex justify-content-center mb-2">
                          <a href="edit_profile.php" class="btn btn-outline-dark ms-1">Edit</button></a>
-                         <a href="view_profile.php" class="btn btn-outline-dark ms-1">View</button></a>
+                         <a href="#" class="btn btn-outline-dark ms-1">View</button></a>
                          <a href="delete_profile.php" class="btn btn-outline-dark ms-1">Delete</button></a>
                          <a href="form.php" class="btn btn-outline-dark ms-1">Logout</button></a>
                      </div>
@@ -186,9 +186,6 @@
                                      <td><?php echo $row['File']; ?> </td>
                                      <td>
                                          <a href="edit_profile.php"><input type="button" class="navbar-dark bg-dark text-info img-thumbnail table-light text-center " value="Edit profile"></a>
-                                     </td>
-                                     <td>
-                                         <a href="view_profile.php"><input type="button" class="navbar-dark bg-dark text-info img-thumbnail table-light text-center " value="View profile"></a>
                                      </td>
                                      <td>
                                          <a href="delete_profile.php"><input type="button" class="navbar-dark bg-danger text-light img-thumbnail table-light text-center" value="Delete profile"></a>
