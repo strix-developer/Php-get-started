@@ -58,10 +58,10 @@
                      <td><?php echo $_SESSION['role']; ?> </td>
                      <td><?php echo $_SESSION['ID']; ?> </td>
                      <td>
-                         <a href="profile.php"> <button type="button" class="btn btn-success">Edit Profile</button></a>
+                         <a href="profile.php?ID=<?php echo $_SESSION['ID']; ?>"> <button type="button" class="btn btn-success">Edit Profile</button></a>
                      </td>
                      <td>
-                         <a href="viewprofile.php"> <button type="button" class="btn btn-success">View Profile</button></a>
+                         <a href="viewprofile.php?ID=<?php echo $_SESSION['ID']; ?>"> <button type="button" class="btn btn-success">View Profile</button></a>
                      </td>
                      <td>
                          <a href=""> <button type="button" class="btn btn-danger">Delete Profile</button></a>
@@ -84,10 +84,10 @@
                                  <td><?php echo $user['Role']; ?> </td>
                                  <td><?php echo $user['ID']; ?> </td>
                                  <td>
-                                     <a href="profile.php"> <button type="button" class="btn btn-success">Edit Profile</button></a>
+                                     <a href="profile.php?ID=<?php echo $user['ID']; ?>"> <button type="button" class="btn btn-success">Edit Profile</button></a>
                                  </td>
                                  <td>
-                                     <a href="viewprofile.php"> <button type="button" class="btn btn-success">View Profile</button></a>
+                                     <a href="viewprofile.php?ID=<?php echo $user['ID']; ?>"> <button type="button" class="btn btn-success">View Profile</button></a>
                                  </td>
                                  <td>
                                      <a href=""> <button type="button" class="btn btn-danger">Delete Profile</button></a>
