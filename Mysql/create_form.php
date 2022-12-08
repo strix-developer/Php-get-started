@@ -31,25 +31,25 @@
             <!--For name field-->
             <div class="mb-3 mt-3 text-start">
                 <label for="first_name">First Name:</label>
-                <input type="text" class="form-control" id="first_name" pattern="[A-Za-z]{1,20}" placeholder="Enter your First name" name="first_name">
+                <input type="text" class="form-control" id="first_name" pattern="[A-Za-z]{1,20}" placeholder="Enter your First name" name="first_name" required>
             </div>
 
             <!--For last name field-->
             <div class="mb-3 mt-3 text-start">
                 <label for="last_name">Last Name:</label>
-                <input type="text" class="form-control" id="last_name" pattern="[A-Za-z]{1,20}" placeholder="Enter Last name" name="last_name">
+                <input type="text" class="form-control" id="last_name" pattern="[A-Za-z]{1,20}" placeholder="Enter Last name" name="last_name" required>
             </div>
 
             <!--For Email field-->
             <div class="mb-3 mt-3 text-start">
                 <label for="email">Email:</label>
-                <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+                <input type="email" class="form-control" id="email" placeholder="Enter email" name="email" required>
             </div>
 
             <!--For Password field-->
             <div class="mb-3 mt-3 text-start">
                 <label for="password">Password:</label>
-                <input type="password" class="form-control" id="password" placeholder="Enter password" name="password">
+                <input type="password" class="form-control" id="password" placeholder="Enter password" name="password" required>
             </div>
 
             <!--For Phone number field-->
@@ -58,7 +58,7 @@
                 <input type="number" class="form-control" id="
                 phone_number" placeholder="Enter Phone Number" name="phone_number" min="0" maxlength="10" oninput="
                 javascript: if (this.value.length > this.maxLength) this.value = 
-                this.value.slice(0, this.maxLength);">
+                this.value.slice(0, this.maxLength);" required>
             </div>
 
             <!--For Role field-->
