@@ -35,7 +35,7 @@
                 } else {
                     $ImageName = uniqid();
                     $ImageName .= '.' . $imageExtension;
-                    move_uploaded_file($tmpName, 'Uploded data/' . $ImageName);
+                    move_uploaded_file($tmpName, 'Upload data/' . $ImageName);
 
                    
                     $sql = "INSERT INTO `signup` (`Name`, `Last Name`, `Email`, `Password`, `Phone Number`, `Role`, `File`)

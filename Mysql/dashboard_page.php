@@ -94,14 +94,15 @@
          <!--div for Profile photo start-->
          <div class=" col-sm-4 m-3 text-center">
              <div class="card ">
-                 <img src="Uploded data/<?php echo $row['File'] ?>" height="300px" width="300px" style="border-radius:50%;display:block;margin-left:auto;margin-right:auto;" />
+                 <img src="Upload data/<?php echo $row['File'] ?>" height="300px" width="300px" style="border-radius:50%;display:block;margin-left:auto;margin-right:auto;" />
                  <div class="card-body">
                      <h4 class="card-title">
                          <?php echo $_SESSION['name']; ?>&nbsp;
                      </h4>
                      <div class="d-flex justify-content-center mb-2">
-                         <button type="button" class="btn btn-outline-dark ms-1">Follow</button>
-                         <button type="button" class="btn btn-outline-dark ms-1">Message</button>
+                         <a href="edit_profile.php" class="btn btn-outline-dark ms-1">Edit</button></a>
+                         <a href="view_profile.php" class="btn btn-outline-dark ms-1">View</button></a>
+                         <a href="delete_profile.php" class="btn btn-outline-dark ms-1">Delete</button></a>
                          <a href="form.php" class="btn btn-outline-dark ms-1">Logout</button></a>
                      </div>
                  </div>

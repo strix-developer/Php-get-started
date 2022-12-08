@@ -32,6 +32,56 @@
  </head>
 
  <body>
+     <!--Header Started-->
+     <header>
+         <div class="container-fluid bg-dark rounded-pill">
+
+             <div class="row">
+                 <!--Png logo-->
+                 <div class="col-sm-1 p-3 bg-dark rounded-pill">
+                     <a class="navbar-brand p-3" href="index.php">
+                         <img src="./images/5796282.webp" alt="Logo" style="width:70px;" class="rounded-pill">
+                     </a>
+                 </div>
+
+                 <!--Name-->
+                 <div class="col-sm-2 p-3">
+                     <a class="navbar-brand text-white text-center" href="#">
+                         <h2>Himanshu Thakur</h2>
+                     </a>
+                 </div>
+
+                 <!--Menu-->
+                 <div class="col-sm-6 bg-info text-white rounded-pill img-thumbnail">
+                     <nav class="navbar navbar-expand-sm bg-dark text-white rounded-pill p-2 m-1 justify-content-center">
+                         <div class="col-sm-7 bg-dark text-white rounded-pill ">
+                             <ul class="nav nav-tabs  ">
+                                 <li class="nav-item ">
+                                     <a class="nav-link text-info" href="#">Menu</a>
+                                 </li>
+                                 <li class="nav-item">
+                                     <a class="nav-link text-info" href="#">About</a>
+                                 </li>
+                                 <li class="nav-item">
+                                     <a class="nav-link text-info" href="#">Contact</a>
+                                 </li>
+                                 <li class="nav-item">
+                                     <a class="nav-link text-info" href="#">Services</a>
+                                 </li>
+                                 <li class="nav-item">
+                                     <a class="nav-link text-info" href="#">Blog</a>
+                                 </li>
+                                 <li class="nav-item">
+                                     <a class="nav-link text-info" href="#">Reservation</a>
+                                 </li>
+                             </ul>
+                         </div>
+                     </nav>
+                 </div>
+             </div>
+         </div>
+     </header>
+     <!--Header close-->
 
      <!--Log in-->
      <div class="container col-sm-6 mt-3 bg-info p-2">
