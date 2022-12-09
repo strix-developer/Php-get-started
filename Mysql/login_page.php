@@ -13,6 +13,12 @@
      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
 
      <style>
+         body {
+             background-image: url('images/img.jpg');
+             background-repeat: no-repeat;
+            background-position: center center;
+         }
+
          button.btn.btn-light {
              float: right;
          }
@@ -34,27 +40,23 @@
  <body>
      <!--Header Started-->
      <header>
-         <div class="container-fluid bg-dark rounded-pill">
+         <div class="container-fluid bg-image rounded-pill">
 
              <div class="row">
                  <!--Png logo-->
-                 <div class="col-sm-1 p-3 bg-dark rounded-pill">
-                     <a class="navbar-brand p-3" href="index.php">
-                         <img src="./images/5796282.webp" alt="Logo" style="width:70px;" class="rounded-pill">
+                 <div class="col-sm-1 p-3 bg-image rounded-pill">
+                     <a class="navbar-brand p-3" href="form.php">
+                         <img src="./images/5796282.webp" alt="Logo" style="width:80px;" class="rounded-pill">
                      </a>
                  </div>
 
                  <!--Name-->
-                 <div class="col-sm-2 p-3">
-                     <a class="navbar-brand text-white text-center" href="#">
-                         <h2>Himanshu Thakur</h2>
-                     </a>
-                 </div>
+
 
                  <!--Menu-->
-                 <div class="col-sm-6 bg-info text-white rounded-pill img-thumbnail">
-                     <nav class="navbar navbar-expand-sm bg-dark text-white rounded-pill p-2 m-1 justify-content-center">
-                         <div class="col-sm-7 bg-dark text-white rounded-pill ">
+                 <div class="col-sm-8 bg-image text-white rounded-pill ">
+                     <nav class="navbar navbar-expand-sm bg-image text-white rounded-pill p-2 m-1 justify-content-center">
+                         <div class="col-sm-3 bg-image text-white rounded-pill ">
                              <ul class="nav nav-tabs  ">
                                  <li class="nav-item ">
                                      <a class="nav-link text-info" href="#">Menu</a>
@@ -78,16 +80,21 @@
                          </div>
                      </nav>
                  </div>
+                 <div class="col-sm-2 p-3">
+                     <a class="navbar-brand text-white text-center" href="#">
+                         <h2>Himanshu Thakur</h2>
+                     </a>
+                 </div>
              </div>
          </div>
      </header>
      <!--Header close-->
 
      <!--Log in-->
-     <div class="container col-sm-6 mt-3 bg-info p-2">
-         <h2 class=" bg-info text-white rounded-pill img-thumbnail text-center">Please Log in</h2>
+     <div class="container col-sm-12 mt-3 bg-image p-2">
+         <h2 class=" bg-image text-white rounded-pill  text-center">Please Log in</h2>
          <!--Log in form Started-->
-         <form action="insert_login.php" method="POST">
+         <form class="text-white" action="insert_login.php" method="POST">
 
              <!-- Gmail-->
              <div class="mb-3">

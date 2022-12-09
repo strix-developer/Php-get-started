@@ -11,6 +11,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <style>
+         body {
+             background-image: url('images/mount.jpg');
+             background-repeat: no-repeat;
+            background-position: center center;
+         }
+
         .col-sm-3.p-3.bg-dark.rounded-pill {
             float: right;
         }
@@ -31,55 +37,56 @@
 </head>
 
 <body>
-    <header>
-        <div class="container-fluid bg-dark rounded-pill ">
-            <div class="row">
-                <div class="col-sm-1 p-3 bg-dark rounded-pill">
-                    <a class="navbar-brand p-3" href="index.php">
-                        <img src="./images/5796282.webp" alt="Logo" style="width:70px;" class="rounded-pill">
-                    </a>
-                </div>
-                <div class="col-sm-2 p-3">
-                    <a class="navbar-brand text-light text-center " href="index.php">
-                        <h2>Himanshu Thakur</h2>
-                    </a>
-                </div>
-                <div class="col-sm-6 bg-info text-white rounded-pill img-thumbnail">
-                    <nav class="navbar navbar-expand-sm bg-dark text-white rounded-pill p-2 justify-content-center">
-                        <div class="col-sm-7 bg-dark text-white rounded-end ">
-                            <ul class="nav nav-tabs  ">
-                                <li class="nav-item ">
-                                    <a class="nav-link text-info" href="#">Menu</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link text-info" href="#">About</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link text-info" href="#">Contact</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link text-info" href="#">Services</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link text-info" href="#">Blog</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link text-info" href="#">Reservation</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </nav>
-                </div>
-                <div class="col-sm-3 p-3 bg-dark rounded-pill">
+<header>
+         <div class="container-fluid bg-image rounded-end rounded-start">
 
-                    <h3 class="text-white text-center text-center">Welcome</h3>
-                </div>
-            </div>
-        </div>
-        </div>
-    </header>
-    <div class="container col-sm-6 mt-3 bg-info p-2  ">
-        <h2 class=" bg-info text-white rounded-pill img-thumbnail text-center ">Edit Profile</h2>
+             <div class="row">
+                 <!--Png logo-->
+                 <div class="col-sm-1 p-3 bg-image rounded-pill">
+                     <a class="navbar-brand p-3" href="form.php">
+                         <img src="./images/5796282.webp" alt="Logo" style="width:80px;" class="rounded-pill">
+                     </a>
+                 </div>
+
+                 <!--Name-->
+
+                 <!--Menu-->
+                 <div class="col-sm-8 bg-image text-white rounded-pill ">
+                     <nav class="navbar navbar-expand-sm bg-image text-white rounded-pill p-2 m-1 justify-content-center">
+                         <div class="col-sm-3 bg-image text-white rounded-pill ">
+                             <ul class="nav nav-tabs  ">
+                                 <li class="nav-item ">
+                                     <a class="nav-link text-dark" href="#">Menu</a>
+                                 </li>
+                                 <li class="nav-item">
+                                     <a class="nav-link text-dark" href="#">About</a>
+                                 </li>
+                                 <li class="nav-item">
+                                     <a class="nav-link text-dark" href="#">Contact</a>
+                                 </li>
+                                 <li class="nav-item">
+                                     <a class="nav-link text-dark" href="#">Services</a>
+                                 </li>
+                                 <li class="nav-item">
+                                     <a class="nav-link text-dark" href="#">Blog</a>
+                                 </li>
+                                 <li class="nav-item">
+                                     <a class="nav-link text-dark" href="#">Reservation</a>
+                                 </li>
+                             </ul>
+                         </div>
+                     </nav>
+                 </div>
+                 <div class="col-sm-2 p-3">
+                     <a class="navbar-brand text-white text-center" href="#">
+                         <h2>Himanshu Thakur</h2>
+                     </a>
+                 </div>
+             </div>
+     </header>
+     <!--Header close-->
+    <div class="container col-sm-12 mt-3 bg-image p-2 text-white ">
+        <h2 class=" bg-image text-secondary rounded-pill text-center ">Edit Profile</h2>
         <form action="login_page.php" method="post">
         <?php
         session_start();
@@ -89,6 +96,10 @@
             $showdata = mysqli_query($connect, $showquery);
             $arrdata = mysqli_fetch_array($showdata);
             ?>
+            <div class="form-group mb-3 mt-3 text-start">
+                <img class=" rounded-end rounded-start align-center" src="Upload data/<?php echo $arrdata['File']; ?>" style="width:200px ;"><br>
+                <input type="file" name="image" id="image" accept=".jpg, .jpeg, .png">
+            </div>
             <div class="mb-3 mt-3">
                 <label for="Name">Name:</label>
                 <input type="text" class="form-control" id="name" value="<?php echo $_SESSION['name']; ?>" name="name">
@@ -108,10 +119,6 @@
             <div class="mb-3">
                 <label for="role">Role:</label>
                 <input type="role" class="form-control" id="role" value=" <?Php echo $_SESSION['role']; ?>" name="role" >
-            </div>
-            <div class="form-group mb-3 mt-3 text-start">
-                <img src="Upload data/<?php echo $arrdata['File']; ?>" style="width:80px ; height:60px"><br>
-                <input type="file" name="image" id="image" accept=".jpg, .jpeg, .png">
             </div>
             <div class="mb-3">
                 <input type="submit" class="navbar-dark bg-dark text-white img-thumbnail " name="submit" value="Submit">
