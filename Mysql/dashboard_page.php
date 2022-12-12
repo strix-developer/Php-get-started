@@ -55,10 +55,10 @@
                  <!--Name-->
 
                  <!--Menu-->
-                 <div class="col-sm-8 bg-image text-white rounded-pill ">
-                     <nav class="navbar navbar-expand-sm navbar-dark bg-image text-white rounded-pill p-2 m-1 justify-content-center">
+                 <div class="col-sm-8 bg-image rounded-pill ">
+                     <nav class="navbar navbar-expand-sm bg-image rounded-pill p-2 m-1 justify-content-center">
                          <div class="col-sm-3 bg-image text-white rounded-pill ">
-                             <ul class="nav nav-tabs  ">
+                             <ul class="nav nav-tabs nav-border-dark">
                                  <li class="nav-item ">
                                      <a class="nav-link text-dark" href="#">Menu</a>
                                  </li>
@@ -204,12 +204,12 @@
                                      <td>
                                          <?Php echo $row['File']; ?></br>
                                      </td>
-                                 <td>
-                                     <a href="edit_profile.php"><input type="button" class="navbar-dark bg-dark text-info img-thumbnail table-light text-center " value="Edit profile"></a>
-                                 </td>
-                                 <td>
-                                     <a href="delete_profile.php"><input type="button" class="navbar-dark bg-danger text-light img-thumbnail table-light text-center" value="Delete profile"></a>
-                                 </td>
+                                     <td>
+                                         <a href="edit_profile.php"><input type="button" class="navbar-dark bg-dark text-info img-thumbnail table-light text-center " value="Edit profile"></a>
+                                     </td>
+                                     <td>
+                                         <a href="delete_profile.php"><input type="button" class="navbar-dark bg-danger text-light img-thumbnail table-light text-center" value="Delete profile"></a>
+                                     </td>
                                  </tr>
                              <?php endforeach; ?>
                  <?php
