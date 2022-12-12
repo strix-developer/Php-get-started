@@ -316,6 +316,5 @@ $odd=$odd . "  ".$value;
 }
 echo"The even elements are =>" .$even . "<br>";
 echo "The odd elements are =>".$odd ;
-
-
+echo"<br>";
 ?>  
