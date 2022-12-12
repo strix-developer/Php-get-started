@@ -1,5 +1,6 @@
 <?php
-
+//
+echo "<h1> 1. </h1>";
 $age= 12;
 switch($age){
     case 12:
@@ -17,7 +18,8 @@ switch($age){
 }
 
 echo "<br>";
-
+//
+echo "<h1> 2. </h1>";
 $today = date("D");
 switch($today){
     case "Mon":
@@ -47,7 +49,7 @@ switch($today){
 }
 
 echo "<br>";
-
+echo "<h1> 3. </h1>";
 $today =date("d/F/Y-l");
 echo $today . "</br>";
 date_default_timezone_set("asia/kolkata");
@@ -55,7 +57,8 @@ $today=date("h:i:sA");
 echo $today;
 
 echo "<br>";
-
+//
+echo "<h1> 4. </h1>";
 $number = array ("One", "Two", "Three", "Stop", "Four");  
     foreach ($number as $element) {  
         if ($element == "Stop") {  
@@ -65,7 +68,8 @@ $number = array ("One", "Two", "Three", "Stop", "Four");
     }  
 
     echo "<br>";
-
+//
+echo "<h1> 5. </h1>";
     $i = 1;  
     while ($i<=20) {  
         if ($i %2 == 1) {  
@@ -79,7 +83,8 @@ $number = array ("One", "Two", "Three", "Stop", "Four");
     }
 
     echo "<br>";
-
+//
+echo "<h1> 6. </h1>";
 $number = array ("One", "Two", "Three", "Stop", "Four");  
 foreach ($number as $element) {  
 if ($element == "Stop") {  
@@ -89,7 +94,8 @@ echo "$element </br>";
 }   
    
 echo "<br>";
-
+//
+echo "<h1> 7. </h1>";
 echo "<h2>Using the break Statement</h2>";
    for($i=1; $i<=5; $i++)
    {
@@ -107,7 +113,8 @@ echo "<h2>Using the break Statement</h2>";
    }
 
 echo "<br>";
-
+//
+echo "<h1> 8. </h1>";
 $i= array('Apple','Pomegranate', 'Mango', 'Guava', 'Orange', 'Pineapple');
 foreach ($i as $a){
 
@@ -120,7 +127,8 @@ foreach ($i as $a){
 }
 
 echo "<br>";
-
+//
+echo "<h1> 9. </h1>";
 $j= array("cake","pizza","burger","paasta");
 foreach ($j as $p){
     if ($p=="burger")
