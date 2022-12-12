@@ -34,7 +34,7 @@
                 <div class="col-sm-2 p-3 text-white rounded text-center" style="--bs-bg-opacity: .2">
                     <h1>
                         <a href="#" style="text-decoration:none ;color:white">
-                        Mysqli Database
+                            Mysqli Database
                         </a>
                     </h1>
                 </div>
@@ -132,8 +132,7 @@
             <!--For Phone number field-->
             <div class="mb-3 mt-3 text-start">
                 <label for="phone_number">Phone Number:</label>
-                <input type="number" class="form-control" id="
-                phone_number" placeholder="Enter Phone Number" name="phone_number" min="0" maxlength="10" oninput="
+                <input type="number" class="form-control" id="phone_number" placeholder="Enter Phone Number" name="phone_number" min="0" maxlength="10" oninput="
                 javascript: if (this.value.length > this.maxLength) this.value = 
                 this.value.slice(0, this.maxLength);" required>
             </div>
@@ -150,6 +149,7 @@
 
             <!--div for file upload-->
             <div class="form-group mb-3 mt-3 text-start">
+                <label for="Profile Photo">Profile Photo:</label><br>
                 <input type="file" name="image" id="image" accept=".jpg, .jpeg, .png" value="" required>
             </div>
 
