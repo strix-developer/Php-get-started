@@ -38,7 +38,7 @@ session_start();
                 <div class="col-sm-2 p-3 text-white rounded text-center" style="--bs-bg-opacity: .2">
                     <h1>
                         <a href="#" style="text-decoration:none ;color:white">
-                        Mysqli Database
+                            Mysqli Database
                         </a>
                     </h1>
                 </div>
@@ -122,8 +122,7 @@ session_start();
             <!--For name field-->
             <div class="mb-3 mt-3 text-start">
                 <label for="first_name">First Name:</label>
-                <input type="text" class="form-control" id="first_name" patern="
-                [A-Za-z]{1,20}" placeholder="Enter your First name" name="first_name" value="<?php echo $arrdata['First Name'] ?>">
+                <input type="text" class="form-control" id="first_name" patern="[A-Za-z]{1,20}" placeholder="Enter your First name" name="first_name" value="<?php echo $arrdata['First Name'] ?>">
             </div>
 
             <!--For last name field-->
@@ -142,15 +141,13 @@ session_start();
             <!--For Password field-->
             <div class="mb-3 mt-3 text-start">
                 <label for="password">Password:</label>
-                <input type="password" class="form-control" id="
-                password" placeholder="Enter password" name="password" value="<?php echo $arrdata['Password'] ?>">
+                <input type="password" class="form-control" id="password" placeholder="Enter password" name="password" value="<?php echo $arrdata['Password'] ?>">
             </div>
 
             <!--For Phone number field-->
             <div class="mb-3 mt-3 text-start">
                 <label for="phone_number">Phone Number:</label>
-                <input type="number" class="form-control" id="
-                phone_number" placeholder="Enter Phone Number" name="phone_number" min="0" maxlength="10" oninput="
+                <input type="number" class="form-control" id="phone_number" placeholder="Enter Phone Number" name="phone_number" min="0" maxlength="10" oninput="
                 javascript: if (this.value.length > this.maxLength) this.value =
                 this.value.slice(0, this.maxLength);" value="<?php echo $arrdata['Phone Number'] ?>">
             </div>
@@ -158,13 +155,13 @@ session_start();
             <!--For Role field-->
             <div class="mb-3 mt-3 text-start">
                 <label for="role">Role:</label>
-                <input type="text" class="form-control" id="
-                role" placeholder="Enter Role" name="role" value="<?php echo $arrdata['Role'] ?>">
+                <input type="text" class="form-control" id="role" placeholder="Enter Role" name="role" value="<?php echo $arrdata['Role'] ?>">
             </div>
 
             <!--div for image upload-->
             <div class="form-group mb-3 mt-3 text-start">
-                <img src="upload/<?php echo $arrdata['File']; ?>" style="width:80px; height:60px"><br>
+                <label for="role">Profile Photo:</label><br>
+                <img src="upload/<?php echo $arrdata['File']; ?>" style="width:150px; height:100px"><br>
                 <input type="file" name="image" id="image" accept=".jpg, .jpeg, .png">
                 <input type="hidden" name="old_image" value="<?php echo $arrdata['File']; ?>">
             </div>
