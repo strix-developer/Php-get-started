@@ -11,19 +11,107 @@ session_start();
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bootstrap</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-image: url(images/forest.jpg);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 100vh;
+        }
+
+        .card img {
+            border-radius: 50%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .fa-solid {
+            color: blue;
+        }
+
+        .fa-sharp {
+            color: red;
+        }
+    </style>
 </head>
 
 <body>
 
-    <!--navbar div-->
-    <nav class="navbar navbar-expand-sm bg-dark navbar-dark text-white">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">
-                <img src="images/2441.jpg" alt="Logo" style="width:50px;" class="rounded-pill">
-            </a>
+    <!--Header div-->
+    <header>
+        <div class="container-fluid bg-dark rounded" style="--bs-bg-opacity: .2">
+            <div class="row">
+                <!--Logo div-->
+                <div class="col-sm-1 pt-2 rounded text-center" style="--bs-bg-opacity: .2">
+                    <a class="navbar-brand" href="#">
+                        <img src="images/logo.png" alt="Logo" style="width:90px ;" class="rounded-pill">
+                    </a>
+                </div>
+                <!--Name div-->
+                <div class="col-sm-2 p-3 text-white rounded text-center" style="--bs-bg-opacity: .2">
+                    <h1>
+                        <a href="#" style="text-decoration:none ;color:white">
+                            Mysqli Database
+                        </a>
+                    </h1>
+                </div>
+                <!--Navbar div-->
+                <div class="col-sm-6 p-3 text-white rounded-pill">
+                    <nav class="navbar navbar-expand-sm bg-primary rounded-pill border border-danger border-5" style="--bs-bg-opacity: .2">
+                        <div class="container-fluid">
+                            <ul class="navbar-nav mx-auto">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="javascript:void(0)">About</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="javascript:void(0)">Services</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="javascript:void(0)">Contact</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+                <!--div for Sign in and Logout options-->
+                <div class="col-sm-3 p-4 text-white text-end rounded" style="--bs-bg-opacity: .2">
+                    <?php
+                    if (isset($_SESSION['ID'])) {
+
+                        echo "<h5>Welcome $_SESSION[first_name]&nbsp"
+                    ?>
+                        <a href="logout.php">
+                            <button type="button" class="btn btn-danger font-monospace">
+                                Logout
+                            </button>
+                        </a>
+                    <?php
+                        "</h5>";
+                    } else {
+                    ?>
+                        <!--Sign in options div-->
+                        <div class="dropdown font-monospace">
+                            <button type="button" class="btn btn-primary btn-lg dropdown-toggle" data-bs-toggle="dropdown">
+                                Sign In
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="login.php">Login</a></li>
+                                <li><a class="dropdown-item" href="signup.php">Sign up</a></li>
+                            </ul>
+                        </div>
+                </div>
+            <?php
+                    }
+            ?>
+            </div>
         </div>
-        <h2>Welcome!</h2>
-    </nav>
+
+        </div>
+    </header>
 
     <div class="container">
         <?php
@@ -35,70 +123,63 @@ session_start();
 
         <!--div for Profile photo start-->
         <div class=" col-sm-4 m-3 text-center">
-            <div class="card">
-                <img src="upload/<?php echo $row['File'] ?>" height="300px" width="300px" style="border-radius:50%;display:block;margin-left:auto;margin-right:auto;" />
+            <div class="card bg-light" style="--bs-bg-opacity: .3">
+                <img src="upload/<?php echo $row['File'] ?>" height="300px" width="300px">
                 <div class="card-body">
                     <h4 class="card-title">
                         <?php echo $_SESSION['first_name']; ?>&nbsp;
                         <?php echo $_SESSION['last_name']; ?>
                     </h4>
-                    <div class="text-center"><a href="logout.php"> <input class="btn btn-danger" type="button" value="Logout"></a></div>
                 </div>
-
             </div>
         </div>
 
         <!--div for form data start-->
-        <div class="container mt-3 text-center bg-body">
+        <div class="container mt-3 text-center">
             <!--div for heading-->
-            <div class="container-fluid p-2 bg-dark text-center text-white">
+            <div class="container-fluid p-2 bg-primary text-center" style="--bs-bg-opacity: .5">
                 <h2>Profile Information</h2>
             </div>
 
             <!--table for data-->
-            <table class="table table-hover table-borderless">
+            <table class="table bg-light table-hover table-borderless opacity-75">
                 <?php
                 $rows = mysqli_query($conn, "SELECT * FROM users");
                 if ($row['Role'] != 'admin') {
                 ?>
                     <!--Row for table headings-->
-                    <tr>
-                        <th class="table-success font-monospace">ID</th>
-                        <td class="table-primary font-monospace"><?php echo $row['ID']; ?> </td>
+                    <tr class="table font-monospace">
+                        <th>ID</th>
+                        <th>First Name</th>
+                        <th>Last Name</th>
+                        <th>Email</th>
+                        <th>Password</th>
+                        <th>Phone Number</th>
+                        <th>Role</th>
+                        <th>Image</th>
+                        <th>Update</th>
+
                     </tr>
-                    <tr>
-                        <th class="table-success font-monospace">First Name</th>
-                        <td class="table-primary font-monospace"><?php echo $row['First Name']; ?> </td>
-                    </tr>
-                    <tr>
-                        <th class="table-success font-monospace">Last Name</th>
-                        <td class="table-primary font-monospace"><?php echo $row['Last Name']; ?></td>
-                    </tr>
-                    <tr>
-                        <th class="table-success font-monospace">Email</th>
-                        <td class="table-primary font-monospace"><?php echo $row['Email']; ?></td>
-                    </tr>
-                    <tr>
-                        <th class="table-success font-monospace">Password</th>
-                        <td class="table-primary font-monospace"><?php echo $row['Password']; ?></td>
-                    </tr>
-                    <tr>
-                        <th class="table-success font-monospace">Phone Number</th>
-                        <td class="table-primary font-monospace"><?php echo $row['Phone Number']; ?> </td>
-                    </tr>
-                    <tr>
-                        <th class="table-success font-monospace">Role</th>
-                        <td class="table-primary font-monospace"><?php echo $row['Role']; ?> </td>
+                    <tr class="table font-monospace">
+                        <td><?php echo $row['ID']; ?> </td>
+                        <td><?php echo $row['First Name']; ?> </td>
+                        <td><?php echo $row['Last Name']; ?></td>
+                        <td><?php echo $row['Email']; ?></td>
+                        <td><?php echo $row['Password']; ?></td>
+                        <td><?php echo $row['Phone Number']; ?> </td>
+                        <td><?php echo $row['Role']; ?> </td>
+                        <td><?php echo $row['File'] ?> </td>
+                        <td>
+                            <a href="updateprofile.php?ID=<?php echo $row['ID']; ?>" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Update">
+                                <i class="fa-solid fa-pen-to-square"></i>
+                            </a>
+                        </td>
                     </tr>
 
-                    <tr>
-                        <th class="table-success font-monospace">Image</th>
-                        <td class="table-primary font-monospace"><?php echo $row['File'] ?> </td>
-                    </tr>
                     <?php
                 } else {
                     if ($_SESSION['role'] == 'admin') { ?>
-                        <tr class="table-danger font-monospace">
+                        <tr class="table font-monospace">
                             <th>ID</th>
                             <th>First Name</th>
                             <th>Last Name</th>
@@ -115,7 +196,7 @@ session_start();
                         $rows = mysqli_query($conn, "SELECT * FROM users ORDER BY id ASC");
                         foreach ($rows as $row) : ?>
                             <!--Row for table data-->
-                            <tr class="table-primary font-monospace">
+                            <tr class="table font-monospace">
                                 <?php $i++; ?>
                                 <td><?php echo $row['ID']; ?> </td>
                                 <td><?php echo $row['First Name']; ?> </td>
@@ -126,13 +207,13 @@ session_start();
                                 <td><?php echo $row['Role']; ?> </td>
                                 <td><?php echo $row['File']; ?> </td>
                                 <td>
-                                    <a href="updateprofile.php?ID=<?php echo $row['ID']; ?>">
-                                        <button type="button" class="btn btn-success">Edit</button>
+                                    <a href="updateprofile.php?ID=<?php echo $row['ID']; ?>" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Update">
+                                        <i class="fa-solid fa-pen-to-square"></i>
                                     </a>
                                 </td>
                                 <td>
-                                    <a href="deleteprofile.php?ID=<?php echo $row['ID']; ?>">
-                                        <button type="button" class="btn btn-danger">Delete</button>
+                                    <a href="deleteprofile.php?ID=<?php echo $row['ID']; ?>" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Delete">
+                                        <i class="fa-sharp fa-solid fa-trash"></i>
                                     </a>
                                 </td>
                             </tr>
@@ -147,8 +228,15 @@ session_start();
         <!--div for form data end-->
     </div>
 
-</body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/9197b39465.js" crossorigin="anonymous"></script>
+    <script>
+        var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+        var tooltipList = tooltipTriggerList.map(function(tooltipTriggerEl) {
+            return new bootstrap.Tooltip(tooltipTriggerEl)
+        })
+    </script>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
 
 </html>
