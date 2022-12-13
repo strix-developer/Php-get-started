@@ -238,7 +238,7 @@ session_start();
     </script>
     <script>
         function checkdelete() {
-            return confirm('Are you sure you want to Delete this record ?');
+            return confirm('Are you sure you want to Delete this Profile ?');
         }
     </script>
 </body>
