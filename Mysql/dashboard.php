@@ -212,7 +212,7 @@ session_start();
                                     </a>
                                 </td>
                                 <td>
-                                    <a href="deleteprofile.php?ID=<?php echo $row['ID']; ?>" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Delete">
+                                    <a href="deleteprofile.php?ID=<?php echo $row['ID']; ?>" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Delete" onclick='return checkdelete()'>
                                         <i class="fa-sharp fa-solid fa-trash"></i>
                                     </a>
                                 </td>
@@ -236,7 +236,11 @@ session_start();
             return new bootstrap.Tooltip(tooltipTriggerEl)
         })
     </script>
-
+    <script>
+        function checkdelete() {
+            return confirm('Are you sure you want to Delete this record ?');
+        }
+    </script>
 </body>
 
 </html>
