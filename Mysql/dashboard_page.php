@@ -10,6 +10,7 @@
      <title>Header page</title>
      <meta charset="utf-8">
      <meta name="viewport" content="width=device-width, initial-scale=1">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
 
@@ -46,7 +47,7 @@
 
              <div class="row">
                  <!--Png logo-->
-                 <div class="col-sm-1 p-3 bg-image rounded-pill">
+                 <div class="col-sm-2 p-3 bg-image rounded-pill">
                      <a class="navbar-brand p-3" href="form.php">
                          <img src="./images/5796282.webp" alt="Logo" style="width:80px;" class="rounded-pill">
                      </a>
@@ -55,36 +56,31 @@
                  <!--Name-->
 
                  <!--Menu-->
-                 <div class="col-sm-8 bg-image rounded-pill ">
-                     <nav class="navbar navbar-expand-sm bg-image rounded-pill p-2 m-1 justify-content-center">
-                         <div class="col-sm-3 bg-image text-white rounded-pill ">
-                             <ul class="nav nav-tabs nav-border-dark">
-                                 <li class="nav-item ">
-                                     <a class="nav-link text-dark" href="#">Menu</a>
-                                 </li>
-                                 <li class="nav-item">
-                                     <a class="nav-link text-dark" href="#">About</a>
-                                 </li>
-                                 <li class="nav-item">
-                                     <a class="nav-link text-dark" href="#">Contact</a>
-                                 </li>
-                                 <li class="nav-item">
-                                     <a class="nav-link text-dark" href="#">Services</a>
-                                 </li>
-                                 <li class="nav-item">
-                                     <a class="nav-link text-dark" href="#">Blog</a>
-                                 </li>
-                                 <li class="nav-item">
-                                     <a class="nav-link text-dark" href="#">Reservation</a>
-                                 </li>
-                             </ul>
-                         </div>
-                     </nav>
-                 </div>
-                 <div class="col-sm-2 p-3">
-                     <a class="navbar-brand text-white text-center" href="#">
-                         <h2>Himanshu Thakur</h2>
-                     </a>
+                 <div class="col-sm-8 bg-image ">
+                     <div class="navbar navbar-expand-sm bg-image rounded p-2 m-1 justify-content-center" id="navbarSupportedContent">
+                         <ul class="nav nav-pills">
+                             <li class="nav-item">
+                                 <a class="nav-link link text-dark display-7" data-bs-toggle="pill" href="#">
+                                     Home</a>
+                             </li>
+                             <li class="nav-item">
+                                 <a class="nav-link link text-dark display-7" data-bs-toggle="pill" href="#">
+                                     Watch Video</a>
+                             </li>
+                             <li class="nav-item">
+                                 <a class="nav-link link text-dark display-7" data-bs-toggle="pill" href="#">
+                                     About</a>
+                             </li>
+                             <li class="nav-item">
+                                 <a class="nav-link link text-dark display-7" data-bs-toggle="pill" href="#">
+                                     Contact</a>
+                             </li>
+                             <li class="nav-item">
+                                 <a class="nav-link link text-dark  display-7" data-bs-toggle="pill" href="#">
+                                     Blocks</a>
+                             </li>
+                         </ul>
+                     </div>
                  </div>
              </div>
      </header>
@@ -102,7 +98,7 @@
              <img src="Upload data/<?php echo $row['File'] ?>" height="300px" width="300px" style="border-radius:50%;display:block;margin-left:auto;margin-right:auto;" />
              <div class="card-body">
                  <h4 class="card-title text-white m-2">
-                     <?php echo $_SESSION['name']; ?>&nbsp;
+                     Welcome <?php echo $_SESSION['name']; ?>&nbsp;
                  </h4>
                  <div class="d-flex justify-content-center mb-2">
                      <a href="edit_profile.php" class="btn btn-outline-light ms-1 text-secondary">Edit</button></a>
