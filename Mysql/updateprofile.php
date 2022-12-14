@@ -17,7 +17,7 @@ session_start();
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
-            height: 100vh;
+            min-height: 100vh;
         }
     </style>
 </head>
@@ -38,7 +38,7 @@ session_start();
                 <div class="col-sm-2 p-3 text-white rounded text-center" style="--bs-bg-opacity: .2">
                     <h1>
                         <a href="#" style="text-decoration:none ;color:white">
-                            Mysqli Database
+                            Mysqli_Database
                         </a>
                     </h1>
                 </div>

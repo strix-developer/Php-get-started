@@ -4,6 +4,9 @@ session_start();
 if (isset($_POST['submit'])) {
     extract($_POST);
     include 'create_connection.php';
+    $email = $_POST['email'];
+    $pass = $_POST['pass'];
+
     $sql = mysqli_query($conn, "SELECT * FROM users where Email='$email' and Password='$pass'");
     $row  = mysqli_fetch_array($sql);
     if (is_array($row)) {
