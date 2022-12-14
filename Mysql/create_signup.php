@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bootstrap</title>
+    <title>Mysqli Database</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
         body {
@@ -32,11 +32,11 @@
                 </div>
                 <!--Name div-->
                 <div class="col-sm-2 p-3 text-white rounded text-center" style="--bs-bg-opacity: .2">
-                    <h1>
-                        <a href="#" style="text-decoration:none ;color:white">
+                    <a href="#" style="text-decoration:none ;color:white">
+                        <h1>
                             Mysqli_Database
-                        </a>
-                    </h1>
+                        </h1>
+                    </a>
                 </div>
                 <!--Navbar div-->
                 <div class="col-sm-6 p-3 text-white rounded-pill">
