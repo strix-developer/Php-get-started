@@ -90,7 +90,7 @@
                                      <a href="viewprofile.php?ID=<?php echo $user['ID']; ?>"> <button type="button" class="btn btn-success">View Profile</button></a>
                                  </td>
                                  <td>
-                                     <a href=""> <button type="button" class="btn btn-danger">Delete Profile</button></a>
+                                     <a href="delete.php?ID=<?php echo $user['ID']; ?>"> <button type="button" class="btn btn-danger">Delete Profile</button></a>
                                  </td>
                              </tr>
              <?php
