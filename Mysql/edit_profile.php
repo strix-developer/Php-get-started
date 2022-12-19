@@ -1,6 +1,5 @@
-
 <!DOCTYPE html>
-<html lang="en">
+<html lang='en'>
 
 <head>
     <title>Header page</title>
@@ -54,7 +53,7 @@
                      <div class="navbar navbar-expand-sm bg-image rounded p-2 m-1 justify-content-center" id="navbarSupportedContent">
                          <ul class="nav nav-pills">
                              <li class="nav-item">
-                                 <a class="nav-link link text-dark display-7" data-bs-toggle="pill" href="#">
+                                 <a class="nav-link link text-dark display-7" data-bs-toggle="pill" href="form.php">
                                      Home</a>
                              </li>
                              <li class="nav-item">
@@ -81,13 +80,13 @@
      <!--Header close-->
     <div class="container col-sm-12 mt-3 bg-image p-2 text-white ">
         <h2 class=" bg-image text-secondary rounded-pill text-center ">Edit Profile</h2>
-        <form action="login_page.php" method="post">
+        <form action="login_page.php" method="POST">
         <?php
-        session_start();
+        
             include 'mysql.php';
-            $ID = $_SESSION['ID'];
-            $showquery = "SELECT * FROM signup where ID=$ID";
-            $showdata = mysqli_query($connect, $showquery);
+            $ID = $_GET["ID"];
+            $sql = "SELECT * FROM signup WHERE ID=$ID";
+            $showdata = mysqli_query($connect, $sql);
             $arrdata = mysqli_fetch_array($showdata);
             ?>
             <div class="form-group mb-3 mt-3 text-start">
@@ -96,23 +95,23 @@
             </div>
             <div class="mb-3 mt-3">
                 <label for="Name">Name:</label>
-                <input type="text" class="form-control" id="name" value="<?php echo $_SESSION['name']; ?>" name="name">
+                <input type="text" class="form-control" id="name" value="<?php echo $arrdata['Name']; ?>" name="name">
             </div>
             <div class="mb-3">
                 <label for="Last Name">Last Name:</label>
-                <input type="text" class="form-control" id="lastname" value=" <?Php echo $_SESSION['lastname']; ?>" name="lastname">
+                <input type="text" class="form-control" id="lastname" value=" <?Php echo $arrdata['Last Name']; ?>" name="lastname">
             </div>
             <div class="mb-3">
                 <label for="email">E-mail:</label>
-                <input type="email" class="form-control" id="email" value=" <?Php echo $_SESSION['email']; ?>" name="email" disabled>
+                <input type="email" class="form-control" id="email" value=" <?Php echo $arrdata['Email']; ?>" name="email" disabled>
             </div>
             <div class="mb-3">
                 <label for="Contact">Contact:</label>
-                <input type="text" class="form-control" id="number" value=" <?Php echo $_SESSION['number']; ?>" name="number" maxlength="10" disabled>
+                <input type="text" class="form-control" id="number" value=" <?Php echo $arrdata['Phone Number']; ?>" name="number" maxlength="10" disabled>
             </div>
             <div class="mb-3">
                 <label for="role">Role:</label>
-                <input type="role" class="form-control" id="role" value=" <?Php echo $_SESSION['role']; ?>" name="role" >
+                <input type="role" class="form-control" id="role" value=" <?Php echo $arrdata['Role']; ?>" name="role" disabled>
             </div>
             <div class="mb-3">
                 <input type="submit" class="navbar-dark bg-dark text-white img-thumbnail " name="submit" value="Submit">
@@ -144,7 +143,7 @@
             } else {
                 $image_data = $image;
             }
-            $sql = "UPDATE `signup` SET `ID`='$ID',`First Name`='$name',`Last Name`='$lastname',`Email`='$email',`Password`='$pswd',`Phone Number`='$number',`Role`='$role',`File`='$file' WHERE ID='$ID' ";
+            $sql = "UPDATE `signup` SET `ID`='$ID',`Name`='$name',`Last Name`='$lastname',`Email`='$lastname',`Password`='$pswd',`Role`='$role',`File`='$file',`Phone Number`='$number' WHERE ID='$ID' ";
             $result = mysqli_query($connect, $sql);
             if ($result) {
                 echo "<h3>Profile Updated Successfully!</h3>";

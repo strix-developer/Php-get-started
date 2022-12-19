@@ -43,11 +43,11 @@
 
      <!--Header Started-->
      <header>
-         <div class="container-fluid bg-image rounded-end rounded-start">
+         <div class="container-fluid bg-image rounded">
 
              <div class="row">
                  <!--Png logo-->
-                 <div class="col-sm-2 p-3 bg-image rounded-pill">
+                 <div class="col-sm-2 p-3 bg-image">
                      <a class="navbar-brand p-3" href="form.php">
                          <img src="./images/5796282.webp" alt="Logo" style="width:80px;" class="rounded-pill">
                      </a>
@@ -60,7 +60,7 @@
                      <div class="navbar navbar-expand-sm bg-image rounded p-2 m-1 justify-content-center" id="navbarSupportedContent">
                          <ul class="nav nav-pills">
                              <li class="nav-item">
-                                 <a class="nav-link link text-dark display-7" data-bs-toggle="pill" href="#">
+                                 <a class="nav-link link text-dark display-7" data-bs-toggle="pill" href="form.php">
                                      Home</a>
                              </li>
                              <li class="nav-item">
@@ -95,7 +95,7 @@
 
          <!--div for Profile photo start-->
          <div class=" col-sm-12 m-3 text-center bg-image">
-             <img src="Upload data/<?php echo $row['File'] ?>" height="300px" width="300px" style="border-radius:50%;display:block;margin-left:auto;margin-right:auto;" />
+             <img src="Upload data/<?php echo $row['File'] ?>" height="300px" width="300px" style="border-radius:50%;" />
              <div class="card-body">
                  <h4 class="card-title text-white m-2">
                      Welcome <?php echo $_SESSION['name']; ?>&nbsp;
@@ -118,22 +118,22 @@
 
              <!--table for data-->
              <table class="table table-hover table-borderless">
-                 <thead>
-                     <tr class=" text-white ">
-                         <th>Name</th>
-                         <th>Last Name</th>
-                         <th>Gmail</th>
-                         <th>Number</th>
-                         <th>Password</th>
-                         <th>Roles</th>
-                         <th>ID</th>
-                         <th>Images</th>
-                     </tr>
-                 </thead>
                  <?php
                     $rows = mysqli_query($connect, "SELECT * FROM signup");
                     if ($row["Role"] != "Admin") {
                     ?>
+                     <thead>
+                         <tr class=" text-white ">
+                             <th>Name</th>
+                             <th>Last Name</th>
+                             <th>Gmail</th>
+                             <th>Number</th>
+                             <th>Password</th>
+                             <th>Roles</th>
+                             <th>ID</th>
+                             <th>Images</th>
+                         </tr>
+                     </thead>
                      <!--Row for table headings-->
                      <tr class="table-info ">
                          <td class="text-dark">
@@ -152,7 +152,7 @@
                              <?Php echo $row['Password']; ?></br>
                          </td>
                          <td>
-                             <?Php echo $row['Role']; ?></br>
+                             <?Php echo $row['Role'] == '0' ? 'selected' : ''  ?></br>
                          </td>
                          <td>
                              <?Php echo $row['ID']; ?></br>
@@ -160,66 +160,79 @@
                          <td>
                              <?Php echo $row['File']; ?></br>
                          </td>
+                         <td>
+                             <a href="edit_profile.php?ID=<?Php echo $row['ID']; ?>"><input type="button" class="navbar-dark bg-dark text-info img-thumbnail table-light text-center " value="Edit profile"></a>
+                         </td>
                      </tr>
-
-                     <?php
+             </table>
+             <?php
                     } else {
                         if ($_SESSION['role'] == 'Admin') { ?>
-                         <?php
+                 <table class="table table-hover table-borderless">
+                     <thead>
+                         <tr class=" text-white ">
+                             <th>Name</th>
+                             <th>Last Name</th>
+                             <th>Gmail</th>
+                             <th>Number</th>
+                             <th>Password</th>
+                             <th>Roles</th>
+                             <th>ID</th>
+                             <th>Images</th>
+                         </tr>
+                     </thead>
+                     <?php
                             $i = 1;
                             $rows = mysqli_query($connect, "SELECT * FROM signup ORDER BY id ASC");
-                            if (count($row) != 0) {
-                                foreach ($rows as $row) : ?>
-                                 <th></th>
-                                 <th></th>
-                                 <!--Row for table data-->
-                                 <tr class="text-dark table-info">
-                                     <?php $i++; ?>
-                                 <tr class="table-info ">
-                                     <td class="text-dark">
-                                         <?Php echo $row['Name']; ?>
-                                     </td>
-                                     <td>
-                                         <?Php echo $row['Last Name']; ?>
-                                     </td>
-                                     <td>
-                                         <?Php echo $row['Email']; ?>
-                                     </td>
-                                     <td>
-                                         <?Php echo $row['Phone Number']; ?>
-                                     </td></br>
-                                     <td>
-                                         <?Php echo $row['Password']; ?></br>
-                                     </td>
-                                     <td>
-                                         <?Php echo $row['Role']; ?></br>
-                                     </td>
-                                     <td>
-                                         <?Php echo $row['ID']; ?></br>
-                                     </td>
-                                     <td>
-                                         <?Php echo $row['File']; ?></br>
-                                     </td>
-                                     <td>
-                                         <a href="edit_profile.php"><input type="button" class="navbar-dark bg-dark text-info img-thumbnail table-light text-center " value="Edit profile"></a>
-                                     </td>
-                                     <td>
-                                         <a href="delete_profile.php"><input type="button" class="navbar-dark bg-danger text-light img-thumbnail table-light text-center" value="Delete profile"></a>
-                                     </td>
-                                 </tr>
-                             <?php endforeach; ?>
-                 <?php
-                            }
+                            foreach ($rows as $row) : ?>
+                         <th></th>
+                         <th></th>
+                         <!--Row for table data-->
+                         <tr class="text-dark table-info">
+                             <?php $i++; ?>
+                         <tr class="table-info ">
+                             <td class="text-dark">
+                                 <?Php echo $row['Name']; ?>
+                             </td>
+                             <td>
+                                 <?Php echo $row['Last Name']; ?>
+                             </td>
+                             <td>
+                                 <?Php echo $row['Email']; ?>
+                             </td>
+                             <td>
+                                 <?Php echo $row['Phone Number']; ?>
+                             </td></br>
+                             <td>
+                                 <?Php echo $row['Password']; ?></br>
+                             </td>
+                             <td>
+                                 <?Php echo $row['Role'] ?></br>
+                             </td>
+                             <td>
+                                 <?Php echo $row['ID']; ?></br>
+                             </td>
+                             <td>
+                                 <?Php echo $row['File']; ?></br>
+                             </td>
+                             <td>
+                                 <a href="edit_profile.php?ID=<?Php echo $row['ID']; ?>"><input type="button" class="navbar-dark bg-dark text-info img-thumbnail table-light text-center " value="Edit profile"></a>
+                             </td>
+                             <td>
+                                 <a href="delete_profile.php?ID=<?Php echo $row['ID']; ?>"><input type="button" class="navbar-dark bg-danger text-light img-thumbnail table-light text-center" value="Delete profile"></a>
+                             </td>
+                         </tr>
+                     <?php endforeach; ?>
+             <?php
                         }
                     }
-                    ?>
+                ?>
 
-             </table>
+                 </table>
          </div>
          <!--div for form data end-->
      </div>
 
  </body>
- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
 
  </html>
