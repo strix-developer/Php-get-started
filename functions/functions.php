@@ -104,5 +104,6 @@ echo "<br>";
 function whatIsToday(){
     echo "Today is " . date("l-d/F/Y") . " Have fun";
 }
+gap();
 whatIsToday()
 ?>
