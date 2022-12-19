@@ -71,12 +71,12 @@ echo add1(43.5,78.8);
 echo "<br>";
 
 //passing argument by reference
-function add_five(&$value) {
+function add_38(&$value) {
     $value +=38;
   }
   
   $num =72;
-  add_five($num);
+  add_38($num);
   echo $num;
 
   echo "<br>";
@@ -87,4 +87,22 @@ function add_five(&$value) {
     }  
     echo "Cube of 7 is: ".cube(7); 
 
+    echo "<br>";
+
+    //
+    function makecoffee($type = "cappuccino")
+{
+    return "Making a cup of $type ☕<br>";
+}
+echo makecoffee();
+echo makecoffee("coffee");
+echo makecoffee("espresso");
+
+echo "<br>";
+
+// user defined function that display today's date
+function whatIsToday(){
+    echo "Today is " . date("l-d/F/Y") . " Have fun";
+}
+whatIsToday()
 ?>

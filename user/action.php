@@ -13,7 +13,7 @@
             echo "password did not match";
           }
           else {
-        echo "sign up sucessfully";
+        echo  $firstname , $lastname , $email , $password, "sign up sucessfully";
           }
           }
           ?>
