@@ -1,10 +1,10 @@
-    <?php
+<?php
     //post method
     if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-        $Sitetitle = $_REQUEST['sitetitle'];
+        $Database = $_REQUEST['database'];
         $Username = $_REQUEST['Username'];
         $Password = $_REQUEST['Password'];
-        $email = $_REQUEST['email'];
+        $datahost = $_REQUEST['datahost'];
         //connect to database
         extract($_POST);
         include("db.php");
@@ -14,14 +14,14 @@
             exit;
         } else {
             //insert data from wordpress
-            $sql = "INSERT INTO `wordpress`(`Site Title`, `User Name`, `Password`, `Email`) VALUES ('$Sitetitle','$Username','$Password','$email')";
+            $sql = "INSERT INTO `admin`(`Database`, `Username`, `Password`, `Database host`) VALUES ('$Database','$Username','$Password','$datahost')";
 
             $result = mysqli_query($connect, $sql);
             //result
             if ($result) {
                 echo '<strong>Success!</strong>Your entry has been submitted successfully!';
 
-                header("Location: success.php?status=success");
+                header("Location: install.php?status=success");
             } else {
                 echo "The record was not submitted successfully because of this error --->" . mysqli_error($connect);
             }

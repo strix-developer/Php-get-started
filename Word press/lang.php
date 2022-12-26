@@ -13,11 +13,13 @@
 <body>
     <div class="col-lg-12">
         <img src="images/w-logo-blue.png" alt="avatar" class="rounded-circle img-fluid mx-auto d-block ">
+        <!--Langauge-->
         <form action="detail.php" class="col-sm-6 mx-auto d-block">
             <label for="sel1" class="form-label">Select langauge:</label>
-            <select multiple class="form-select" id="sel2" name="sellist2">
+             <!--Langauge by their countyr-->
+            <select multiple class="form-select" id="sel1" name="sellist1">
                 <option>English (United State)</option>
-                <option>Hindi</option>
+                <option>Hindi(India)</option>
                 <option>English (Australia)</option>
                 <option>English (Canada)</option>
                 <option>English (New Zealand)</option>

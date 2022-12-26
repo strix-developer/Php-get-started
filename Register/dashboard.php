@@ -69,8 +69,8 @@ require __DIR__ . "/Core/Support/Layout/header.php";
                             <a href="viewprofile.php"><input type="button" class="navbar-dark bg-dark text-info img-thumbnail table-light text-center " value="View profile"></a>
                         </td>
                         <td>
-                                        <a href="delete.php"><input type="button" class="navbar-dark bg-danger text-light img-thumbnail table-light text-center" value="Delete profile"></a>
-                                    </td>
+                            <a href="delete.php"><input type="button" class="navbar-dark bg-danger text-light img-thumbnail table-light text-center" value="Delete profile"></a>
+                        </td>
                     </tr>
 
                     <?php

@@ -12,23 +12,32 @@
 
 <body>
     <div class="col-lg-12">
+        <!--Logo of word press-->
         <img src="images/w-logo-blue.png" alt="avatar" class="rounded-circle img-fluid mx-auto d-block ">
-        <div class="mb-3 col-sm-3 mx-auto d-block alert alert-dark rounded">
-            <div class="mb-3 col-sm-5 mx-auto d-block text-center ">
-                <label for="username">User Name or password:</label><br>
-                <input type="text" value="admin">
+        <!--form start-->
+        <form action="insert_wp_login.php" method="POST" enctype="multipart/form-data">
+            <div class="mb-3 col-sm-4 mx-auto d-block alert alert-dark rounded">
+                <!--user login tag-->
+                <div class="mb-3 col-sm-5 mx-auto d-block text-start ">
+                    <label for="EMAIL">Email</label><br>
+                    <input type="text" placeholder="Email" name="email">
+                </div>
+                <!--user password-->
+                <div class="mb-3 col-sm-5 mx-auto d-block text-start">
+                    <label for="pswd">Password</label><br>
+                    <input type="password" placeholder="Password" name="pswd"><br>
+                </div>
+                <!--checkbox-->
+                <div class="mb-3 col-sm-5 mx-auto d-block text-center">
+                    <input type="checkbox" id="checkbox1" name="checkbox1" value="checkbox">
+                    <label for="checkbox1">Remenber Me</label>
+                <!--submit button-->
+                    <input type="submit" class="btn btn-dark" name="submit" value="Log in">
+                </div>
             </div>
-            <div class="mb-3 col-sm-5 mx-auto d-block text-center">
-                <label for="pswd">Password:</label><br>
-                <input type="password" value="himanshu2986"><br>
-            </div>
-            <div class="mb-3 col-sm-5 mx-auto d-block text-center">
-                <input type="checkbox" id="checkbox1" name="checkbox1" value="checkbox">
-                <label for="checkbox1">Remenber Me</label>
-                <a href="#"><button type="button" class="navbar-dark bg-dark text-white  img-thumbnail ">Login</button></a>
-            </div>
-        </div>
+        </form>
     </div>
+    
 </body>
 
 </html>

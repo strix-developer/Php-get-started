@@ -12,21 +12,23 @@
 
 <body>
     <div class="col-sm-12">
+        <!--Logo of word press-->
         <img src="images/w-logo-blue.png" alt="avatar" class="rounded-circle img-fluid mx-auto d-block ">
         <div class="mb-3 col-sm-6 mx-auto d-block alert alert-dark rounded">
             <p class="col-sm-12 mx-auto d-block">Below you should enter your database connection details. If you are not sure about these, contact your host.</p>
-            <form>
-            <div class="form-group row">
+
+            <form action="error.php" method="POST" enctype="multipart/form-data">
+                <div class="form-group row">
                     <label for="database name" class="col-sm-2 col-form-label">Database:</label>
                     <div class="col-sm-10">
-                        <input type="text" class="form-control" id="database name" placeholder="Database Name">
+                        <input type="text" class="form-control" id="database name" placeholder="Database Name" name="database">
                         The name of the database you want to use with WordPress.
                     </div>
                 </div>
                 <div class="form-group row">
                     <label for="Username" class="col-sm-2 col-form-label">User Name:</label>
                     <div class="col-sm-10">
-                        <input type="text" class="form-control" id="Username" placeholder="User Name">
+                        <input type="text" class="form-control" id="Username" placeholder="User Name" name="username">
                         Your database username.
                     </div>
                 </div>
@@ -40,7 +42,7 @@
                 <div class="form-group row">
                     <label for="dbhost" class="col-sm-2 col-form-label">Database host:</label>
                     <div class="col-sm-10">
-                        <input type="text" class="form-control" id="dbhost" placeholder="Database host">
+                        <input type="text" class="form-control" id="dbhost" placeholder="Database host" name="hostname">
                         You should be able to get this info from your web host, if localhost does not work.
                     </div>
                 </div>
@@ -52,7 +54,7 @@
                     </div>
                 </div>
                 <div class="mb-3 col-sm-12 mx-auto d-block ">
-                    <a href="install.php"><button type="button" class="navbar-dark bg-dark text-white  img-thumbnail ">Submit</button></a>
+                     <input type="submit" class="btn btn-dark" name="submit" value="Submit">
                 </div>
             </form>
         </div>

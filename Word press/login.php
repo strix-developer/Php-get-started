@@ -12,6 +12,7 @@
 
 <body>
     <div class="col-lg-12">
+          <!--Logo of word press-->
         <img src="images/w-logo-blue.png" alt="avatar" class="rounded-circle img-fluid mx-auto d-block ">
         <div class="mb-3 col-sm-6 mx-auto d-block alert alert-dark rounded">
             <h3 class="col-sm-12 mx-auto d-block ">Welcome</h3>
@@ -22,45 +23,56 @@
             <hr>
             <p class="col-sm-12 mx-auto d-block">Please provide the following information. Do not worry, you can always change these settings later.<br>
             </p>
-            <div class="form-group row">
-                <label for="Sitetitle" class="col-sm-2 col-form-label">Site Title:</label>
-                <div class="col-sm-10">
-                    <input type="text" class="form-control" id="sitetitle" placeholder="Site title">
+              <!--Form Started-->
+            <form action="insert_login.php" method="POST" enctype="multipart/form-data">
+                  <!--Site Title tag-->
+                <div class="form-group row">
+                    <label for="sitetitle" class="col-sm-2 col-form-label">Site Title:</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="sitetitle" placeholder="Site title" name="sitetitle">
+                    </div>
                 </div>
-            </div>
-            <div class="form-group row">
-                <label for="Username" class="col-sm-2 col-form-label">User Name:</label>
-                <div class="col-sm-10">
-                    <input type="text" class="form-control" id="Username" placeholder="User Name">
-                    Usernames can have only alphanumeric characters, spaces, underscores, hyphens, periods, and the @ symbol.
+                <br>
+                <!--User Name tag-->
+                <div class="form-group row">
+                    <label for="Username" class="col-sm-2 col-form-label">User Name:</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="Username" placeholder="User Name" name="Username">
+                        Usernames can have only alphanumeric characters, spaces, underscores, hyphens, periods, and the @ symbol.
+                    </div>
                 </div>
-            </div>
-            <div class="form-group row">
-                <label for="Password" class="col-sm-2 col-form-label">Password:</label>
-                <div class="col-sm-10">
-                    <input type="password" class="form-control" id="Password" placeholder="Password">
-                    Important: You will need this password to log in. Please store it in a secure location.
+                <!--Password tag-->
+                <div class="form-group row">
+                    <label for="Password" class="col-sm-2 col-form-label">Password:</label>
+                    <div class="col-sm-10">
+                        <input type="password" class="form-control" id="Password" placeholder="Password" name="Password">
+                        Important: You will need this password to log in. Please store it in a secure location.
+                    </div>
                 </div>
-            </div>
-            <div class="form-group row">
-                <label for="email" class="col-sm-2 col-form-label">Your Email:</label>
-                <div class="col-sm-10">
-                    <input type="text" class="form-control" id="email" placeholder="abc@gmail.com">
-                    Double-check your email address before continuing.
+                <!--Email tag-->
+                <div class="form-group row">
+                    <label for="email" class="col-sm-2 col-form-label">Your Email:</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="email" placeholder="abc@gmail.com" name="email">
+                        Double-check your email address before continuing.
+                    </div>
                 </div>
-            </div><hr>
-            <div class="form-group row">
-                <label for="search engine" class="col-sm-2 col-form-label">Search engine visibility:</label>
-                <div class="col-sm-10">
-                <input type="checkbox" id="checkbox1" name="checkbox1" value="checkbox">
-                    <label for="checkbox1">Discourage search engines from indexing this site
-                        It is up to search engines to honor this request.</label>
-                    <br>
+                <hr>
+                <div class="form-group row">
+                    <!--Search engine tag-->
+                    <label for="search engine" class="col-sm-2 col-form-label">Search engine visibility:</label>
+                    <div class="col-sm-10">
+                        <input type="checkbox" id="checkbox1" name="checkbox1" value="checkbox">
+                        <label for="checkbox1">Discourage search engines from indexing this site
+                            It is up to search engines to honor this request.</label>
+                        <br>
+                    </div>
                 </div>
-            </div>
-            <div class="mb-3 col-sm-12 mx-auto d-block ">
-                <a href="insert_login.php"><button type="button" class="navbar-dark bg-dark text-white  img-thumbnail "> Install Wordpress</button></a>
-            </div>
+                <!--Submit Button-->
+                <div class="mb-3 col-sm-12 mx-auto d-block ">
+                    <input type="submit" class="btn btn-dark" name="submit" value="Install Wordpress">
+                </div>
+            </form>
         </div>
     </div>
 </body>
