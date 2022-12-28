@@ -22,16 +22,17 @@
          }
 
          a:hover {
-             color: green;
+             color: white;
          }
 
          a.dropdown-item {
              color: white;
+             background-color: none;
          }
 
          a.dropdown-item:hover {
-             color: green;
-             background-color: none;
+             color: #51abcb;
+             background-color: black;
          }
 
          .col-sm-1.text-white.d-flex.align-items-start.bg-dark {
@@ -40,6 +41,10 @@
 
          ul.dropdown-menu.dropdown-menu-dark:hover {
              background-color: black;
+         }
+
+         button.btn.btn-dark:hover {
+             background-color: #51abcb;
          }
      </style>
  </head>
