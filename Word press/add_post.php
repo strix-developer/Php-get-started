@@ -60,11 +60,8 @@ session_start();
             transition-timing-function: ease-in-out;
         }
 
-        .col-sm-1.bg-dark {
-            width: 11%;
-        }
 
-        .col-sm-11 {
+        .col-sm-10 {
             background-image: url("Images/moon-light-ride-4k-e3-2048x1152.jpg");
             background-repeat: no-repeat;
         }
@@ -78,8 +75,14 @@ session_start();
             color: #33f078;
         }
 
-        .col-sm-11 {
-            width: 89%;
+        .col-sm-10 {
+            flex: 0 0 auto;
+            width: 89% !important;
+        }
+
+        .col-sm-2 {
+            flex: 0 0 auto;
+            width: 11% !important;
         }
     </style>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -154,7 +157,7 @@ session_start();
     </div>
     <!--Header ended-->
     <nav class="conatiner-fluid d-flex col-sm-12" style="min-height:100vh">
-        <div class="col-sm-1 bg-dark">
+        <div class="col-sm-2 bg-dark">
             <ul class="navbar-nav">
                 <li class="nav-item dropdown dropend">
                     <button type="button" class="btn btn-dark text-light" data-bs-toggle="dropdown"><i class="fa-solid fa-gauge text-start" aria-hidden='true'></i> Dashboard
@@ -280,8 +283,8 @@ session_start();
                 </a>
             </ul>
         </div>
-        <div class="col-sm-11">
-            <div class="conatiner p-2 col-sm-12 m-3 d-flex justify-content-center text-white">
+        <div class="col-sm-10">
+            <div class="conatiner col-sm-12 d-flex justify-content-center text-white">
                 <form action="insert_posts.php" class="col-sm-4" method="POST" enctype="multipart/form-data">
                     <div class="form-group  justify-content-center">
                         <label for="Addtitle"></label>

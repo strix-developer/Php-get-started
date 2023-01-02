@@ -15,7 +15,7 @@
             echo "Email Id Already Exists";
             exit;
         } else {
-            //insert data from wordpress
+            //insert data from adduser
             $sql = "INSERT INTO `adduser`( `User Name`, `Email`, `First Name`, `Last Name`, `Password`, `Role`) VALUES ('$usersname','$email','$fname','$lname','$passwords','$role')";
 
             $result = mysqli_query($connect, $sql);

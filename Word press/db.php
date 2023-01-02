@@ -8,6 +8,6 @@ if(!$connect){
      die("Fail to connect".mysqli_connect_error($connect)) ;
 }
 else{
-    echo "lo";
+    echo "";
 }
 ?>

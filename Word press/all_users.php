@@ -60,11 +60,7 @@ session_start();
             transition-timing-function: ease-in-out;
         }
 
-        .col-sm-1.bg-dark {
-            width: 11%;
-        }
-
-        .col-sm-11 {
+        .col-sm-10 {
             background-image: url("Images/moon-light-ride-4k-e3-2048x1152.jpg");
             background-repeat: no-repeat;
         }
@@ -78,8 +74,14 @@ session_start();
             color: #33f078;
         }
 
-        .col-sm-11 {
-            width: 89%;
+        .col-sm-10 {
+            flex: 0 0 auto;
+            width: 89% !important;
+        }
+
+        .col-sm-2 {
+            flex: 0 0 auto;
+            width: 11% !important;
         }
     </style>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -154,7 +156,7 @@ session_start();
     </div>
     <!--Header ended-->
     <nav class="conatiner-fluid d-flex col-sm-12" style="min-height:100vh">
-        <div class="col-sm-1 bg-dark">
+        <div class="col-sm-2 bg-dark">
             <ul class="navbar-nav">
                 <li class="nav-item dropdown dropend">
                     <button type="button" class="btn btn-dark text-light" data-bs-toggle="dropdown"><i class="fa-solid fa-gauge text-start" aria-hidden='true'></i> Dashboard
@@ -169,7 +171,7 @@ session_start();
                         <button type="button" class="btn btn-dark text-light" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa-solid fa-thumbtack" aria-hidden='true'></i> Posts
                         </button>
                         <ul class="dropdown-menu dropdown-menu-dark" style="position: absolute; inset: 0px auto auto 0px; margin: 0px; transform: translate3d(123.28px, 0px, 0px);" data-popper-placement="right-start">
-                            <li><a class="dropdown-item" href="all_post.php">All Posts</a></li>
+                            <li><a class="dropdown-item" href="all_posts.php">All Posts</a></li>
                             <li><a class="dropdown-item" href="add_post.php">Add New</a></li>
                             <li><a class="dropdown-item" href="#">Categories</a></li>
                             <li><a class="dropdown-item" href="#">Tags</a></li>
@@ -280,11 +282,12 @@ session_start();
                 </a>
             </ul>
         </div>
-        <div class="col-sm-11">
+        <div class="col-sm-10">
             <h2 class="col-sm-10">Users
                 <a href="add_user.php" class="btn btn-light" type="submit">Add new</a>
             </h2>
             <?php
+            //include database page
             include 'db.php';
             $ID = (isset($_SESSION["ID"]));
             $sql = mysqli_query($connect, "SELECT * FROM adduser where ID='$ID' ");
@@ -303,6 +306,7 @@ session_start();
                 <?php
                 $i = 1;
                 $rows = mysqli_query($connect, "SELECT * FROM adduser ORDER BY id ASC");
+                //foreach start
                 foreach ($rows as $row) : ?>
                     <th></th>
                     <th></th>
@@ -325,6 +329,7 @@ session_start();
                             <?Php echo $row['Role'] ?></br>
                         </td>
                     </tr>
+                    <!-- end foreach-->
                 <?php endforeach; ?>
             </table>
         </div>

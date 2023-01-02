@@ -14,41 +14,37 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         echo "Title Already Exists";
         exit;
     } else {
+        //image upload
+        $title = $_POST['title'];
+        $files = $_FILES['file'];
 
-        if (isset($_POST['submit'])) {
-            
-           // For inserting the Image to the database
-            $fileName = $_FILES["file"]["name"];
-            $fileSize = $_FILES["file"]["size"];
-            $tmpName = $_FILES["file"]["tmp_name"];
+        print_r($title);
+        echo "<br>";
+        $fileName = $files['name'];
+        $fileerror = $files['error'];
+        $filetmp = $files['tmp_name'];
 
-            $validImageExtension = ['jpg', 'jpeg', 'png'];
-            $imageExtension = explode('.', $fileName);
-            $imageExtension = strtolower(end($imageExtension));
-            if (!in_array($imageExtension, $validImageExtension)) {
-                echo "<script> alert('Invalid Image Extension'); </script>";
-            } elseif ($fileSize > 1000000) {
-                echo "<script> alert('Image Size Is Too Large'); </script>";
-            } else {
-                $fileName = uniqid();
-                $fileName .= '.' . $imageExtension;
-                move_uploaded_file($tmpName, './Upload-Image' . $fileName);
-                
-                //insert data from wordpress
-                $sql = "INSERT INTO `user_post`(`Title`, `Author`, `Categories`, `Tags`, `Date`, `File`) VALUES ('$title','$author','$categories','$tags','$date','$fileName')";
+        $fileext = explode('.', $fileName);
+        $filecheck = strtolower(end($fileext));
 
-                $result = mysqli_query($connect, $sql);
-                //result
-                if ($result) {
-                    echo '<strong>Success!</strong>Your entry has been submitted successfully!';
+        $fileextstore = array('png', 'jpg', 'jpeg');
 
-                    header("Location: all_posts.php");
-                } else {
-                    echo "The record was not submitted successfully because of this error --->" . mysqli_error($connect);
-                }
-            }
+        if (in_array($filecheck, $fileextstore)) {
+            $destfile = 'Upload-Image/' . $fileName;
+            move_uploaded_file($filetmp, $destfile);
+        }
+        //insert data from user_post
+        $sql = "INSERT INTO `user_post`(`Title`, `Author`, `Categories`, `Tags`, `Date`, `File`) VALUES ('$title','$author','$categories','$tags','$date','$destfile')";
+
+        $result = mysqli_query($connect, $sql);
+        //result
+        if ($result) {
+            echo '<strong>Success!</strong>Your entry has been submitted successfully!';
+
+            header("Location: all_posts.php");
+        } else {
+            echo "The record was not submitted successfully because of this error --->" . mysqli_error($connect);
         }
     }
 }
 mysqli_close($connect);
-?>

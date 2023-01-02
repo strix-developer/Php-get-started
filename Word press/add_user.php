@@ -138,65 +138,193 @@ session_start();
         </div>
     </div>
     <!--Header ended-->
-    <div class="col-lg-12">
-        <br>
-        <h2 class="d-flex">Add User</h2>
-        <br>
-        <h6 class="d-flex">Create a brand new user and add them to this site</h6>
-        <!--form start-->
-        <form action="insert_users.php" class="col-sm-12" method="POST">
+    <nav class="conatiner-fluid d-flex col-sm-12" style="min-height:100vh">
+        <div class="col-sm-2 bg-dark">
+            <ul class="navbar-nav">
+                <li class="nav-item dropdown dropend">
+                    <button type="button" class="btn btn-dark text-light" data-bs-toggle="dropdown"><i class="fa-solid fa-gauge text-start" aria-hidden='true'></i> Dashboard
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-dark" style="position: absolute; inset: 0px auto auto 0px; margin: 0px; transform: translate3d(123.28px, 0px, 0px);" data-popper-placement="right-start">
+                        <li class="text-light"><a class="dropdown-item bg-dark" href="#">Home</a></li>
+                        <li><a class="dropdown-item" href="#">Updates</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <div class="dropdown dropend">
+                        <button type="button" class="btn btn-dark text-light" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa-solid fa-thumbtack" aria-hidden='true'></i> Posts
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-dark" style="position: absolute; inset: 0px auto auto 0px; margin: 0px; transform: translate3d(123.28px, 0px, 0px);" data-popper-placement="right-start">
+                            <li><a class="dropdown-item" href="all_posts.php">All Posts</a></li>
+                            <li><a class="dropdown-item" href="add_post.php">Add New</a></li>
+                            <li><a class="dropdown-item" href="#">Categories</a></li>
+                            <li><a class="dropdown-item" href="#">Tags</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <div class="dropdown dropend">
+                        <button type="button" class="btn btn-dark text-light" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa-solid fa-camera" aria-hidden='true'></i> Media
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-dark" style="position: absolute; inset: 0px auto auto 0px; margin: 0px; transform: translate3d(123.28px, 0px, 0px);" data-popper-placement="right-start">
+                            <li><a class="dropdown-item" href="#">Library</a></li>
+                            <li><a class="dropdown-item" href="#">Add New</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <div class="dropdown dropend">
+                        <button type="button" class="btn btn-dark text-light" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa-solid fa-file" aria-hidden='true'></i> Pages
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-dark" style="position: absolute; inset: 0px auto auto 0px; margin: 0px; transform: translate3d(123.28px, 0px, 0px);" data-popper-placement="right-start">
+                            <li><a class="dropdown-item" href="#">All Pages</a></li>
+                            <li><a class="dropdown-item" href="#">Add New</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <div class="dropdown dropend">
+                        <button type="button" class="btn btn-dark text-light" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa-solid fa-message" aria-hidden='true'></i> Comments
+                        </button>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <div class="dropdown dropend">
+                        <button type="button" class="btn btn-dark text-light" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa-solid fa-brush" aria-hidden='true'></i> Apperences
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-dark" style="position: absolute; inset: 0px auto auto 0px; margin: 0px; transform: translate3d(123.28px, 0px, 0px);" data-popper-placement="right-start">
+                            <li><a class="dropdown-item" href="#">Themes</a></li>
+                            <li><a class="dropdown-item" href="#">Editor</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <div class="dropdown dropend">
+                        <button type="button" class="btn btn-dark text-light" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa-solid fa-plug" aria-hidden='true'></i> Plugins
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-dark" style="position: absolute; inset: 0px auto auto 0px; margin: 0px; transform: translate3d(123.28px, 0px, 0px);" data-popper-placement="right-start">
+                            <li><a class="dropdown-item" href="#">Install Plugins</a></li>
+                            <li><a class="dropdown-item" href="#">Add New</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <div class="dropdown dropend">
+                        <button type="button" class="btn btn-dark text-light" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa-solid fa-user" aria-hidden='true'></i> User
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-dark" style="position: absolute; inset: 0px auto auto 0px; margin: 0px; transform: translate3d(123.28px, 0px, 0px);" data-popper-placement="right-start">
+                            <li><a class="dropdown-item" href="all_users.php">All Users</a></li>
+                            <li><a class="dropdown-item" href="add_user.php">Add New</a></li>
+                            <li><a class="dropdown-item" href="#">Profile</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <div class="dropdown dropend">
+                        <button type="button" class="btn btn-dark text-light" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa-solid fa-wrench" aria-hidden='true'></i> Tools
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-dark" style="position: absolute; inset: 0px auto auto 0px; margin: 0px; transform: translate3d(123.28px, 0px, 0px);" data-popper-placement="right-start">
+                            <li><a class="dropdown-item" href="#">Available Tools</a></li>
+                            <li><a class="dropdown-item" href="#">Import</a></li>
+                            <li><a class="dropdown-item" href="#">Export</a></li>
+                            <li><a class="dropdown-item" href="#">Site Health</a></li>
+                            <li><a class="dropdown-item" href="#">Export Personal Data</a></li>
+                            <li><a class="dropdown-item" href="#">Erase Personal Data</a></li>
+                            <li><a class="dropdown-item" href="#">Theme File Editor</a></li>
+                            <li><a class="dropdown-item" href="#">Plugin File Editor</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <div class="dropdown dropend">
+                        <button type="button" class="btn btn-dark text-light" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa-solid fa-sliders" aria-hidden='true'></i> Setting
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-dark" style="position: absolute; inset: 0px auto auto 0px; margin: 0px; transform: translate3d(123.28px, 0px, 0px);" data-popper-placement="right-start">
+                            <li><a class="dropdown-item" href="#">General</a></li>
+                            <li><a class="dropdown-item" href="#">Writing</a></li>
+                            <li><a class="dropdown-item" href="#">Reading</a></li>
+                            <li><a class="dropdown-item" href="#">Discussion</a></li>
+                            <li><a class="dropdown-item" href="#">Media</a></li>
+                            <li><a class="dropdown-item" href="#">Permalinks</a></li>
+                            <li><a class="dropdown-item" href="#">Privacy</a></li>
+                        </ul>
+                        </a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <div class="p-1 text-light">
+                        <button type="button" class="btn btn btn-outline-light me-2" data-bs-toggle="dropdown">
+                            <i class="fa-solid fa-arrow-right-arrow-left" aria-hidden='true'></i> Collapse menu
+                        </button>
+                    </div>
+                </li>
+                <a href="#top" data-toggle="sidebar-colapse" class="bg-dark list-group-item list-group-item-action d-flex align-items-center">
+                    <div class="d-flex w-100 justify-content-start align-items-center">
+                        <span id="collapse-icon" class="fa fa-2x mr-3"></span>
+                        <span id="collapse-text" class="menu-collapsed">Collapse</span>
+                    </div>
+                </a>
+            </ul>
+        </div>
+        <div class="col-lg-12">
             <br>
-            <div class="form-group row">
-                <label for="name" class="col-sm-2 col-form-label">User Name(Required)</label>
-                <div class="col-sm-4">
-                    <input type="text"  class="form-control" id="name" placeholder="" name="username">
+            <h2 class="d-flex">Add User</h2>
+            <br>
+            <h6 class="d-flex">Create a brand new user and add them to this site</h6>
+            <!--form start-->
+            <form action="insert_users.php" class="col-sm-12" method="POST">
+                <br>
+                <div class="form-group row">
+                    <label for="name" class="col-sm-2 col-form-label">User Name(Required)</label>
+                    <div class="col-sm-4">
+                        <input type="text" class="form-control" id="name" placeholder="" name="username">
+                    </div>
                 </div>
-            </div>
-            <br>
-            <div class="form-group row">
-                <label for="staticEmail" class="col-sm-2 col-form-label">Email(Required)</label>
-                <div class="col-sm-4">
-                    <input type="email"  class="form-control" id="staticEmail" placeholder="" name="email">
+                <br>
+                <div class="form-group row">
+                    <label for="staticEmail" class="col-sm-2 col-form-label">Email(Required)</label>
+                    <div class="col-sm-4">
+                        <input type="email" class="form-control" id="staticEmail" placeholder="" name="email">
+                    </div>
                 </div>
-            </div>
-            <br>
-            <div class="form-group row">
-                <label for="fname" class="col-sm-2 col-form-label">First Name</label>
-                <div class="col-sm-4">
-                    <input type="text"  class="form-control" id="fname" placeholder="" name="firstname">
+                <br>
+                <div class="form-group row">
+                    <label for="fname" class="col-sm-2 col-form-label">First Name</label>
+                    <div class="col-sm-4">
+                        <input type="text" class="form-control" id="fname" placeholder="" name="firstname">
+                    </div>
                 </div>
-            </div>
-            <br>
-            <div class="form-group row">
-                <label for="lname" class="col-sm-2 col-form-label">Last Name</label>
-                <div class="col-sm-4">
-                    <input type="text"  class="form-control" id="lname" placeholder="" name="lastname">
+                <br>
+                <div class="form-group row">
+                    <label for="lname" class="col-sm-2 col-form-label">Last Name</label>
+                    <div class="col-sm-4">
+                        <input type="text" class="form-control" id="lname" placeholder="" name="lastname">
+                    </div>
                 </div>
-            </div>
-            <br>
-            <div class="form-group row">
-                <label for="inputPassword" class="col-sm-2 col-form-label">Password</label>
-                <div class="col-sm-4">
-                    <input type="password" class="form-control" id="inputPassword" placeholder="" name="password">
+                <br>
+                <div class="form-group row">
+                    <label for="inputPassword" class="col-sm-2 col-form-label">Password</label>
+                    <div class="col-sm-4">
+                        <input type="password" class="form-control" id="inputPassword" placeholder="" name="password">
+                    </div>
                 </div>
-            </div>
-            <br>
-            <div class="form-group row">
-                <label for="role" class="col-sm-2 col-form-label">Roles:</label>
-                <div class="col-sm-2">
-                    <select id="role" name="role">
-                        <option value="Subscriber">Subscriber</option>
-                        <option value="Contributer">Contributer</option>
-                        <option value="Author">Author</option>
-                        <option value="Editor">Editor</option>
-                        <option value="Administrator">Administrator</option>
-                    </select>
+                <br>
+                <div class="form-group row">
+                    <label for="role" class="col-sm-2 col-form-label">Roles:</label>
+                    <div class="col-sm-2">
+                        <select id="role" name="role">
+                            <option value="Subscriber">Subscriber</option>
+                            <option value="Contributer">Contributer</option>
+                            <option value="Author">Author</option>
+                            <option value="Editor">Editor</option>
+                            <option value="Administrator">Administrator</option>
+                        </select>
+                    </div>
                 </div>
-            </div>
-            <br>
-            <input type="submit" value="Add User" class="btn btn-light">
-        </form>
-    </div>
+                <br>
+                <input type="submit" value="Add User" class="btn btn-light">
+            </form>
+        </div>
+    </nav>
 </body>
 
 </html>
