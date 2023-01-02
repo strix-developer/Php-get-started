@@ -1,5 +1,5 @@
 <?php
-require_once __DIR__ . "/Bootsstrap/App.php";
+require_once __DIR__ . "/Bootstrap/App.php";
 require file_header();
 ?>
 

@@ -4,7 +4,7 @@
 $servername = "localhost";
 $username = "root";
 $password = "";
-$database = "wordpress";
+$database = "admin";
 
 //create a connection
 $conn = mysqli_connect($servername, $username, $password, $database);

@@ -1,5 +1,5 @@
 <?php
-include __DIR__ . "/Bootsstrap/App.php";
+include __DIR__ . "/Bootstrap/App.php";
 
 //header 
 include file_header();

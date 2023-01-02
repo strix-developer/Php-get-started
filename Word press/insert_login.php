@@ -8,13 +8,13 @@
         //connect to database
         extract($_POST);
         include("db.php");
-        $sql = mysqli_query($connect, "SELECT * FROM wordpress where Email='$email'");
+        $sql = mysqli_query($connect, "SELECT * FROM `admin` WHERE  Email='$email'");
         if (mysqli_num_rows($sql) > 0) {
             echo "Email Id Already Exists";
             exit;
         } else {
             //insert data from wordpress
-            $sql = "INSERT INTO `wordpress`(`Site Title`, `User Name`, `Password`, `Email`) VALUES ('$Sitetitle','$Username','$Password','$email')";
+            $sql = "INSERT INTO `admin`(`Site Title`, `UserName`, `Password`, `Email`) VALUES ('$Sitetitle','$Username','$Password','$email')";
 
             $result = mysqli_query($connect, $sql);
             //result

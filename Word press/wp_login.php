@@ -19,8 +19,8 @@
             <div class="mb-3 col-sm-4 mx-auto d-block alert alert-dark rounded">
                 <!--user login tag-->
                 <div class="mb-3 col-sm-5 mx-auto d-block text-start ">
-                    <label for="EMAIL">Email</label><br>
-                    <input type="text" placeholder="Email" name="email">
+                    <label for="username">UserName</label><br>
+                    <input type="text" placeholder="Username" name="Username">
                 </div>
                 <!--user password-->
                 <div class="mb-3 col-sm-5 mx-auto d-block text-start">

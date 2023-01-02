@@ -5,9 +5,9 @@
     if (isset($_POST['submit'])) {
         extract($_POST);
         include "db.php";
-        $email = $_POST['email'] ;
+        $username = $_POST['Username'] ;
         $pswd = $_POST['pswd'] ;
-        $sql = mysqli_query($connect, "SELECT * FROM `wordpress` WHERE  Email = '$email' and password = '$pswd' ");
+        $sql = mysqli_query($connect, "SELECT * FROM `admin` WHERE  Username = '$username' and password = '$pswd' ");
         $row  = mysqli_fetch_array($sql);
         if (is_array($row)) {
             

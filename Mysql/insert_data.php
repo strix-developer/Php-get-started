@@ -12,14 +12,14 @@
         extract($_POST);
         include("mysql.php");
   
-        $sql = mysqli_query($connect, "SELECT * FROM signup where Email='$email'");
+        $sql = mysqli_query($connect, "SELECT * FROM signup_ where Email='$email'");
         if (mysqli_num_rows($sql) > 0) {
             echo "Email Id Already Exists";
             exit;
         } else {
 
        
-            if (isset($_POST['submit'])) {
+            if (isset($_POST['upload'])) {
                 
                 $fileName = $_FILES["file"]["name"];
                 $fileSize = $_FILES["file"]["size"];
@@ -30,15 +30,15 @@
                 $imageExtension = strtolower(end($imageExtension));
                 if (!in_array($imageExtension, $validImageExtension)) {
                     echo "<script> alert('Invalid Image Extension'); </script>";
-                } elseif ($fileSize > 100000000000000000000) {
+                } elseif ($fileSize > 100000000) {
                     echo "<script> alert('Image Size Is Too Large'); </script>";
                 } else {
                     $ImageName = uniqid();
                     $ImageName .= '.' . $imageExtension;
-                    move_uploaded_file($tmpName, 'Upload data/' . $ImageName);
+                    move_uploaded_file($tmpName, './Upload Image' . $ImageName);
 
                    
-                    $sql = "INSERT INTO `signup` (`Name`, `Last Name`, `Email`, `Password`, `Phone Number`, `Role`, `File`)
+                    $sql = "INSERT INTO `signup_` (`ID`, `Name`, `Last Name`, `Email`, `Password`, `Number`, `Role`, `File`)
                     VALUES ('$name', '$lname', '$email', '$pswd', '$number','$role','$ImageName')";
 
                     $result = mysqli_query($connect, $sql);

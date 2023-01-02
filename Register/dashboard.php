@@ -1,6 +1,6 @@
 <?php
 session_start();
-realpath(__DIR__ . "/Bootsstrap/App.php");
+realpath(__DIR__ . "/Bootstrap/App.php");
 require __DIR__ . "/Core/Support/Layout/header.php";
 ?>
 

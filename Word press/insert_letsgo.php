@@ -2,13 +2,13 @@
     //post method
     if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         $Database = $_REQUEST['database'];
-        $Username = $_REQUEST['Username'];
+        $username = $_REQUEST['Username'];
         $Password = $_REQUEST['Password'];
         $datahost = $_REQUEST['datahost'];
         //connect to database
         extract($_POST);
         include("db.php");
-        $sql = mysqli_query($connect, "SELECT * FROM wordpress where Email='$email'");
+        $sql = mysqli_query($connect, "SELECT * FROM `admin` where Email='$email'");
         if (mysqli_num_rows($sql) > 0) {
             echo "Email Id Already Exists";
             exit;
