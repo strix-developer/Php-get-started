@@ -1,25 +1,22 @@
  <?php
 
-    session_start();
+    $data = file_get_contents('database/user.json');
+    $json = json_decode($data, true);
+    $new_filtered_array = array_filter($json, function ($element) {
+        return $element['ID'] != $_GET['ID'];
+    });
+    // print_r($new_filtered_array);
+    $array_encode = json_encode($new_filtered_array, JSON_PRETTY_PRINT);
+    file_put_contents('database/user.json', $array_encode);
 
-    // read json file and decode json to associative array
-    $data = json_decode(file_get_contents('/database/user.php'), true);
+    //  delete profile
+    $data = file_get_contents('database/user.json');
+    $json = json_decode($data, true);
+    $new_filtered_array = array_filter($json, function ($element) {
+        return $element['ID'] != $_GET['ID'];
+    });
+    // print_r($new_filtered_array);
+    $array_encode = json_encode($new_filtered_array, JSON_PRETTY_PRINT);
+    file_put_contents('database/user.json', $array_encode);
 
-    // get array index to delete
-    $arr_index = array();
-    foreach ($data as $key) {
-        if ($key['ID'] == $_SESSION['ID']) {
-            $arr_index[] = $key;
-        }
-    }
-
-    // delete data
-    foreach ($arr_index as $i) {
-        unset($data[$i]);
-    }
-
-    // rebase array
-    $userdata = array_values($data);
-
-    // encode array to json and save to file
-    file_put_contents('/database/user.json', json_encode($data));
+    ?>
