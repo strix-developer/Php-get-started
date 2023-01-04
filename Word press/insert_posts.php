@@ -17,8 +17,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         //image upload
         $title = $_POST['title'];
         $files = $_FILES['file'];
-
-        print_r($title);
         echo "<br>";
         $fileName = $files['name'];
         $fileerror = $files['error'];

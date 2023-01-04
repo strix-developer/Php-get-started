@@ -159,8 +159,8 @@ session_start();
         <div class="col-sm-2 bg-dark">
             <ul class="navbar-nav">
                 <li class="nav-item dropdown dropend">
-                    <button type="button" class="btn btn-dark text-light" data-bs-toggle="dropdown"><i class="fa-solid fa-gauge text-start" aria-hidden='true'></i> Dashboard
-                    </button>
+                    <a href="#"> <button type="button" class="btn btn-dark text-light" data-bs-toggle="dropdown"><i class="fa-solid fa-gauge text-start" aria-hidden='true'></i> Dashboard
+                        </button></a>
                     <ul class="dropdown-menu dropdown-menu-dark" style="position: absolute; inset: 0px auto auto 0px; margin: 0px; transform: translate3d(123.28px, 0px, 0px);" data-popper-placement="right-start">
                         <li class="text-light"><a class="dropdown-item bg-dark" href="#">Home</a></li>
                         <li><a class="dropdown-item" href="#">Updates</a></li>
@@ -168,8 +168,8 @@ session_start();
                 </li>
                 <li class="nav-item">
                     <div class="dropdown dropend">
-                        <button type="button" class="btn btn-dark text-light" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa-solid fa-thumbtack" aria-hidden='true'></i> Posts
-                        </button>
+                        <a href="#"> <button type="button" class="btn btn-dark text-light" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa-solid fa-thumbtack" aria-hidden='true'></i> Posts
+                            </button></a>
                         <ul class="dropdown-menu dropdown-menu-dark" style="position: absolute; inset: 0px auto auto 0px; margin: 0px; transform: translate3d(123.28px, 0px, 0px);" data-popper-placement="right-start">
                             <li><a class="dropdown-item" href="all_posts.php">All Posts</a></li>
                             <li><a class="dropdown-item" href="add_post.php">Add New</a></li>
@@ -180,8 +180,8 @@ session_start();
                 </li>
                 <li class="nav-item">
                     <div class="dropdown dropend">
-                        <button type="button" class="btn btn-dark text-light" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa-solid fa-camera" aria-hidden='true'></i> Media
-                        </button>
+                        <a href="#"> <button type="button" class="btn btn-dark text-light" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa-solid fa-camera" aria-hidden='true'></i> Media
+                            </button></a>
                         <ul class="dropdown-menu dropdown-menu-dark" style="position: absolute; inset: 0px auto auto 0px; margin: 0px; transform: translate3d(123.28px, 0px, 0px);" data-popper-placement="right-start">
                             <li><a class="dropdown-item" href="#">Library</a></li>
                             <li><a class="dropdown-item" href="#">Add New</a></li>
@@ -190,8 +190,8 @@ session_start();
                 </li>
                 <li class="nav-item">
                     <div class="dropdown dropend">
-                        <button type="button" class="btn btn-dark text-light" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa-solid fa-file" aria-hidden='true'></i> Pages
-                        </button>
+                        <a href="#"> <button type="button" class="btn btn-dark text-light" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa-solid fa-file" aria-hidden='true'></i> Pages
+                            </button></a>
                         <ul class="dropdown-menu dropdown-menu-dark" style="position: absolute; inset: 0px auto auto 0px; margin: 0px; transform: translate3d(123.28px, 0px, 0px);" data-popper-placement="right-start">
                             <li><a class="dropdown-item" href="#">All Pages</a></li>
                             <li><a class="dropdown-item" href="#">Add New</a></li>
@@ -200,14 +200,14 @@ session_start();
                 </li>
                 <li class="nav-item">
                     <div class="dropdown dropend">
-                        <button type="button" class="btn btn-dark text-light" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa-solid fa-message" aria-hidden='true'></i> Comments
-                        </button>
+                        <a href="#"> <button type="button" class="btn btn-dark text-light" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa-solid fa-message" aria-hidden='true'></i> Comments
+                            </button></a>
                     </div>
                 </li>
                 <li class="nav-item">
                     <div class="dropdown dropend">
-                        <button type="button" class="btn btn-dark text-light" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa-solid fa-brush" aria-hidden='true'></i> Apperences
-                        </button>
+                        <a href="#"> <button type="button" class="btn btn-dark text-light" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa-solid fa-brush" aria-hidden='true'></i> Apperences
+                            </button></a>
                         <ul class="dropdown-menu dropdown-menu-dark" style="position: absolute; inset: 0px auto auto 0px; margin: 0px; transform: translate3d(123.28px, 0px, 0px);" data-popper-placement="right-start">
                             <li><a class="dropdown-item" href="#">Themes</a></li>
                             <li><a class="dropdown-item" href="#">Editor</a></li>
@@ -216,8 +216,8 @@ session_start();
                 </li>
                 <li class="nav-item">
                     <div class="dropdown dropend">
-                        <button type="button" class="btn btn-dark text-light" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa-solid fa-plug" aria-hidden='true'></i> Plugins
-                        </button>
+                        <a href="#"> <button type="button" class="btn btn-dark text-light" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa-solid fa-plug" aria-hidden='true'></i> Plugins
+                            </button></a>
                         <ul class="dropdown-menu dropdown-menu-dark" style="position: absolute; inset: 0px auto auto 0px; margin: 0px; transform: translate3d(123.28px, 0px, 0px);" data-popper-placement="right-start">
                             <li><a class="dropdown-item" href="#">Install Plugins</a></li>
                             <li><a class="dropdown-item" href="#">Add New</a></li>
@@ -226,8 +226,8 @@ session_start();
                 </li>
                 <li class="nav-item">
                     <div class="dropdown dropend">
-                        <button type="button" class="btn btn-dark text-light" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa-solid fa-user" aria-hidden='true'></i> User
-                        </button>
+                        <a href="#"> <button type="button" class="btn btn-dark text-light" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa-solid fa-user" aria-hidden='true'></i> User
+                            </button></a>
                         <ul class="dropdown-menu dropdown-menu-dark" style="position: absolute; inset: 0px auto auto 0px; margin: 0px; transform: translate3d(123.28px, 0px, 0px);" data-popper-placement="right-start">
                             <li><a class="dropdown-item" href="all_users.php">All Users</a></li>
                             <li><a class="dropdown-item" href="add_user.php">Add New</a></li>
@@ -237,8 +237,8 @@ session_start();
                 </li>
                 <li class="nav-item">
                     <div class="dropdown dropend">
-                        <button type="button" class="btn btn-dark text-light" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa-solid fa-wrench" aria-hidden='true'></i> Tools
-                        </button>
+                        <a href="#"> <button type="button" class="btn btn-dark text-light" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa-solid fa-wrench" aria-hidden='true'></i> Tools
+                            </button></a>
                         <ul class="dropdown-menu dropdown-menu-dark" style="position: absolute; inset: 0px auto auto 0px; margin: 0px; transform: translate3d(123.28px, 0px, 0px);" data-popper-placement="right-start">
                             <li><a class="dropdown-item" href="#">Available Tools</a></li>
                             <li><a class="dropdown-item" href="#">Import</a></li>
@@ -253,8 +253,8 @@ session_start();
                 </li>
                 <li class="nav-item">
                     <div class="dropdown dropend">
-                        <button type="button" class="btn btn-dark text-light" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa-solid fa-sliders" aria-hidden='true'></i> Setting
-                        </button>
+                        <a href="#"> <button type="button" class="btn btn-dark text-light" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa-solid fa-sliders" aria-hidden='true'></i> Setting
+                            </button></a>
                         <ul class="dropdown-menu dropdown-menu-dark" style="position: absolute; inset: 0px auto auto 0px; margin: 0px; transform: translate3d(123.28px, 0px, 0px);" data-popper-placement="right-start">
                             <li><a class="dropdown-item" href="#">General</a></li>
                             <li><a class="dropdown-item" href="#">Writing</a></li>
@@ -264,7 +264,6 @@ session_start();
                             <li><a class="dropdown-item" href="#">Permalinks</a></li>
                             <li><a class="dropdown-item" href="#">Privacy</a></li>
                         </ul>
-                        </a>
                     </div>
                 </li>
                 <li class="nav-item">
@@ -274,12 +273,6 @@ session_start();
                         </button>
                     </div>
                 </li>
-                <a href="#top" data-toggle="sidebar-colapse" class="bg-dark list-group-item list-group-item-action d-flex align-items-center">
-                    <div class="d-flex w-100 justify-content-start align-items-center">
-                        <span id="collapse-icon" class="fa fa-2x mr-3"></span>
-                        <span id="collapse-text" class="menu-collapsed">Collapse</span>
-                    </div>
-                </a>
             </ul>
         </div>
         <div class="col-sm-10">

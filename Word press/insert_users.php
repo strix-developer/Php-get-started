@@ -1,5 +1,5 @@
 <?php
-    //post method
+    //request method
     if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         $usersname = $_REQUEST['username'];
         $email = $_REQUEST['email'];
