@@ -1,0 +1,42 @@
+{
+    "0": {
+        "Name": "jitesh verma",
+        "Email": "jitesgv@gmail.com",
+        "Number": "9882254710",
+        "Password": "123",
+        "Role": "admin",
+        "ID": 2
+    },
+    "2": {
+        "Name": "nitesh",
+        "Email": "nitesh@gmail.com",
+        "Number": "9879883251",
+        "Password": "123",
+        "Role": "user",
+        "ID": 3
+    },
+    "3": {
+        "Name": "karan",
+        "Email": "karan321@gmail.com",
+        "Number": "8875994665",
+        "Password": "123",
+        "Role": "user",
+        "ID": 4
+    },
+    "8": {
+        "Name": "priyansh",
+        "Email": "priyansh@gmail.com",
+        "Number": "9882254710",
+        "Password": "123",
+        "Role": "guest",
+        "picture": {
+            "name": "",
+            "full_path": "",
+            "type": "",
+            "tmp_name": "",
+            "error": 4,
+            "size": 0
+        },
+        "ID": 5
+    }
+}
