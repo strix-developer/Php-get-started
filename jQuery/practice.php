@@ -28,7 +28,6 @@
             border-radius: 2px;
             border-color: greenyellow;
             float: left;
-            margin-left: 40%;
         }
 
         .btn {
@@ -42,6 +41,10 @@
 </head>
 
 <body>
+    <div class="btn">
+        <button id="hide">Hide</button>
+        <button id="show">Show</button>
+    </div>
 
     <div class="div_one">
         <h2>jQuery</h2>
@@ -50,10 +53,6 @@
         <p id="para_two">This is another jQuery paragraph.</p>
     </div>
 
-    <div class="btn">
-        <button id="hide">Hide</button>
-        <button id="show">Show</button>
-    </div>
 
     <div class="div_two" style="height: 100px; width: 100px; background-color:aquamarine">Div_Two</div>
 
