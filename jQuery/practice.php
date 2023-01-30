@@ -30,7 +30,12 @@
             float: left;
             margin-left: 40%;
         }
-        .btn{
+
+        .btn {
+            float: left;
+        }
+
+        .div_two {
             float: left;
         }
     </style>
@@ -50,6 +55,8 @@
         <button id="show">Show</button>
     </div>
 
+    <div class="div_two" style="height: 100px; width: 100px; background-color:aquamarine">Div_Two</div>
+
     <script>
         $(document).ready(function() {
             $("#hide").click(function() {
@@ -57,6 +64,23 @@
             });
             $("#show").click(function() {
                 $(".div_one").show();
+            });
+        });
+    </script>
+
+    <script>
+        $(document).ready(function() {
+            $('.div_two').click(function() {
+                var div = $(".div_two");
+                div.animate({
+                    height: '200px'
+                }, 'slow');
+                div.animate({
+                    width: '200px'
+                }, 'slow');
+                div.animate({
+                    fontSize: '3em'
+                }, 'slow');
             });
         });
     </script>
