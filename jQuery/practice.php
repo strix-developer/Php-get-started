@@ -84,6 +84,14 @@
         });
     </script>
 
+    <script>
+        jQuery('.post_filter li a').click(function() {
+            var abc = jQuery(this).attr("id");
+            jQuery(".post-area").hide();
+            jQuery("." + abc).show();
+        });
+    </script>
+
 </body>
 
 </html>
